@@ -5805,3 +5805,19 @@ body.rtl {
         padding: 0;
     }
 }
+
+
+
+.slider-text {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.slider-text h1,
+.slider-text p {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
