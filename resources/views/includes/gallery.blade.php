@@ -1,35 +1,3 @@
-    <!-- Start Before & After Section -->
-    <section class="tm-gray-bg">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
-        <div class="tm-section-heading text-center">
-            <h2>Before After Gallery</h2>
-            <div class="tm-section-seperator"><span></span></div>
-            <div class="empty-space col-md-b60 col-xs-b40"></div>
-        </div>
-        <div class="container">
-            <div class="before-after-gallery-slider owl-carousel tm-nam-tm-style1">
-                <div class="teeth-beforeafter">
-                    <img src="assets/img/teeth-before-image.jpg" alt="teeth before">
-                    <img src="assets/img/teeth-after-image.jpg" alt="teeth after">
-                </div>
-                <div class="teeth-beforeafter">
-                    <img src="assets/img/face-before-image.jpg" alt="teeth before">
-                    <img src="assets/img/face-after-image.jpg" alt="teeth after">
-                </div>
-                <div class="teeth-beforeafter">
-                    <img src="assets/img/teeth-before-image.jpg" alt="teeth before">
-                    <img src="assets/img/teeth-after-image.jpg" alt="teeth after">
-                </div>
-                <div class="teeth-beforeafter">
-                    <img src="assets/img/face-before-image.jpg" alt="teeth before">
-                    <img src="assets/img/face-after-image.jpg" alt="teeth after">
-                </div>
-            </div>
-        </div>
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
-    </section>
-    <!-- End Before & After Section -->
-
     <!-- Start Gallery Section -->
     <section id="gallery">
         <div class="empty-space col-md-b100 col-xs-b70"></div>

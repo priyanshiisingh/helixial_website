@@ -8,7 +8,7 @@
         </div>
         <div class="tm-relative">
             <div class="tm-half-section-bg left">
-                <img src="assets/img/about-hafl-bg.jpg" alt="about hafl bg">
+                <img src="assets/img/client/helixial_3.jpg" alt="about hafl bg">
             </div>
             <div class="empty-space col-xs-b60"></div>
             <div class="container">
