@@ -1366,6 +1366,11 @@ html {
     right: 22px;
     bottom: 0;
 }
+
+.tm-logo {
+    max-width: 170px;
+    height: auto;
+}
 .tm-logo-link {
     display: inline-block;
     position: relative;
