@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div id="tm-alert"></div>
-                    <form action="https://thememarch.com/demo/html/trustlife/trustlife/assets/php/mail.php" class="row tm-contact-form" method="post"  id="contact-form">
+                    <form action="" class="row tm-contact-form" method="post"  id="contact-form">
                         <div class="col-lg-6">
                             <div class="tm-form-field">
                                 <input type="text" id="name" name="name" required>
@@ -53,20 +53,20 @@
                         <div class="tm-single-contact">
                             <i class="fa fa-map-marker"></i>
                             <h3>Address</h3>
-                            <p>2855 Speer Blvd, Denver, CO 80211, USA</p>
+                            <p>Vadodara, Gujarat</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
                             <i class="fa fa-phone"></i>
                             <h3>Phone</h3>
-                            <p>1-800-915-6270 <br>
-                               1-800-915-6272</p>
+                            <p>1-123-456-7890 <br>
+                               1-123-456-7890</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
                             <i class="fa fa-envelope"></i>
                             <h3>Email</h3>
-                            <p>info@trustlife.com <br>
+                            <p>info@helixial.com <br>
                             Skype: example</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>

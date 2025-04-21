@@ -17,7 +17,7 @@
                 </div><!-- .col -->
                 <div class="col-lg-5">
                     <div class="empty-space col-md-b60 col-xs-b40"></div>
-                    <form method="POST" action="https://thememarch.com/demo/html/trustlife/trustlife/assets/php/appointment.php" class="tm-appointment-form" id="appointment-form">
+                    <form method="POST" action="" class="tm-appointment-form" id="appointment-form">
                         <div id="tm-alert1"></div>
                         <div class="tm-form-field">
                             <input type="text" id="uname" name="uname" placeholder="Full Name" required>

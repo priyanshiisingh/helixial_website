@@ -3,20 +3,20 @@
         <div class="tm-site-header">
             <div class="tm-header-info-wrap">
                 <div class="container tm-header-info">
-                    <a href="#"><i class="fa fa-phone"></i>1-800-915-6270</a>
-                    <a href="#"><i class="fa fa-envelope"></i>info@trustlife.com</a>
+                    <a href="#"><i class="fa fa-phone"></i>1-123-456-7890</a>
+                    <a href="#"><i class="fa fa-envelope"></i>info@helixial.com</a>
                 </div>
             </div>
             <div class="tm-header-menu">
                 <div class="container tm-header-menu-container">
                     <div class="tm-site-branding">
                         <!-- For Image Logo -->
-                        <a href="index.html" class="tm-logo-link">
-                            <img src="assets/img/logo.png" alt="" class="tm-logo">
+                        <a href="{{ route('home') }}" class="tm-logo-link">
+                            <img src="assets/img/client/logo/helixial_logo_transparent.png" alt="" class="tm-logo">
                         </a>
                         <!-- For Site Title -->
                         <!-- <span class="tm-site-title">
-                        <a href="index.html">Trustlife</a>
+                        <a href="index.html">Helixial</a>
                         </span> -->
                     </div>
                     <nav class="tm-primary-nav tm-onepage-nav">

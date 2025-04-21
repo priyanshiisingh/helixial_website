@@ -21,7 +21,7 @@
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
                         {{-- <div class="tm-overflow-hidden">
                             <p>The quality of our service and the professionalism of our staff are <br>
-                            the reason for Trustlife Center’s success.</p>
+                            the reason for Helixial Center’s success.</p>
                         </div> --}}
                         {{-- <div class="empty-space col-md-b55 col-sm-b35 col-xs-b25"></div> --}}
                         <div class="tm-overflow-hidden">

@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row row-md-reverce">
                     <div class="col-lg-5">
-                        <div class="tm-shedule-wrap">
+                        <div class="tm-shedule-wrap" style="visibility: hidden">
                             <div class="tm-shedule">
                                 <h3 class="tm-shedule-title">Opening Hours</h3>
                                 <ul class="tm-shedule-list">
@@ -56,14 +56,9 @@
                         <div class="empty-space col-md-b30 col-xs-b0"></div>
                         <div class="tm-about-wrap tm-hf-hide">
                             <div class="tm-about tm-gray-bg wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.1s">
-                                <h3 class="tm-about-title">Why People Choose Our <span>Hospital</span>?</h3>
+                                <h3 class="tm-about-title">About <span>Us</span></h3>
                                 <div class="tm-about-text">
-                                    <p>We provide the best service all over the country. People chose our hospital because of the following advantages. </p>
-                                    <p>We have a list of associated doctors, Every Department Specialists are availability, Available ambulance facilities, OT/ICU, trauma care is best as always, Our pharmacy is opend 24/7, Our cost is affordable.  </p>
-                                </div>
-                                <div class="empty-space col-xs-b25"></div>
-                                <div class="tm-about-btn">
-                                    <a href="#" class="tm-btn1">READ MORE</a>
+                                    <p>At Helixial, we believe that every disease leaves a molecular trail — and we’re here to follow it. We are committed to unwinding the genetic blueprint of disease to bring clarity to healthcare decisions. Whether it's identifying elusive infections or detecting cancer at the molecular level, our solutions are built to empower clinicians, laboratories, and researchers with data they can trust.</p>
                                 </div>
                             </div>
                         </div>

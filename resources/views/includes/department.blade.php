@@ -52,7 +52,7 @@
                                     <div class="tm-about tm-gray-bg">
                                         <h3 class="tm-about-title">Welcome to our <span>NEUROLOGY</span></h3>
                                         <div class="tm-about-text">
-                                            <p>Our Neurology deparment of Trustlife Hospital serves as the receiving point for the most seriously injured people from across the country and treats patients with brain and spine.</p>
+                                            <p>Our Neurology deparment of Helixial Hospital serves as the receiving point for the most seriously injured people from across the country and treats patients with brain and spine.</p>
                                             <p>In addition to being a centre of excellence, the Neurology deparment aims to be an asset to national and international communities.</p>
                                         </div>
                                         <div class="empty-space col-xs-b25"></div>
@@ -74,7 +74,7 @@
                                     <div class="tm-about tm-gray-bg">
                                         <h3 class="tm-about-title">Welcome to our <span>CRUTCHES</span></h3>
                                         <div class="tm-about-text">
-                                            <p>It is important to start walking as soon as you can after your surgery. But you will need support for walking while your leg heals. Trustlife may be a good choice after a leg injury or surgery if you only need a little help with balance and stability. </p>
+                                            <p>It is important to start walking as soon as you can after your surgery. But you will need support for walking while your leg heals. Helixial may be a good choice after a leg injury or surgery if you only need a little help with balance and stability. </p>
                                             <p>Crutches are also useful when your leg is only a little weak or painful.</p>
                                         </div>
                                         <div class="empty-space col-xs-b25"></div>
