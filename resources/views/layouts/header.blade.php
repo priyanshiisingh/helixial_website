@@ -4,7 +4,7 @@
             <div class="tm-header-info-wrap">
                 <div class="container tm-header-info">
                     <a href="#"><i class="fa fa-phone"></i>1-123-456-7890</a>
-                    <a href="#"><i class="fa fa-envelope"></i>info@helixial.com</a>
+                    <a href="mailto:Info@helixialservices.com"><i class="fa fa-envelope"></i>Info@helixialservices.com</a>
                 </div>
             </div>
             <div class="tm-header-menu">
@@ -22,14 +22,14 @@
                     <nav class="tm-primary-nav tm-onepage-nav">
                         <ul class="tm-primary-nav-list">
                             <li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent">
-                                <a href="#home" class="nav-link tm-smooth-move">HOME</a>
+                                <a href="#home" class="nav-link tm-smooth-move">Home</a>
                             </li>
-                            <li class="menu-item"><a href="#about" class="nav-link tm-smooth-move">ABOUT</a></li>
-                            <li class="menu-item"><a href="#department" class="nav-link tm-smooth-move">SERVICES</a></li>
+                            <li class="menu-item"><a href="#about" class="nav-link tm-smooth-move">This Is Helixial</a></li>
+                            <li class="menu-item"><a href="#department" class="nav-link tm-smooth-move">Our Services</a></li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
-                            <li class="menu-item"><a href="#gallery" class="nav-link tm-smooth-move">GALLERY</a></li>
+                            <li class="menu-item"><a href="#gallery" class="nav-link tm-smooth-move">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
-                            <li class="menu-item "><a href="#blog" class="nav-link tm-smooth-move">BLOG</a>
+                            <li class="menu-item "><a href="#blog" class="nav-link tm-smooth-move">Blog</a>
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
                                     <li class="menu-item"><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
@@ -40,7 +40,7 @@
                                     <li class="menu-item"><a href="blog-details-full-width.html">Single Blog Video Post</a></li>
                                 </ul> --}}
                             </li>
-                            <li class="menu-item"><a href="#contact" class="nav-link tm-smooth-move">CONTACT</a></li>
+                            <li class="menu-item"><a href="#contact" class="nav-link tm-smooth-move">Contact</a></li>
                             {{-- <li class="menu-item"><a href="#appointment" class="nav-link tm-smooth-move">APPOINTMENT</a></li> --}}
                         </ul>
                     </nav>

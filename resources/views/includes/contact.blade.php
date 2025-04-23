@@ -1,6 +1,5 @@
     <!-- Start Contact Section -->
     <section id="contact">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="tm-section-heading text-center">
             <h2>Get In Touch</h2>
             <div class="tm-section-seperator"><span></span></div>
@@ -59,15 +58,13 @@
                         <div class="tm-single-contact">
                             <i class="fa fa-phone"></i>
                             <h3>Phone</h3>
-                            <p>1-123-456-7890 <br>
-                               1-123-456-7890</p>
+                            <p>1-123-456-7890</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
                             <i class="fa fa-envelope"></i>
                             <h3>Email</h3>
-                            <p>info@helixial.com <br>
-                            Skype: example</p>
+                            <a href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                     </div>

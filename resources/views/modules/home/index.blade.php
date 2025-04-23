@@ -8,11 +8,9 @@
 
 @include('includes.department')
 
-@include('includes.funfact')
+@include('includes.testimonials')
 
 @include('includes.gallery')
-
-@include('includes.testimonials')
 
 @include('includes.blog')
 

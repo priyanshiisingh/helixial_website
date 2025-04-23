@@ -1,11 +1,6 @@
     <!-- Start About Secton -->
     <section id="about">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
-        <div class="tm-section-heading text-center">
-            <h2>Who We Are</h2>
-            <div class="tm-section-seperator"><span></span></div>
-            <div class="empty-space col-md-b60 col-xs-b40"></div>
-        </div>
+        <div class="empty-space col-md-b40 col-xs-b30"></div>
         <div class="tm-relative">
             <div class="tm-half-section-bg left">
                 <img src="assets/img/client/helixial_3.jpg" alt="about hafl bg">

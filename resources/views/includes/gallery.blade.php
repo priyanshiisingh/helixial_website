@@ -1,6 +1,5 @@
     <!-- Start Gallery Section -->
     <section id="gallery">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="tm-section-heading text-center">
             <h2>View our Gallery</h2>
             <div class="tm-section-seperator"><span></span></div>
