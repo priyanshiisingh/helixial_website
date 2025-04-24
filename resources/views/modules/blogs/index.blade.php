@@ -6,10 +6,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="tm-blog-hero-title">Our Services</h1>
+                    <h1 class="tm-blog-hero-title">Our Blogs</h1>
                     <ul class="tm-breadcrumb">
                         <li><a href="{{ route('home') }}">Home</a></li>
-                        <li>Services</li>
+                        <li>Blogs</li>
                     </ul>
                 </div><!-- .col -->
             </div>
@@ -34,10 +34,10 @@
                                     </div>
                                 </div>
                                 <div class="tm-post-details-wrap">
-                                    <h2 class="tm-entry-title"><a href="{{ route('pages.service.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
+                                    <h2 class="tm-entry-title"><a href="{{ route('pages.blog.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
                                     <div class="tm-byline">
                                         <span class="author">
-                                            <a href="{{ route('pages.service.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
+                                            <a href="{{ route('pages.blog.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
                                         </span>
                                         <span class="posted-on"><i class="fa fa-calendar"></i>February 21, 2018</span>
                                         <span><i class="fa fa-tag"></i>Medical</span>
@@ -48,7 +48,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet.</p>
                             </div>
                             <div class="empty-space col-xs-b30"></div>
-                            <a href="{{ route('pages.service.detail') }}" class="tm-btn1">Read More</a>
+                            <a href="{{ route('pages.blog.detail') }}" class="tm-btn1">Read More</a>
                         </article><!-- .post -->
                         <article class="tm-post">
                             <header class="tm-entry-header">
@@ -64,10 +64,10 @@
                                     </div> -->
                                 </div>
                                 <div class="tm-post-details-wrap">
-                                    <h2 class="tm-entry-title"><a href="{{ route('pages.service.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
+                                    <h2 class="tm-entry-title"><a href="{{ route('pages.blog.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
                                     <div class="tm-byline">
                                         <span class="author">
-                                            <a href="{{ route('pages.service.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
+                                            <a href="{{ route('pages.blog.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
                                         </span>
                                         <span class="posted-on"><i class="fa fa-calendar"></i>February 21, 2018</span>
                                         <span><i class="fa fa-tag"></i>Medical</span>
@@ -78,7 +78,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet.</p>
                             </div>
                             <div class="empty-space col-xs-b30"></div>
-                            <a href="{{ route('pages.service.detail') }}" class="tm-btn1">Read More</a>
+                            <a href="{{ route('pages.blog.detail') }}" class="tm-btn1">Read More</a>
                         </article><!-- .post -->
                         <article class="tm-post">
                             <header class="tm-entry-header">
@@ -92,7 +92,7 @@
                                     </div>
                                     <div class="tm-byline">
                                         <span class="author">
-                                            <a href="{{ route('pages.service.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
+                                            <a href="{{ route('pages.blog.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
                                         </span>
                                         <span class="posted-on"><i class="fa fa-calendar"></i>February 21, 2018</span>
                                         <span><i class="fa fa-tag"></i>Medical</span>
@@ -100,12 +100,12 @@
                                 </div><!-- .tm-post-details-wrap -->
                             </header><!-- .tm-entry-header -->
                             <div class="empty-space col-xs-b30"></div>
-                            <a href="{{ route('pages.service.detail') }}" class="tm-btn1">Read More</a>
+                            <a href="{{ route('pages.blog.detail') }}" class="tm-btn1">Read More</a>
                         </article><!-- .post -->
                         <article class="tm-post">
                             <header class="tm-entry-header">
                                 <div class="tm-post-thumb">
-                                    <a href="{{ route('pages.service.detail') }}" class="tm-link-block">
+                                    <a href="{{ route('pages.blog.detail') }}" class="tm-link-block">
                                         <img src="assets/img/blog-08.jpg" alt="">
                                         <div class="tm-blog-hover">
                                             <span class="tm-blog-shap"></span>
@@ -114,10 +114,10 @@
                                     </a>
                                 </div>
                                 <div class="tm-post-details-wrap">
-                                    <h2 class="tm-entry-title"><a href="{{ route('pages.service.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
+                                    <h2 class="tm-entry-title"><a href="{{ route('pages.blog.detail') }}">Lorem ipsum dolor sit amet, consectetur adipisicing eliust</a></h2>
                                     <div class="tm-byline">
                                         <span class="author">
-                                            <a href="{{ route('pages.service.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
+                                            <a href="{{ route('pages.blog.detail') }}" class="bar-link"><i class="fa fa-user"></i>Admin</a>
                                         </span>
                                         <span class="posted-on"><i class="fa fa-calendar"></i>February 21, 2018</span>
                                         <span><i class="fa fa-tag"></i>Medical</span>
@@ -128,7 +128,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet.</p>
                             </div>
                             <div class="empty-space col-xs-b30"></div>
-                            <a href="{{ route('pages.service.detail') }}" class="tm-btn1">Read More</a>
+                            <a href="{{ route('pages.blog.detail') }}" class="tm-btn1">Read More</a>
                         </article><!-- .post -->
                         <div class="tm-pagination">
                             <!-- <a href="#" class="tm-prev-page"><i class="icofont icofont-long-arrow-left"></i></a> -->

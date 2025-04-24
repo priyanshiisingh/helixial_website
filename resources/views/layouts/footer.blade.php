@@ -7,25 +7,9 @@
                         <div class="tm-footer-social">
                             <h2>Follow Us</h2>
                             <div class="tm-footer-social-list">
-                                <a href="#" class="tm-social-btn blue">
-                                    <i class="fa fa-facebook-square"></i>
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                                <a href="#" class="tm-social-btn blue">
-                                    <i class="fa fa-google-plus-square"></i>
-                                    <i class="fa fa-google-plus-square"></i>
-                                </a>
-                                <a href="#" class="tm-social-btn blue">
-                                    <i class="fa fa-twitter-square"></i>
-                                    <i class="fa fa-twitter-square"></i>
-                                </a>
-                                <a href="#" class="tm-social-btn blue">
+                                <a href="http://helixial-services-pvt-ltd.linkedin.com" class="tm-social-btn blue">
                                     <i class="fa fa-linkedin-square"></i>
                                     <i class="fa fa-linkedin-square"></i>
-                                </a>
-                                <a href="#" class="tm-social-btn blue">
-                                    <i class="fa fa-skype"></i>
-                                    <i class="fa fa-skype"></i>
                                 </a>
                             </div>
                         </div>
@@ -44,7 +28,7 @@
                             <div class="tm-footer-hotline-in">
                                 <div class="tm-phone-icon"><i class="fa fa-mobile"></i></div>
                                 <h3>Toll Free</h3>
-                                <p>123-456-789</p>
+                                <p>701-686-1759</p>
                             </div>
                         </div>
                     </div><!-- .col -->
