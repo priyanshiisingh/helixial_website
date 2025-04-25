@@ -179,11 +179,11 @@
 
         var $current = getHeader(top);
 
-        if (current !== $current) {
-          $this.find(".active").removeClass("active");
-          $current.addClass("active");
-          current = $current;
-        }
+        // if (current !== $current) {
+        //   $this.find(".active").removeClass("active");
+        //   $current.addClass("active");
+        //   current = $current;
+        // }
       });
     });
   }

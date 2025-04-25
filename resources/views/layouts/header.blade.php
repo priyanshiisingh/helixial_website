@@ -21,15 +21,15 @@
                     </div>
                     <nav class="tm-primary-nav tm-onepage-nav">
                         <ul class="tm-primary-nav-list">
-                            <li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent">
-                                <a href="{{ route('home') }}" class="nav-link tm-smooth-move">Home</a>
+                            <li class="menu-item">
+                                <a href="{{ route('home') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
-                            <li class="menu-item"><a href="{{ route('pages.about') }}" class="nav-link tm-smooth-move">This Is Helixial</a></li>
-                            <li class="menu-item"><a href="{{ route('pages.service') }}" class="nav-link tm-smooth-move">Our Services</a></li>
+                            <li class="menu-item"><a href="{{ route('pages.about') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">This Is Helixial</a></li>
+                            <li class="menu-item"><a href="{{ route('pages.service') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our Services</a></li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
                             <li class="menu-item"><a href="{{ route('home') }}#gallery" class="nav-link tm-smooth-move">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
-                            <li class="menu-item "><a href="{{ route('pages.blog') }}" class="nav-link tm-smooth-move">Blogs</a>
+                            <li class="menu-item "><a href="{{ route('pages.blog') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
                                     <li class="menu-item"><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
