@@ -14,7 +14,7 @@
 
 @include('includes.blog')
 
-{{-- @include('includes.contact') --}}
+@include('includes.contact')
 
 {{-- @include('includes.human_body') --}}
 

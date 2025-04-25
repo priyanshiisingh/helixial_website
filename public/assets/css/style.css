@@ -1606,7 +1606,7 @@ html {
 --------------------------------------------------------------*/
 /*Hero*/
 .hero {
-    height: 820px;
+    height: 570px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1628,7 +1628,7 @@ html {
     font-family: inherit;
     font-size: 56px;
     font-weight: 300;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: 80px;
     margin-bottom: 0;
 }
@@ -3525,7 +3525,7 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: url(../img/blog-hero-bg.jpg);
+    background-image: url(../img/client/helixial_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3533,6 +3533,7 @@ html {
 }
 .tm-blog-hero-title {
     font-size: 40px;
+    color: #fff;
     font-weight: 500;
     margin: 0;
 }
@@ -3547,7 +3548,7 @@ html {
 }
 .tm-breadcrumb li {
     font-size: 18px;
-    color: #002856;
+    color: #fff;
     padding-right: 10px;
     margin-right: 10px;
     position: relative;
@@ -5814,15 +5815,8 @@ body.rtl {
 
 
 .slider-text {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.7);
     padding: 30px 40px;
     border-radius: 10px;
     display: inline-block;
-}
-
-.slider-text h1,
-.slider-text p {
-    color: #fff;
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }

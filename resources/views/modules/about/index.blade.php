@@ -19,7 +19,7 @@
 
     <!-- Start Site Content -->
     <div class="tm-blog-section tm-blog-right-sidebar">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
+        {{-- <div class="empty-space col-md-b100 col-xs-b70"></div> --}}
         <div class="container">
             <div class="row">
                 <main class="col-xl-12">
