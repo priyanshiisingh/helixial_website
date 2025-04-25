@@ -16,10 +16,10 @@
 
                     <div class="slider-text">
                         <div class="tm-overflow-hidden">
-                            <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500">HELIXIAL
+                            <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 80px;">HELIXIAL
                             </h1>
-                            <div class="empty-space col-sm-b20 col-xs-b10"  style="font-weight: 400"></div>
-                            <p>Unwinding genomic data for next-generation diagnostics </p>
+                            <div class="empty-space col-sm-b20 col-xs-b10"></div>
+                            <h1>Unwinding genomic data for next-generation diagnostics </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
                         {{-- <div class="tm-overflow-hidden">
