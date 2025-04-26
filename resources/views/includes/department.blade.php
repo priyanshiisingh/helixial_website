@@ -14,7 +14,7 @@
                         <li><i class="icofont icofont-crutches"></i>Pathology</li>
                     </ul> <!-- .tabs -->
                 </div> --}}
-                <div class="empty-space col-md-b60 col-xs-b40"></div>
+                {{-- <div class="empty-space col-md-b60 col-xs-b40"></div> --}}
                 <div class="tm-tab-content">
                     <div class="tm-tabs-item">
                         <div class="row">
@@ -32,6 +32,6 @@
                 </div> <!-- .tm-tab-content -->
             </div> <!-- .tab -->
         </div>
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
+        {{-- <div class="empty-space col-md-b100 col-xs-b70"></div> --}}
     </section>
     <!-- End Department Section -->
