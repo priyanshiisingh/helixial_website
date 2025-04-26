@@ -9,7 +9,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div id="tm-alert"></div>
-                    <form action="" class="row tm-contact-form" method="post"  id="contact-form">
+                    <form action="{{ route('contact.submit') }}" class="row tm-contact-form" method="POST"  id="contact-form">
+                        @csrf
                         <div class="col-lg-6">
                             <div class="tm-form-field">
                                 <input type="text" id="name" name="name" required>
@@ -74,3 +75,6 @@
         <div class="empty-space col-md-b70 col-xs-b40"></div>
     </section>
     <!-- End Contact Section -->
+    <script>
+        var contactSubmitUrl = "{{ route('contact.submit') }}";
+    </script>

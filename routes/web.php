@@ -10,3 +10,5 @@ Route::get('/services', [PagesController::class,'service'])->name('pages.service
 Route::get('/service/detail', [PagesController::class,'serviceDetail'])->name('pages.service.detail');
 Route::get('/blogs', [PagesController::class,'blog'])->name('pages.blog');
 Route::get('/blog/detail', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
+
+Route::post('/contact', [HomeController::class,'contact'])->name('contact.submit');
