@@ -109,25 +109,35 @@
         visibility: visible;
         opacity: 1;
     }
+
+    #description-box {
+    background: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 </style>
 
 <div class="human-body">
     <!-- Marker: Fungal -->
     <div class="marker-container" style="top: 90px; left: 60px;">
-        <img src="{{ asset('assets/img/markers/fungal_marker.svg') }}" class="marker" data-info="Fungal Infection Info" />
-        <div class="tooltip">Fungal Infection Info</div>
+        <img src="{{ asset('assets/img/markers/fungal_marker.svg') }}" class="marker" data-info="6,000 fungi in a single test using our propriety technology. Separation of contaminants commensal allow for increased accuracy. Used in both acute on chronic infections and long term chronic infections common in immunosuppressed individuals including transplant patients." />
+        {{-- <div class="tooltip"></div> --}}
     </div>
 
     <!-- Marker: Bacterial -->
     <div class="marker-container" style="top: 130px; left: 110px;">
-        <img src="{{ asset('assets/img/markers/bacteria_marker.svg') }}" class="marker" data-info="Bacterial Infection Info" />
-        <div class="tooltip">Bacterial Infection Info</div>
+        <img src="{{ asset('assets/img/markers/bacteria_marker.svg') }}" class="marker" data-info="22,000 bacteria in a single test using our propriety technology. Separation of contaminants commensal allow for increased accuracy. Recommended by by intensivists, infectious disease and microbiologists to tackle any type of bacterial identification in any sample." />
+        {{-- <div class="tooltip"></div> --}}
     </div>
 
     <!-- Marker: Viral -->
     <div class="marker-container" style="top: 170px; left: 70px;">
-        <img src="{{ asset('assets/img/markers/virus_marker.svg') }}" class="marker" data-info="Viral Infection Info" />
-        <div class="tooltip">Viral Infection Info</div>
+        <img src="{{ asset('assets/img/markers/virus_marker.svg') }}" class="marker" data-info="9000 viruses in a single test both DNA & RNA using our proprietary technology. Ideal for identifying any viral infection across multiple samples. Species and genotypic resolution available for every sample. The only product with the largest screening of viruses in a single test." />
+        {{-- <div class="tooltip"></div> --}}
     </div>
 
     <svg data-position="head" class="head" xmlns="http://www.w3.org/2000/svg" width="56.594" height="95.031"
@@ -166,10 +176,12 @@
             d="M21.255-.002l2.88 6.9 8.412 1.335.664 12.458-4.427 17.8-2.878-.22 2.8-11.847-2.99-.084-4.676 12.6-3.544-.446 4.4-12.736-3.072-.584-5.978 13.543-4.428-.445 6.088-14.1-2.1-1.25-7.528 12.012-3.764-.445L12.4 12.9l-1.107-1.78L.665 15.57 0 13.124l8.635-7.786zm162.49 0l-2.88 6.9-8.412 1.335-.664 12.458 4.427 17.8 2.878-.22-2.8-11.847 2.99-.084 4.676 12.6 3.544-.446-4.4-12.736 3.072-.584 5.978 13.543 4.428-.445-6.088-14.1 2.1-1.25 7.528 12.012 3.764-.445L192.6 12.9l1.107-1.78 10.628 4.45.665-2.447-8.635-7.786z" />
     </svg>
 </div>
+<div id="description-box" style="display:none; position:absolute; top:0; left:0; background:white; padding:10px; border:1px solid #ccc; max-width:300px; z-index:10000;">
+</div>
+
 
 <script>
     window.onload = function () {
-        // SVG click handling
         const pieces = document.getElementsByTagName('svg');
         for (let i = 0; i < pieces.length; i++) {
             let _piece = pieces[i];
@@ -179,13 +191,22 @@
             };
         }
 
-        // Marker click handling
         const markers = document.querySelectorAll('.marker');
+        const descriptionBox = document.getElementById('description-box');
+
         markers.forEach(marker => {
-            marker.addEventListener('click', function () {
+            marker.addEventListener('mouseenter', function (e) {
                 const info = marker.getAttribute('data-info');
-                document.getElementById('data').innerHTML = info;
+                descriptionBox.innerHTML = info;
+                descriptionBox.style.display = 'block';
+                descriptionBox.style.top = (marker.parentElement.offsetTop + 40) + 'px'; // 40px below marker
+                descriptionBox.style.left = (marker.parentElement.offsetLeft + 40) + 'px'; // 40px to right
+            });
+
+            marker.addEventListener('mouseleave', function () {
+                descriptionBox.style.display = 'none';
             });
         });
     };
 </script>
+
