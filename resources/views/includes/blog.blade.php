@@ -1,11 +1,11 @@
     <!-- Start Blog Section -->
     <section id="blog">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
-        <div class="tm-section-heading text-center">
+        {{-- <div class="tm-section-heading text-center">
             <h2>Blogs</h2>
             <div class="tm-section-seperator"><span></span></div>
             <div class="empty-space col-md-b60 col-xs-b40"></div>
-        </div>
+        </div> --}}
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
