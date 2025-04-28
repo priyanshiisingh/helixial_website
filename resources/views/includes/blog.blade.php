@@ -2,7 +2,7 @@
     <section id="blog">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="tm-section-heading text-center">
-            <h2>BLOGS</h2>
+            <h2>Blogs</h2>
             <div class="tm-section-seperator"><span></span></div>
             <div class="empty-space col-md-b60 col-xs-b40"></div>
         </div>

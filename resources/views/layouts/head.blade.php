@@ -7,8 +7,9 @@
 	<!-- Page Title -->
 	<title>Helixial</title>
     <!-- Favicon Icon -->
-  	<link rel="icon" href="{{ asset('assets/img/client/logo/helixial_logo.png')}}">
+  	<link rel="icon" href="{{ asset('assets/img/client/logo/helixial_ico.png')}}">
 	<!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/plugins.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css')}}">
 </head>

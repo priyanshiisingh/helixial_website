@@ -59,7 +59,7 @@
                         <div class="tm-single-contact">
                             <i class="fa fa-phone"></i>
                             <h3>Phone</h3>
-                            <p>1-123-456-7890</p>
+                            <p>701-686-1759</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">

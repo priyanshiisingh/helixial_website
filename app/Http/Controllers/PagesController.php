@@ -25,4 +25,12 @@ class PagesController extends Controller
     public function blogDetail(){
         return view('modules.blogs.show');
     }
+
+    public function contact(){
+        return view('modules.contact.index');
+    }
+
+    public function career(){
+        return view('modules.career.index');
+    }
 }

@@ -10,7 +10,7 @@
 
 @include('includes.testimonials')
 
-@include('includes.gallery')
+{{-- @include('includes.gallery') --}}
 
 @include('includes.blog')
 

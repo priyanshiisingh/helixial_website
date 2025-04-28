@@ -1,18 +1,19 @@
     <!-- Start Site Header Wrap -->
     <header>
         <div class="tm-site-header">
-            <div class="tm-header-info-wrap">
+            {{-- <div class="tm-header-info-wrap">
                 <div class="container tm-header-info">
                     <a href="#"><i class="fa fa-phone"></i>701-686-1759</a>
                     <a href="mailto:Info@helixialservices.com"><i class="fa fa-envelope"></i>Info@helixialservices.com</a>
                 </div>
-            </div>
+            </div> --}}
             <div class="tm-header-menu">
                 <div class="container tm-header-menu-container">
                     <div class="tm-site-branding">
                         <!-- For Image Logo -->
                         <a href="{{ route('home') }}" class="tm-logo-link">
-                            <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}" alt="Helixial Logo" class="tm-logo">
+                            <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}"
+                                alt="Helixial Logo" class="tm-logo">
                         </a>
                         <!-- For Site Title -->
                         <!-- <span class="tm-site-title">
@@ -22,14 +23,28 @@
                     <nav class="tm-primary-nav tm-onepage-nav">
                         <ul class="tm-primary-nav-list">
                             <li class="menu-item">
-                                <a href="{{ route('home') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
+                                <a href="{{ route('home') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
-                            <li class="menu-item"><a href="{{ route('pages.about') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">This Is Helixial</a></li>
-                            <li class="menu-item"><a href="{{ route('pages.service') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our Services</a></li>
+                            <li class="menu-item  menu-item-has-children"><a href="#"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">This
+                                    Is Helixial</a>
+                                <ul>
+                                    <li class="menu-item"><a href="{{ route('pages.about') }}">About Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.career') }}">Careers</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.contact') }}">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="{{ route('pages.service') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
+                                    Services</a>
+                            </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
-                            <li class="menu-item"><a href="{{ route('home') }}#gallery" class="nav-link tm-smooth-move">Partners</a></li>
+                            <li class="menu-item"><a href="{{ route('home') }}#gallery"
+                                    class="nav-link tm-smooth-move">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
-                            <li class="menu-item "><a href="{{ route('pages.blog') }}" class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
+                            <li class="menu-item "><a href="{{ route('pages.blog') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
                                     <li class="menu-item"><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>

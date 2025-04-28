@@ -1748,7 +1748,7 @@ html {
 .tm-section-heading h2 {
     font-size: 38px;
     color: #2caee2;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
     margin-bottom: 10px;
     line-height: 34px;
@@ -1769,7 +1769,7 @@ html {
     content: '';
     height: 2px;
     background-color: #2caee2;
-    width: 70px;
+    width: 100px;
     position: absolute;
     left: 0;
     top: 6px;
@@ -1778,12 +1778,12 @@ html {
     content: '';
     height: 2px;
     background-color: #2caee2;
-    width: 70px;
+    width: 100px;
     position: absolute;
     right: 0;
     top: 6px;
 }
-.tm-section-seperator span {
+/* .tm-section-seperator span {
     position: absolute;
     height: 2px;
     width: 14px;
@@ -1811,7 +1811,7 @@ html {
     background-color: #002856;
     bottom: 3px;
     left: 6px;
-}
+} */
 /*Rotate Text*/
 .tm-words-wrapper {
   display: inline-block;
