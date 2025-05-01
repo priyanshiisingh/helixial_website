@@ -16,10 +16,10 @@
 
                     <div class="slider-text">
                         <div class="tm-overflow-hidden">
-                            <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 70px; font-family: 'Playfair', serif;">HELIXIAL
-                            </h1>
+                            {{-- <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 70px; font-family: 'Playfair', serif;">HELIXIAL
+                            </h1> --}}
                             <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                            <h2 style="font-family: 'Playfair', serif;">Unwinding genomic data for next-generation diagnostics </h2>
+                            <h1 style="font-family: 'Playfair', serif;">Unwinding genomic data for next-generation diagnostics </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
                         {{-- <div class="tm-overflow-hidden">
@@ -36,8 +36,21 @@
                 <div class="container">
                     <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
                         <div class="tm-overflow-hidden">
-                            <h2 class="tm-headline letters tm-rotate-text" style="font-family: 'Playfair', serif;">Built on research, backed by data, delivered with precision
-                            </h2>
+                            <h1 class="tm-headline letters tm-rotate-text" style="font-family: 'Playfair', serif;">Molecular precision | Smarter Detection | Better Health
+                            </h1>
+                        </div>
+                        <div class="empty-space col-sm-b20 col-xs-b10"></div>
+                    </div>
+                </div><!-- .container -->
+            </div><!-- .single-slide -->
+
+            <div class="single-slide" style="background: url(assets/img/client/helixial_2.jpg);">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
+                        <div class="tm-overflow-hidden">
+                            <h1 class="tm-headline letters tm-rotate-text" style="font-family: 'Playfair', serif;">Built on research | Backed by data | Delivered with precision
+                            </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
                     </div>

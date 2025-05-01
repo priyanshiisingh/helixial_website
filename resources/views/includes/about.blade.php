@@ -12,7 +12,9 @@
                         <div class="tm-about tm-gray-bg wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
                             <h3 class="tm-about-title">About <span>Us</span></h3>
                             <div class="tm-about-text">
-                                <p>At Helixial, we believe that every disease leaves a molecular trail — and we’re here to follow it. We are committed to unwinding the genetic blueprint of disease to bring clarity to healthcare decisions. Whether it's identifying elusive infections or detecting cancer at the molecular level, our solutions are built to empower clinicians, laboratories, and researchers with data they can trust.</p>
+                                <p>Driven by science and powered by innovation, Helixial is committed to unwinding the genetic blueprint of disease to bring clarity to healthcare decisions. Whether it's identifying elusive infections or detecting cancer at the molecular level, our solutions are built to empower clinicians, laboratories, and researchers with data they can trust for better patient care. We aim to solve complex diagnostic problems where time and precision matter the most.
+                                    Equipped with cutting-edge technology and highly trained scientists and medical researchers, we are on a mission to make next-generation, precision healthcare more accessible to the people of India.
+                                    </p>
                             </div>
                         </div>
                     </div>

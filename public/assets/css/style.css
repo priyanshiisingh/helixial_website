@@ -2211,7 +2211,7 @@ html {
     padding: 27px 30px;
 }
 .tm-about-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -2220,6 +2220,7 @@ html {
 }
 .tm-about-text p {
     line-height: 26px;
+    font-size: 20px;
 }
 .tm-about-text p:last-child {
     margin-bottom: 0;

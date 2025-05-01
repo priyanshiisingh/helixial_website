@@ -1,10 +1,10 @@
     <!-- Start Department Section -->
     <section class="tm-gray-bg" id="department">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
-        {{-- <div class="tm-section-heading text-center">
-            <h2>Our Services</h2>/
-            <div class="tm-section-seperator"><span></span></div>
-        </div> --}}
+        <div class="tm-section-heading text-start">
+            <h2>Our Services</h2>
+            {{-- <div class="tm-section-seperator"><span></span></div> --}}
+        </div>
         <div class="container">
             <div class="tm-tab-wrap">
                 {{-- <div class="tm-tabs-wrap">
