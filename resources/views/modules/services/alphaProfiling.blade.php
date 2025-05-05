@@ -78,35 +78,6 @@
                             </div>
                         </div>
 
-                        <section class="mb-5" data-aos="zoom-in-up">
-                            <h1 class="text-primary">CancerDetect™</h1>
-                            <p>Personalized Liquid Biopsy for Early Detection of Cancer Recurrence. Designed to detect
-                                recurrence at its earliest stages, using tumor-specific mutations from the patient’s removed
-                                tumor.</p>
-                            <ul style="list-style: none">
-                                <li data-aos="fade-up" data-aos-delay="100">🔍 Targets Minimal Residual Disease (MRD)</li>
-                                <li data-aos="fade-up" data-aos-delay="200">📆 Detects relapse months before imaging</li>
-                                <li data-aos="fade-up" data-aos-delay="300">🎯 Enables early treatment adjustments</li>
-                            </ul>
-                            <h2><strong>Process / Protocol:</strong></h2>
-                            {{-- @include('includes.cancer_detect_process') --}}
-                            <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
-                            <h2 class="mt-3"><strong>Clinical Validation:</strong></h2>
-                            <img src="{{ asset('assets/img/client/detect_art03_img.png') }}" alt="detect_art021_img.png">
-                        </section>
-
-                        <section class="mb-5" data-aos="zoom-in-up">
-                            <h1 class="text-primary">CancerFind™</h1>
-                            <p>Revolutionary test for Multiple Cancer Early Detection (MCED) through a single blood draw.
-                                Ideal for asymptomatic individuals or those at high risk.</p>
-                            <ul style="list-style: none">
-                                <li data-aos="fade-up" data-aos-delay="100">🩸 Detects cancer across multiple types</li>
-                                <li data-aos="fade-up" data-aos-delay="200">🧭 Predicts tissue of origin</li>
-                                <li data-aos="fade-up" data-aos-delay="300">📋 Supports early diagnosis and action</li>
-                            </ul>
-                            <h2><strong>Process / Protocol:</strong></h2>
-                            @include('includes.cancer_find_process')
-                        </section>
                     </article>
                 </main>
             </div>
