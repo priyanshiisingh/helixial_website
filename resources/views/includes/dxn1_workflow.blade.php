@@ -2,7 +2,6 @@
 
     h2 {
       color: #003e73;
-      margin-bottom: 50px;
     }
 
     .workflow-container {
@@ -74,7 +73,7 @@
     }
   </style>
 
-  <h2>SAMPLE WORKFLOW</h2>
+  <h2 class="my-5">SAMPLE WORKFLOW</h2>
 
   <div class="workflow-container">
 

@@ -27,7 +27,7 @@
                         <header data-aos="fade-down">
                             <h2 class="text-primary">DNX1</h2>
                         </header>
-                        <div class="mb-5" data-aos="fade-up">
+                        <div class="mb-5">
                             <p><strong>A Comprehensive NGS Solution For Early Pathogen Identification & Antibiotic Sensitivity</strong></p>
                         </div>
                         @include('includes.products_listing')
