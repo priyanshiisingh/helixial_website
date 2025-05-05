@@ -18,6 +18,14 @@ class PagesController extends Controller
         return view('modules.services.show');
     }
 
+    public function alphaProfiling(){
+        return view('modules.services.alphaProfiling');
+    }
+
+    public function dxn1(){
+        return view('modules.services.dxn1');
+    }
+
     public function blog(){
         return view('modules.blogs.index');
     }

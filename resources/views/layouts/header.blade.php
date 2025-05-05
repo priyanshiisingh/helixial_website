@@ -35,12 +35,12 @@
                                     <li class="menu-item"><a href="{{ route('pages.contact') }}">Contact Us</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item menu-item-has-children"><a href="{{ route('pages.service') }}"
+                            <li class="menu-item menu-item-has-children"><a href="#"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
                                     Services</a>
                                     <ul>
-                                        <li class="menu-item"><a href="{{ route('pages.service.detail') }}">DXN1</a></li>
-                                        <li class="menu-item"><a href="{{ route('pages.service.detail') }}">Alpha Liquid Profiling</a></li>
+                                        <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}">DXN1</a></li>
+                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}">Alpha Liquid Profiling</a></li>
                                     </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
