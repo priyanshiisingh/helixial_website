@@ -26,6 +26,13 @@ class PagesController extends Controller
         return view('modules.services.dxn1');
     }
 
+    public function cancerFind(){
+        return view('modules.services.cancerFind');
+    }
+    public function cancerDetect(){
+        return view('modules.services.cancerDetect');
+    }
+
     public function blog(){
         return view('modules.blogs.index');
     }
