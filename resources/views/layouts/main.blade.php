@@ -5,15 +5,10 @@
 
 <body>
 
+    <div id="loader">
+    </div>
     <!-- Start Preloader -->
     <div id="tm-preloader">
-        <div id="tm-preloader-in">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
     </div>
     <!-- End Preloader -->
 
@@ -37,6 +32,17 @@
         AOS.init();
     </script>
 
+<script>
+    for(let i = 0; i < 15; i++){
+  let parentEl = document.createElement("div");
+  parentEl.classList.add("strand");
+  parentEl.innerHTML = `
+    <div class="top" style="animation-delay:${i * -0.2}s"></div>
+    <div class="bottom" style="animation-delay:${-1.5 - (i * 0.2)}s"></div>
+  `
+  document.querySelector("#tm-preloader").appendChild(parentEl);
+}
+</script>
 </body>
 
 </html>
