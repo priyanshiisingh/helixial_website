@@ -1,69 +1,76 @@
     <!-- Start Department Section -->
-    <section class="tm-gray-bg" id="department">
-        <div class="empty-space col-md-b100 col-xs-b70"></div>
-        <div class="tm-section-heading text-start">
-            <h2>Our Services</h2>
-            {{-- <div class="tm-section-seperator"><span></span></div> --}}
-        </div>
+    <section class="tm-gradient-bg service-section" id="department">
         <div class="container">
-            <div class="tm-tab-wrap">
-                {{-- <div class="tm-tabs-wrap">
-                    <ul class="tabs">
-                        <li><i class="icofont icofont-tooth"></i>Microbiology</li>
-                        <li><i class="icofont icofont-brain"></i>Immunology & Serology</li>
-                        <li><i class="icofont icofont-crutches"></i>Pathology</li>
-                    </ul> <!-- .tabs -->
-                </div> --}}
-                {{-- <div class="empty-space col-md-b60 col-xs-b40"></div> --}}
-                <div class="tm-tab-content">
-                    <div class="tm-tabs-item">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="tm-dept-details-wrap">
-                                    <div class="tm-about tm-gray-bg">
-                                        <h3 class="tm-about-title">Dxn1 : Precision diagnostic</span></h3>
-                                        <a href="{{ route('pages.service.dxn1') }}">Read More</a>
-                                        <p>Incorporating AI, next-gen sequencing, and big data, we offer swift, highly precise, and personalized diagnoses of infectious diseases, including non-culturable strains with their resistance to antibiotics, and cancer detection.</p>
-                                        <h5>Unwinding genomic data for next-generation diagnostics</h5>
-                                        @include('includes.human_body')
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                        </div>
-                    </div> <!-- .tabs_item -->
+            <div class="services-content">
+                <div class="services-text" data-aos="fade-down" data-aos-duration="3000">
+                    <h1>Our<br>Services</h1>
+                    <div class="empty-space col-md-b70 col-xs-b40"></div>
 
-                </div> <!-- .tm-tab-content -->
+                    <h2>Dxn1 : Precision diagnostic</h2>
+                    <a href="{{ route('pages.service.dxn1') }}">READ MORE</a>
 
-                <div class="tm-tab-content">
-                    <div class="tm-tabs-item">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="tm-dept-details-wrap">
-                                    <div class="tm-about tm-gray-bg">
-                                        <h3 class="tm-about-title">Liquid Biopsy</span></h3>
-                                        <p>CancerFind™ is a revolutionary blood-based test for Multiple Cancer Early Detection (MCED)—designed to identify the presence of various cancer types through a single, non-invasive blood draw.</p>
-                                        <a href="{{ route('pages.service.cancerFind') }}">Read More</a>
+                    <p>
+                        Incorporating AI, next-gen sequencing, and big data, we offer swift, highly precise, and personalized diagnoses of infectious diseases, including non-culturable strains with their resistance to antibiotics, and cancer detection.
+                    </p>
 
-                                        <div class="empty-space col-md-b30 col-xs-b30"></div>
+                    <p class="service-yellow-text">
+                        Unwinding genomic data for next-generation diagnostics
+                    </p>
 
-                                        <p>CancerDetect™ : Personalized Liquid Biopsy for Early Detection of Cancer Recurrence
-                                            With CancerDetect™, we bring next-generation cancer surveillance to the forefront—empowering proactive, personalized, and data-driven oncology care.</p>
-                                        <a href="{{ route('pages.service.cancerDetect') }}">Read More</a>
-
-                                        <div class="empty-space col-md-b30 col-xs-b30"></div>
-
-                                        <p>AlphaLiquid®100 is an innovative, cutting-edge liquid biopsy test that empowers personalized cancer care by detecting biomarkers across 118 cancer-related genes through just one blood draw. This non-invasive, highly advanced test is essential for predicting a patient's response or resistance to targeted therapies</p>
-                                        <a href="{{ route('pages.service.alphaProfiling') }}">Read More</a>
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                        </div>
-                    </div> <!-- .tabs_item -->
-
-                </div> <!-- .tm-tab-content -->
-            </div> <!-- .tab -->
+                    <div class="empty-space col-md-b100 col-xs-b70"></div>
+                </div>
+                <div class="services-image" data-aos="fade-up" data-aos-duration="3000">
+                    <div style="width:100%; height: 300px; overflow: hidden;">
+                        <div class="empty-space col-md-b70 col-xs-b40"></div>
+                        <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
+                    </div>
+                </div>
+            </div>
         </div>
-
-        {{-- <div class="empty-space col-md-b100 col-xs-b70"></div> --}}
     </section>
+
+
+
+    <section class="tm-gradient-bg service-section" id="liquid-biopsy">
+        <div class="container py-5">
+            <div class="row align-items-center">
+
+                <!-- Left Column -->
+                <div class="col-md-4 mb-4 mb-md-0 services-text-2" data-aos="fade-down" data-aos-duration="3000">
+                    <h2>Liquid Biopsy</h2>
+                    <div class="empty-space col-md-b70 col-xs-b40"></div>
+                    <p>
+                        CancerFind™ is a revolutionary blood-based test for Multi-Cancer Early Detection (MCED) — to identify the presence of various cancer types through a single, non-invasive blood draw.
+                    </p>
+                    <a href="{{ route('pages.service.cancerFind') }}">READ MORE</a>
+
+                    <div class="mt-4">
+                        <p>
+                            CancerDetect™: Personalized Liquid Biopsy for Early Detection of Cancer Recurrence.
+                            <br>With CancerDetect™, we bring next-generation cancer surveillance to the forefront—empowering proactive, personalized, and data-driven oncology care.
+                        </p>
+                        <a href="{{ route('pages.service.cancerDetect') }}">READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Center Image Column -->
+                <div class="col-md-4 text-center mb-4 mb-md-0" >
+                    <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Liquid Biopsy Tube" class="img-fluid" style="max-height: 300px;">
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-4 services-text-2" data-aos="fade-up" data-aos-duration="3000">
+                    <p>
+                        AlphaLiquid®100 is an innovative, cutting-edge liquid biopsy test that empowers personalized cancer care by detecting biomarkers across 118 cancer-related genes through just one blood draw.
+                    </p>
+                    <p>
+                        This non-invasive, highly advanced test is essential for predicting a patient's response or resistance to targeted therapies.
+                    </p>
+                    <a href="{{ route('pages.service.alphaProfiling') }}">READ MORE</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- End Department Section -->

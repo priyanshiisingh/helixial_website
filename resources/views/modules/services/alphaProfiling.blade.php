@@ -10,7 +10,7 @@
                     <ul class="tm-breadcrumb">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('pages.service') }}">Services</a></li>
-                        <li>AlphaLiquid Profiling</li>
+                        <li>AlphaLiquid® Biopsy</li>
                     </ul>
                 </div><!-- .col -->
             </div>
@@ -25,7 +25,7 @@
                 <main class="container mt-3">
                     <article data-aos="zoom-in">
                         <header class="mb-4" data-aos="fade-down">
-                            <h2 class="text-primary">AlphaLiquid Profiling</h2>
+                            <h2 class="text-primary">AlphaLiquid® Biopsy</h2>
                         </header>
                         <div class="mb-5" data-aos="fade-up">
                             <p><strong>AlphaLiquid®100</strong> is an innovative, cutting-edge liquid biopsy test that
@@ -40,44 +40,47 @@
 
                         <div class="row mb-5">
                             <div class="col-md-6" data-aos="fade-right">
-                                <h4 class="text-danger">Challenges with Tissue Biopsy</h4>
+                                <h4 class="text-danger">Conventional Tissue Biopsy</h4>
                                 <div class="card mb-3" data-aos="flip-left" data-aos-delay="100">
-                                    <div class="card-body">🔪 Invasive procedure with recovery risks</div>
+                                    <div class="card-body">Invasive procedure</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-left" data-aos-delay="200">
-                                    <div class="card-body">⚠️ High risk for elderly & vulnerable patients</div>
+                                    <div class="card-body">Higher risk for vulnerable patients</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-left" data-aos-delay="300">
-                                    <div class="card-body">📷 Limited snapshot of tumor profile</div>
+                                    <div class="card-body">Tumour heterogeneity undetected</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-left" data-aos-delay="400">
-                                    <div class="card-body">📉 Not ideal for frequent monitoring</div>
+                                    <div class="card-body">Not ideal for monitoring</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-left" data-aos-delay="500">
-                                    <div class="card-body">🧬 Often insufficient tissue volume</div>
+                                    <div class="card-body">Insufficient sample volume for single gene tests (EGFR, ALK, ROS1, BRAF</div>
                                 </div>
                             </div>
 
                             <div class="col-md-6" data-aos="fade-left">
-                                <h4 class="text-success">Advantages of AlphaLiquid®</h4>
+                                <h4 class="text-success">AlphaLiquid® Biopsy Technology</h4>
                                 <div class="card mb-3" data-aos="flip-right" data-aos-delay="100">
-                                    <div class="card-body">💉 Minimally invasive: just a blood draw</div>
+                                    <div class="card-body">Minimally invasive</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-right" data-aos-delay="200">
-                                    <div class="card-body">🌐 Captures tumor heterogeneity</div>
+                                    <div class="card-body">Safe for elderly and high risk patients</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-right" data-aos-delay="300">
-                                    <div class="card-body">⏱️ Enables real-time monitoring</div>
+                                    <div class="card-body">Captures tumour heterogeneity</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-right" data-aos-delay="400">
-                                    <div class="card-body">👴 Safe for all patients</div>
+                                    <div class="card-body">Enables real-time monitoring</div>
                                 </div>
                                 <div class="card mb-3" data-aos="flip-right" data-aos-delay="500">
-                                    <div class="card-body">🧾 Single test for 118 genes</div>
+                                    <div class="card-body">Comprehensive analysis of 118 cancer-related genes</div>
                                 </div>
                             </div>
                         </div>
-
+                        <header class="mb-4" data-aos="fade-down">
+                            <h2 class="text-primary">The test procedure</h2>
+                        </header>
+                        <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
                     </article>
                 </main>
             </div>

@@ -27,8 +27,7 @@
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="menu-item  menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">This
-                                    Is Helixial</a>
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About Us</a>
                                 <ul>
                                     <li class="menu-item"><a href="{{ route('pages.about') }}">About Us</a></li>
                                     <li class="menu-item"><a href="{{ route('pages.career') }}">Careers</a></li>
@@ -40,7 +39,7 @@
                                     Services</a>
                                     <ul>
                                         <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}">DXN1</a></li>
-                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}">Alpha Liquid Profiling</a></li>
+                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}">AlphaLiquid® Biopsy</a></li>
                                     </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
@@ -49,6 +48,9 @@
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
                             <li class="menu-item "><a href="{{ route('pages.blog') }}"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
+                            <li class="menu-item "><a href="#"
+                                        class="nav-link tm-smooth-move">Outreach Activity</a>
+
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
                                     <li class="menu-item"><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>

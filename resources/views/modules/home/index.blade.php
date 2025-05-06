@@ -6,9 +6,15 @@
 
 @include('includes.about')
 
+{{-- @include('includes.data_sequencing') --}}
+
+@include('includes.generational_diagnostics')
+
 @include('includes.department')
 
-@include('includes.testimonials')
+@include('includes.molecular_precision')
+
+{{-- @include('includes.testimonials') --}}
 
 {{-- @include('includes.gallery') --}}
 

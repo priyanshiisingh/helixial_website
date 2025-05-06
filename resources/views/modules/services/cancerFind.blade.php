@@ -26,13 +26,16 @@
                     <article data-aos="zoom-in">
                         <section class="mb-5" data-aos="zoom-in-up">
                             <h1 class="text-primary">CancerFind<sup>™</sup></h1>
-                            <p>Revolutionary test for Multiple Cancer Early Detection (MCED) through a single blood draw.
-                                Ideal for asymptomatic individuals or those at high risk.</p>
-                            <ul style="list-style: none">
+                            <p>CancerFind™ is a revolutionary blood-based test for Multiple Cancer Early Detection (MCED)—designed to identify the presence of various cancer types through a single, non-invasive blood draw. </p>
+
+                            <p>
+                                It offers a convenient screening solution for asymptomatic individuals and those at high risk, making it easy to incorporate into routine medical checkups. Beyond detection, CancerFind™ provides accurate predictions of the tissue of origin of any cancer signal, enabling faster and more targeted clinical decision-making. It can prove to be crucial for individuals who want early confirmation of cancer, those with a family history, or those needing further examination after screenings.
+                                By facilitating early diagnosis and guiding next steps, CancerFind™ plays a critical role in improving patient outcomes and advancing proactive cancer care.</p>
+                            {{-- <ul style="list-style: none">
                                 <li data-aos="fade-up" data-aos-delay="100">🩸 Detects cancer across multiple types</li>
                                 <li data-aos="fade-up" data-aos-delay="200">🧭 Predicts tissue of origin</li>
                                 <li data-aos="fade-up" data-aos-delay="300">📋 Supports early diagnosis and action</li>
-                            </ul>
+                            </ul> --}}
                             <h2><strong>Process / Protocol:</strong></h2>
                             @include('includes.cancer_find_process')
                         </section>

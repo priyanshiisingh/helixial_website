@@ -1,8 +1,10 @@
  /*Google fonts*/
- @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,500,600,700');
- @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 /*--------------------------------------------------------------
 >> TABLE OF CONTENTS:
@@ -23,7 +25,7 @@
 --------------------------------------------------------------*/
 body {
     color: #767676;
-    font-family: "Crimson Text", serif;
+    font-family: "DM Sans", sans-serif;;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h3, h5, h6 {
     padding: 0;
     margin: 0 0 10px 0;
     font-weight: 400;
-    font-family: "Crimson Text", serif;
+    font-family: "DM Sans", sans-serif;;
 }
 h1 {
     font-size: 40px;
@@ -138,6 +140,18 @@ html {
 }
 .tm-gray-bg {
     background-color: #f3fbfd;
+}
+
+.tm-gradient-bg {
+    background: hsla(197, 76%, 53%, 1);
+
+    background: linear-gradient(360deg, hsla(197, 76%, 53%, 1) 0%, hsla(225, 100%, 26%, 1) 100%);
+
+    background: -moz-linear-gradient(360deg, hsla(197, 76%, 53%, 1) 0%, hsla(225, 100%, 26%, 1) 100%);
+
+    background: -webkit-linear-gradient(360deg, hsla(197, 76%, 53%, 1) 0%, hsla(225, 100%, 26%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2CAEE2", endColorstr="#002285", GradientType=1 );
 }
 .section {
     padding: 100px 0 70px;
@@ -3393,7 +3407,7 @@ html {
     margin-right: 8px;
 }
 .tm-blog-meta span a {
-    color: inherit;
+    color: #003e73 !important;
 }
 .tm-post.tm-style2 .tm-blog-heading {
     font-size: 20px;
@@ -3814,7 +3828,7 @@ html {
 .comment-author .nm a {
     font-weight: 500;
     font-size: 18px;
-    font-family: "Crimson Text", serif;
+    font-family: "DM Sans", sans-serif;
 }
 .comment-author a.nm:hover,
 .comment-author .nm a:hover {

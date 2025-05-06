@@ -4,7 +4,15 @@
     <div class="container">
         <div class="about-content">
             <div class="about-text" data-aos="fade-right" data-aos-duration="3000">
-                <h1>About<br>us</h1>
+                <h1>DNA<br>sequencing</h1>
+            </div>
+            <div class="about-h2" data-aos="fade-left" data-aos-duration="3000">
+                <h2 style="font-size: 60px;"><i>Next generation</i></h2>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right" data-aos-duration="3000">
+                <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
             </div>
             <div class="about-image" data-aos="fade-left" data-aos-duration="3000">
                 <p>
@@ -17,9 +25,6 @@
                     on a mission to make next-generation, precision healthcare more accessible to the people of India.
                 </p>
             </div>
-        </div>
-        <div style="width:100%; height: 300px; overflow: hidden;">
-            <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
         </div>
     </div>
 </section>

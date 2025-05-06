@@ -27,19 +27,19 @@
 
                         <section class="mb-5" data-aos="zoom-in-up">
                             <h1 class="text-primary">CancerDetect<sup>™</sup></h1>
-                            <p>Personalized Liquid Biopsy for Early Detection of Cancer Recurrence. Designed to detect
-                                recurrence at its earliest stages, using tumor-specific mutations from the patient’s removed
-                                tumor.</p>
-                            <ul style="list-style: none">
+                            <p>CancerDetect™ is our proprietary liquid biopsy platform designed to detect cancer recurrence at its earliest stages—well before it appears on traditional imaging. This advanced technology analyses unique genetic mutations found in a patient's surgically removed tumour, creating a highly personalized genetic panel for post-operative monitoring.</p>
+                            {{-- <ul style="list-style: none">
                                 <li data-aos="fade-up" data-aos-delay="100">🔍 Targets Minimal Residual Disease (MRD)</li>
                                 <li data-aos="fade-up" data-aos-delay="200">📆 Detects relapse months before imaging</li>
                                 <li data-aos="fade-up" data-aos-delay="300">🎯 Enables early treatment adjustments</li>
                             </ul>
-                            <h2><strong>Process / Protocol:</strong></h2>
+                            <h2><strong>Process / Protocol:</strong></h2> --}}
                             {{-- @include('includes.cancer_detect_process') --}}
-                            <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
+                            {{-- <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
                             <h2 class="mt-3"><strong>Clinical Validation:</strong></h2>
-                            <img src="{{ asset('assets/img/client/detect_art03_img.png') }}" alt="detect_art021_img.png">
+                            <img src="{{ asset('assets/img/client/detect_art03_img.png') }}" alt="detect_art021_img.png"> --}}
+
+                            <p>By targeting Minimal Residual Disease (MRD), CancerDetect™ offers a powerful, non-invasive method to identify early signs of relapse. It enables clinicians to anticipate recurrence months in advance, allowing for timely and tailored treatment interventions. This precision-driven approach enhances patient outcomes by enabling early therapeutic adjustments and optimizing chemotherapy strategies. </p>
                         </section>
                     </article>
                 </main>
