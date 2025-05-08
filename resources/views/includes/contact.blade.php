@@ -51,20 +51,20 @@
                     <div class="empty-space col-md-b0 col-xs-b40"></div>
                     <div class="tm-contact-info">
                         <div class="tm-single-contact">
-                            <i class="fa fa-map-marker"></i>
-                            <h3>Address</h3>
+                            <i class="contact-section-i fa fa-map-marker "></i>
+                            <h3 class="contact-section-h3">Address</h3>
                             <p>Vadodara, Gujarat</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
-                            <i class="fa fa-phone"></i>
-                            <h3>Phone</h3>
+                            <i class="contact-section-i fa fa-phone"></i>
+                            <h3 class="contact-section-h3">Phone</h3>
                             <p>701-686-1759</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
-                            <i class="fa fa-envelope"></i>
-                            <h3>Email</h3>
+                            <i class="contact-section-i fa fa-envelope"></i>
+                            <h3 class="contact-section-h3">Email</h3>
                             <a class="contact-section-a" href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
