@@ -1,5 +1,5 @@
 <!-- Start About Secton -->
-<section class="about-section">
+<section class="tm-gradient-bg about-section">
 
     <div class="container">
         <div class="about-content">

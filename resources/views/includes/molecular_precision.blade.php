@@ -1,4 +1,4 @@
-<section>
+<section class="tm-e3e8ff-bg">
     <div class="container-fluid px-0">
         <div class="row align-items-stretch">
 

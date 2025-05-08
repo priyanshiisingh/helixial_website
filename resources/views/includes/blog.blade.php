@@ -1,5 +1,5 @@
     <!-- Start Blog Section -->
-    <section id="blog">
+    <section id="blog" class="tm-gradient-bg">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         {{-- <div class="tm-section-heading text-center">
             <h2>Blogs</h2>
@@ -31,7 +31,7 @@
                                         <span><a href="{{ route('pages.blog') }}" class="bar-link"><i class="fa fa-user"></i> Admin</a></span>
                                     </div>
                                     <div class="tm-blog-separator"></div>
-                                    <div class="tm-entry-content mt-2">
+                                    <div class="tm-entry-content-front mt-2">
                                         <p>These tips might just save your life (or at least make it a little healthier)...</p>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
 
                                     </div>
                                     <div class="tm-blog-separator"></div>
-                                    <div class="tm-entry-content mt-2">
+                                    <div class="tm-entry-content-front mt-2">
                                         <p>Health care in the United States is provided by many distinct organizations...</p>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
 
                                     </div>
                                     <div class="tm-blog-separator"></div>
-                                    <div class="tm-entry-content mt-2">
+                                    <div class="tm-entry-content-front mt-2">
                                         <p>Medicare influences most of the healthcare decisions of patients 65 and up...</p>
                                     </div>
                                 </div>

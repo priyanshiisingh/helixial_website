@@ -1,13 +1,13 @@
 <!-- Start About Secton -->
-<section class="about-section">
+<section class="about-section tm-e3e8ff-bg">
 
-    <div class="container">
-        <div class="about-content">
+    <div class="container" style="color: #004aad">
+        <div class="about-content m-0 pb-0">
             <div class="about-text" data-aos="fade-down" data-aos-duration="3000">
                 <h2>Unwinding genomic data for next generation diagnostics </h2>
             </div>
         </div>
-        <div class="about-content">
+        <div class="about-content m-0">
             <div class="about-text" data-aos="fade-right" data-aos-duration="3000">
                 <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
             </div>

@@ -1,5 +1,5 @@
     <!-- Start Department Section -->
-    <section class="tm-gradient-bg service-section" id="department">
+    <section class="tm-gradient-radial-bg service-section" id="department">
         <div class="container">
             <div class="services-content">
                 <div class="services-text" data-aos="fade-down" data-aos-duration="3000">
@@ -20,9 +20,9 @@
                     <div class="empty-space col-md-b100 col-xs-b70"></div>
                 </div>
                 <div class="services-image" data-aos="fade-up" data-aos-duration="3000">
-                    <div style="width:100%; height: 300px; overflow: hidden;">
+                    <div style="width:100%;">
                         <div class="empty-space col-md-b70 col-xs-b40"></div>
-                        <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
+                        <img src="{{ asset('assets/img/client/our_services.gif') }}" alt="Lab equipment image">
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
 
 
 
-    <section class="tm-gradient-bg service-section" id="liquid-biopsy">
+    <section class="tm-gradient-radial-bg service-section" id="liquid-biopsy">
         <div class="container py-5">
             <div class="row align-items-center">
 
@@ -55,7 +55,7 @@
 
                 <!-- Center Image Column -->
                 <div class="col-md-4 text-center mb-4 mb-md-0" >
-                    <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Liquid Biopsy Tube" class="img-fluid" style="max-height: 300px;">
+                    <img src="{{ asset('assets/img/client/liquid_biopsy_transparent.gif') }}" alt="Liquid Biopsy Tube" class="img-fluid">
                 </div>
 
                 <!-- Right Column -->
