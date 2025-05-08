@@ -831,3 +831,24 @@ ul li {
     }
   }
 
+  .card-header-conventional {
+    background-color: #99acff; /* Medium blue */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-header-alpha {
+    background-color: #99acff; /* Dark blue */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body-conventional {
+    background-color: #e3e8ff; /* Light blue */
+}
+
+.card-body-alpha {
+    background-color: #e3e8ff; /* Slightly lighter blue */
+}
