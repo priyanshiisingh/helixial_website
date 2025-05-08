@@ -297,7 +297,11 @@
     color: #fff !important;
 }
 
-.contact-section h1, a, i, h3{
+.contact-section h1, i, h3{
+    color: #fff !important;
+}
+
+.contact-section-a{
     color: #fff !important;
 }
 

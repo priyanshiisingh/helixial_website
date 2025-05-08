@@ -65,7 +65,7 @@
                         <div class="tm-single-contact">
                             <i class="fa fa-envelope"></i>
                             <h3>Email</h3>
-                            <a href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
+                            <a class="contact-section-a" href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                     </div>
