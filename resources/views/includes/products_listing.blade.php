@@ -1,4 +1,4 @@
-<div class="page-center">
+<div class="page-center my-4">
     <div class="solutions-container">
 
         <div class="solution" data-aos="fade-up">
