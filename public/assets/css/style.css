@@ -166,6 +166,20 @@ html {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2CAEE2", endColorstr="#002285", GradientType=1 );
 }
 
+.tm-gradient-radial-text-bg {
+    background: hsla(219, 94%, 57%, 0.4);
+
+    background: linear-gradient(360deg, hsla(219, 94%, 57%, 0.4) 0%, hsla(300, 3%, 93%, 0.4) 100%);
+
+    background: -moz-linear-gradient(360deg, hsla(219, 94%, 57%, 0.4) 0%, hsla(300, 3%, 93%, 0.4) 100%);
+
+    background: -webkit-linear-gradient(360deg, hsla(219, 94%, 57%, 0.4) 0%, hsla(300, 3%, 93%, 0.4) 100%);
+
+    /* Optional fallback for older IE */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#992B72F8", endColorstr="#99EDECED", GradientType=1);
+
+}
+
 
 .tm-e3e8ff-bg {
     background: #e3e8ff;
