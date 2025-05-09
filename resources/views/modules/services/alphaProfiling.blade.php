@@ -101,4 +101,7 @@
         <div class="empty-space col-md-b80 col-xs-b80"></div>
     </div>
     <!-- End Site Content -->
+
+    @include('includes.cancer_detect_process')
+    @include('includes.cancer_find_process')
 @endsection

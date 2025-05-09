@@ -1,22 +1,28 @@
-<!-- Start About Secton -->
-<section class="about-section tm-e3e8ff-bg">
-
+<!-- Start About Section -->
+<section class="about-section tm-e3e8ff-bg py-5">
     <div class="container" style="color: #004aad">
-        <div class="about-content m-0 pb-0">
-            <div class="about-text" data-aos="fade-down" data-aos-duration="3000">
-                <h2>Unwinding genomic data for next generation diagnostics </h2>
-            </div>
+
+        <!-- Heading Full Width -->
+        <div class="about-text p-0" data-aos="fade-down" data-aos-duration="3000">
+            <h2>Unwinding genomic data for next generation diagnostics</h2>
         </div>
-        <div class="about-content m-0">
-            <div class="about-text" data-aos="fade-right" data-aos-duration="3000">
-                <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
+
+        <!-- Image and Paragraph Side-by-Side -->
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="3000">
+                <img src="{{ asset('assets/img/client/bioinformatics2.png') }}"
+                     alt="Lab equipment image"
+                     class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
-            <div class="about-image" data-aos="fade-left" data-aos-duration="3000">
-                <p>
+
+            <!-- Description Column -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="3000">
+                <p style="font-size: large">
                     Next-Generation Sequencing (NGS) is an advanced technology for high-throughput DNA and RNA sequencing, enabling rapid and parallel analysis of entire genomes or targeted regions. By integrating innovative sequencing chemistries, diverse platforms, and powerful bioinformatics, NGS offers a faster, more scalable alternative to traditional Sanger sequencing.
                 </p>
             </div>
         </div>
     </div>
 </section>
-<!-- End About Secton -->
+<!-- End About Section -->

@@ -39,14 +39,14 @@
                         <div class="container text-white my-5" data-aos="fade-up">
                             <div class="row text-center justify-content-center">
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                    <img src="{{ asset('assets/img/client/helixial_1.jpg') }}"
+                                    <img src="{{ asset('assets/img/client/cancerdetect1.png') }}"
                                         alt="Cancer-related variant detection"
                                         class="img-fluid rounded-circle mb-3 mx-auto d-block"
                                         style="width: 180px; height: 180px; object-fit: cover;">
                                     <h5 class="fw-bold text-white">Cancer-related variant detection</h5>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                    <img src="{{ asset('assets/img/client/helixial_2.jpg') }}"
+                                    <img src="{{ asset('assets/img/client/cancerdetect2.png') }}"
                                         alt="Tissue-informed personalized panel design"
                                         class="img-fluid rounded-circle mb-3 mx-auto d-block"
                                         style="width: 180px; height: 180px; object-fit: cover;">

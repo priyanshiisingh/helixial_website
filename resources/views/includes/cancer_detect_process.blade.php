@@ -1,82 +1,71 @@
-<div id="workflow" class="grid"></div>
+    <!-- Start Site Content -->
+    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-bg">
+        <div class="container">
+            <div class="row">
+                <main class="container mt-3">
+                    <article data-aos="zoom-in">
+                        <header class="mb-4" data-aos="fade-down">
+                            <h1 class="text-primary text-white">CancerDetect<sup>™</sup></h1>
+                        </header>
+                        <div class="mb-5 text-white" data-aos="fade-up">
+                            <p>CancerDetect™ is our proprietary liquid biopsy platform designed to detect cancer recurrence
+                                at its earliest stages—well before it appears on traditional imaging. This advanced
+                                technology analyses unique genetic mutations found in a patient's surgically removed tumour,
+                                creating a highly personalized genetic panel for post-operative monitoring.
+                            </p>
+                        </div>
+                        <!-- CancerDetect Feature Icons Section -->
+                        <div class="container text-white my-5" data-aos="fade-up">
+                            <div class="row text-center justify-content-center">
+                                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                    <img src="{{ asset('assets/img/client/cancerdetect1.png') }}"
+                                        alt="Cancer-related variant detection"
+                                        class="img-fluid rounded-circle mb-3 mx-auto d-block"
+                                        style="width: 180px; height: 180px; object-fit: cover;">
+                                    <h5 class="fw-bold text-white">Cancer-related variant detection</h5>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                    <img src="{{ asset('assets/img/client/cancerdetect2.png') }}"
+                                        alt="Tissue-informed personalized panel design"
+                                        class="img-fluid rounded-circle mb-3 mx-auto d-block"
+                                        style="width: 180px; height: 180px; object-fit: cover;">
+                                    <h5 class="fw-bold text-white">Tissue-informed personalized panel design</h5>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                    <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Recurrence monitoring"
+                                        class="img-fluid rounded-circle mb-3 mx-auto d-block"
+                                        style="width: 180px; height: 180px; object-fit: cover;">
+                                    <h5 class="fw-bold text-white">Recurrence monitoring</h5>
+                                </div>
+                            </div>
+                        </div>
 
-<script>
-    const steps = [{
-            icon: "🧬",
-            text: "DNA extraction from Cancer and normal cells"
-        },
-        {
-            icon: "🖥️",
-            text: "WES"
-        },
-        {
-            icon: "🧪",
-            text: "Somatic mutation detection"
-        },
-        {
-            icon: "🏅",
-            text: "Selection of patient-specific mutations (KR 10-2472050)"
-        },
-        {
-            icon: "📄",
-            text: "BSP establishment (signature)"
-        },
-        {
-            icon: "🧫",
-            text: "Blood collection"
-        },
-        {
-            icon: "🧬",
-            text: "Blood collection"
-        },
-        {
-            icon: "🧬",
-            text: "BSP sequencing (100,000x)"
-        },
-        {
-            icon: "🧬",
-            text: "ctDNA detection (HQSTM Adoption)"
-        },
-        {
-            icon: "📘",
-            text: "Clinical report"
-        },
-    ];
 
-    const container = document.getElementById("workflow");
+                        <div class="mb-5 text-white" data-aos="fade-up">
+                            <p>By targeting Minimal Residual Disease (MRD), CancerDetect™ offers a powerful, non-invasive
+                                method to identify early signs of relapse. It enables clinicians to anticipate recurrence
+                                months in advance, allowing for timely and tailored treatment interventions. This
+                                precision-driven approach enhances patient outcomes by enabling early therapeutic
+                                adjustments and optimizing chemotherapy strategies.
+                            </p>
+                        </div>
 
-    steps.forEach((step, index) => {
-        // Create card
-        const card = document.createElement("div");
-        card.className = "card-process";
-        card.innerHTML = `
-      <div class="icon">${step.icon}</div>
-      <div class="label">${step.text}</div>
-    `;
-        container.appendChild(card);
-
-        // Add arrow unless it's the last item in a row
-        const isEndOfRow = (index + 1) % 4 === 0;
-        const isLast = index === steps.length - 1;
-
-        if (!isEndOfRow && !isLast) {
-            const arrow = document.createElement("div");
-            arrow.className = "arrow";
-            arrow.innerHTML = "➔";
-            container.appendChild(arrow);
-        }
-    });
-
-    const cards = document.querySelectorAll(".card-process");
-
-    function revealCardsSequentially(i = 0) {
-        if (i < cards.length) {
-            cards[i].classList.add("visible");
-            setTimeout(() => revealCardsSequentially(i + 1), 400);
-        }
-    }
-
-    window.onload = () => {
-        revealCardsSequentially();
-    };
-</script>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="tm-blog-section tm-blog-left-sidebar tm-e3e8ff-bg">
+        <div class="container">
+            <div class="row">
+                <main class="container mt-3">
+                    <header class="mb-4" data-aos="fade-down">
+                        <h2 class="text-primary mt-2">The test procedure</h2>
+                    </header>
+                    <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
+                </main>
+            </div>
+        </div>
+        <div class="empty-space col-md-b80 col-xs-b80"></div>
+    </div>
+    <!-- End Site Content -->
