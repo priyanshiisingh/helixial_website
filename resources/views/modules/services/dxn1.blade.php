@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Start Blog Header -->
-    <section class="tm-blog-hero">
+    {{-- <section class="tm-blog-hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -15,28 +15,34 @@
                 </div><!-- .col -->
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Blog Header -->
+    <div class="empty-space col-md-b75 col-xs-b75"></div>
 
     <!-- Start Site Content -->
-    <div class="tm-blog-section tm-blog-left-sidebar">
+    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-blog-bg">
         <div class="container">
             <div class="row">
                 <main class="container mt-3">
                     <article data-aos="zoom-in">
-                        <header data-aos="fade-down">
-                            <h2 class="text-primary">DNX1</h2>
+                        <header class="mb-4" data-aos="fade-down">
+                            <h1 class="text-primary text-white">DXN1</h1>
                         </header>
-                        <div class="mb-5">
-                            <p><strong>A Comprehensive NGS Solution For Early Pathogen Identification & Antibiotic Sensitivity</strong></p>
+                        <div class="mb-5 text-white" data-aos="fade-up">
+                            <p><strong>A Comprehensive NGS Solution For Early Pathogen Identification & Antibiotic
+                                    Sensitivity</strong></p>
                         </div>
                         @include('includes.products_listing')
 
-                        @include('includes.dxn1_workflow')
+
                     </article>
                 </main>
             </div>
         </div>
+    </div>
+
+    <div class="tm-blog-section tm-blog-left-sidebar tm-7098a9-bg">
+        @include('includes.dxn1_workflow')
     </div>
     <!-- End Site Content -->
 @endsection

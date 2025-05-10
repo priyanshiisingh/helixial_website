@@ -1,7 +1,7 @@
     <!-- Start Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact-section tm-396171-bg">
         <div class="tm-section-heading text-center">
-            <h2>Get In Touch</h2>
+            <h1>Connect With Us</h1>
             <div class="tm-section-seperator"><span></span></div>
             <div class="empty-space col-md-b60 col-xs-b40"></div>
         </div>
@@ -51,21 +51,21 @@
                     <div class="empty-space col-md-b0 col-xs-b40"></div>
                     <div class="tm-contact-info">
                         <div class="tm-single-contact">
-                            <i class="fa fa-map-marker"></i>
-                            <h3>Address</h3>
+                            <i class="contact-section-i fa fa-map-marker "></i>
+                            <h3 class="contact-section-h3">Address</h3>
                             <p>Vadodara, Gujarat</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
-                            <i class="fa fa-phone"></i>
-                            <h3>Phone</h3>
+                            <i class="contact-section-i fa fa-phone"></i>
+                            <h3 class="contact-section-h3">Phone</h3>
                             <p>701-686-1759</p>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                         <div class="tm-single-contact">
-                            <i class="fa fa-envelope"></i>
-                            <h3>Email</h3>
-                            <a href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
+                            <i class="contact-section-i fa fa-envelope"></i>
+                            <h3 class="contact-section-h3">Email</h3>
+                            <a class="contact-section-a" href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
                         </div>
                         <div class="empty-space col-xs-b25"></div>
                     </div>

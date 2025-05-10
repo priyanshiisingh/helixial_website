@@ -1,106 +1,45 @@
-<style>
-    .flow-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+<!-- Start Site Content -->
+<div class="tm-blog-section tm-blog-left-sidebar tm-gradient-blog-bg">
+    <div class="container">
+        <div class="row">
+            <main class="container mt-3">
+                <article data-aos="zoom-in">
+                    <header class="mb-4" data-aos="fade-down">
+                        <h1 class="text-primary text-white">CancerFind<sup>™</sup></h1>
+                    </header>
+                    <div class="mb-5 text-white" data-aos="fade-up">
+                        <p>CancerFind™ is a revolutionary blood-based test for Multiple Cancer Early Detection
+                            (MCED)—designed to identify the presence of various cancer types through a single,
+                            non-invasive blood draw.
+                            <br>
+                            <br>
+                            It offers a convenient screening solution for asymptomatic individuals and those at high
+                            risk, making it easy to incorporate into routine medical checkups. Beyond detection,
+                            CancerFind™ provides accurate predictions of the tissue of origin of any cancer signal,
+                            enabling faster and more targeted clinical decision-making. It can prove to be crucial for
+                            individuals who want early confirmation of cancer, those with a family history, or those
+                            needing further examination after screenings.
+                            By facilitating early diagnosis and guiding next steps, CancerFind™ plays a critical role in
+                            improving patient outcomes and advancing proactive cancer care.
 
-    .step {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        width: 90%;
-        max-width: 500px;
-        margin: 20px 0;
-        padding: 20px;
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeSlideIn 0.8s ease forwards;
-    }
-
-    .step:nth-child(1) {
-        animation-delay: 0.3s;
-    }
-
-    .step:nth-child(2) {
-        animation-delay: 0.9s;
-    }
-
-    .step:nth-child(3) {
-        animation-delay: 1.5s;
-    }
-
-    .step h3 {
-        color: #0070c0;
-        margin: 0 0 10px;
-        font-size: 1.2rem;
-    }
-
-    .step p {
-        margin: 0;
-        color: #333;
-    }
-
-    .step-number {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #0070c0;
-        margin-bottom: 10px;
-    }
-
-    .arrow {
-        font-size: 2rem;
-        color: #0070c0;
-        margin: -10px 0;
-        opacity: 0;
-        animation: fadeIn 0.8s ease forwards;
-    }
-
-    .arrow:nth-of-type(2) {
-        animation-delay: 0.8s;
-    }
-
-    .arrow:nth-of-type(4) {
-        animation-delay: 1.4s;
-    }
-
-    @keyframes fadeSlideIn {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes fadeIn {
-        to {
-            opacity: 1;
-        }
-    }
-</style>
-
-<div class="flow-container">
-
-    <div class="step">
-        <div class="step-number">01</div>
-        <h3>Blood Collection</h3>
-        <p>cfDNA isolation from blood collected during routine health checkup (10mL)</p>
-    </div>
-
-    <div class="arrow">⬇</div>
-
-    <div class="step">
-        <div class="step-number">02</div>
-        <h3>Early Detection</h3>
-        <p>Multi-modal analysis of methylation patterns and genetic characteristics in cfDNA to detect signals of
-            multiple types of cancer.</p>
-    </div>
-
-    <div class="arrow">⬇</div>
-
-    <div class="step">
-        <div class="step-number">03</div>
-        <h3>Tissue of Origin Prediction</h3>
-        <p>If a cancer signal is detected, the test will further determine where in the body the cancer is coming from
-            with high accuracy to guide further clinical action.</p>
+                        </p>
+                    </div>
+                </article>
+            </main>
+        </div>
     </div>
 </div>
+<div class="tm-blog-section tm-blog-left-sidebar tm-7098a9-bg">
+    <div class="container">
+        <div class="row">
+            <main class="container mt-3">
+                <header class="mb-4" data-aos="fade-down">
+                    <h2 class="mt-2">The test procedure</h2>
+                </header>
+                <img src="{{ asset('assets/img/client/helixial_1.jpg') }}" alt="assets/img/client/helixial_1.jpg">
+            </main>
+        </div>
+    </div>
+    <div class="empty-space col-md-b80 col-xs-b80"></div>
+</div>
+<!-- End Site Content -->

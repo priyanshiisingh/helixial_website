@@ -24,7 +24,7 @@
             <div class="row">
                 <main class="col-xl-12">
                     <div class="tm-about tm-gray-bg">
-                        <h3 class="tm-about-title">Driven by science and powered by innovation, Helixial is committed to
+                        <h3 class="tm-about-title text-002735">Driven by science and powered by innovation, Helixial is committed to
                             unwinding the genetic blueprint of disease to bring clarity to healthcare decisions. Whether
                             it's identifying elusive infections or detecting cancer at the molecular level, our solutions
                             are built to empower clinicians, laboratories, and researchers with data they can trust for

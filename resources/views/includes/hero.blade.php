@@ -4,22 +4,20 @@
             <div class="single-slide" style="position: relative; overflow: hidden;">
                 <!-- Video Background -->
                 <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                    <source src="assets/video/light_blue_dna.mp4" type="video/mp4">
+                    <source src="{{ asset('assets/img/client/new/helixial-dark.mp4') }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-
-                <!-- Optional Overlay -->
-                <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
 
                 <!-- Content -->
                 <div class="container" style="position: relative;  z-index: 1;">
 
-                    <div class="slider-text">
-                        <div class="tm-overflow-hidden">
+                    <div class="slider-text tm-gradient-radial-hero-text-bg">
+                        <div class="tm-overflow-hidden mx-5">
                             {{-- <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 70px; font-family: 'Playfair', serif;">HELIXIAL
                             </h1> --}}
                             <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                            <h1 style="font-family: 'Playfair', serif;">Unwinding genomic data for next-generation diagnostics </h1>
+                            <h1 style="font-family: 'DM Sans', sans-serif;">Helixial Services</h1>
+                            <p class="text-f2c744"><i>Built on research | Backed by data | Delivered with precision</i></p>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
                         {{-- <div class="tm-overflow-hidden">
@@ -35,8 +33,8 @@
                 <div class="hero-overlay"></div>
                 <div class="container">
                     <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
-                        <div class="tm-overflow-hidden">
-                            <h1 class="tm-headline letters tm-rotate-text" style="font-family: 'Playfair', serif;">Molecular precision | Smarter Detection | Better Health
+                        <div class="tm-overflow-hidden mx-5">
+                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'DM Sans', sans-serif;">Molecular precision | Smarter Detection | Better Health
                             </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
@@ -48,8 +46,8 @@
                 <div class="hero-overlay"></div>
                 <div class="container">
                     <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
-                        <div class="tm-overflow-hidden">
-                            <h1 class="tm-headline letters tm-rotate-text" style="font-family: 'Playfair', serif;">Built on research | Backed by data | Delivered with precision
+                        <div class="tm-overflow-hidden mx-5">
+                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'DM Sans', sans-serif;">Built on research | Backed by data | Delivered with precision
                             </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
