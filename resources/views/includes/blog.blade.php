@@ -1,5 +1,5 @@
     <!-- Start Blog Section -->
-    <section id="blog" class="tm-gradient-bg">
+    <section id="blog" class="tm-gradient-top-down-bg">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         {{-- <div class="tm-section-heading text-center">
             <h2>Blogs</h2>

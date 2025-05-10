@@ -7,7 +7,7 @@
                     <a href="mailto:Info@helixialservices.com"><i class="fa fa-envelope"></i>Info@helixialservices.com</a>
                 </div>
             </div> --}}
-            <div class="tm-header-menu">
+            <div class="tm-header-menu tm-gradient-header-bg">
                 <div class="container tm-header-menu-container">
                     <div class="tm-site-branding">
                         <!-- For Image Logo -->
@@ -29,17 +29,17 @@
                             <li class="menu-item  menu-item-has-children"><a href="#"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About Us</a>
                                 <ul>
-                                    <li class="menu-item"><a href="{{ route('pages.about') }}">About Us</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.career') }}">Careers</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.contact') }}">Contact Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.career') }}" class="sub-item">Careers</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.contact') }}" class="sub-item">Contact Us</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
                                     Services</a>
                                     <ul>
-                                        <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}">DXN1</a></li>
-                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}">AlphaLiquid® Biopsy</a></li>
+                                        <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}" class="sub-item">DXN1</a></li>
+                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}" class="sub-item">AlphaLiquid® Biopsy</a></li>
                                     </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}

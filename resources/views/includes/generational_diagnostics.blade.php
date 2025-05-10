@@ -1,10 +1,10 @@
 <!-- Start About Section -->
-<section class="about-section tm-e3e8ff-bg py-5">
-    <div class="container" style="color: #004aad">
+<section class="about-section tm-7098a9-bg py-5">
+    <div class="container" >
 
         <!-- Heading Full Width -->
-        <div class="about-text p-0" data-aos="fade-down" data-aos-duration="3000">
-            <h2>Unwinding genomic data for next generation diagnostics</h2>
+        <div class="about-text p-0 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="3000">
+            <h2 class="">Decoding genomics for next-gen diagnostics</h2>
         </div>
 
         <!-- Image and Paragraph Side-by-Side -->

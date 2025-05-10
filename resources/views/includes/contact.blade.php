@@ -1,5 +1,5 @@
     <!-- Start Contact Section -->
-    <section id="contact" class="contact-section tm-gradient-bg">
+    <section id="contact" class="contact-section tm-396171-bg">
         <div class="tm-section-heading text-center">
             <h1>Connect With Us</h1>
             <div class="tm-section-seperator"><span></span></div>

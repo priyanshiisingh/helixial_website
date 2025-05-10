@@ -20,7 +20,7 @@
     <div class="empty-space col-md-b80 col-xs-b80"></div>
 
     <!-- Start Site Content -->
-    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-bg">
+    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-blog-bg">
         <div class="container">
             <div class="row">
                 <main class="container mt-3">
@@ -50,14 +50,14 @@
             </div>
         </div>
     </div>
-    <div class="tm-blog-section tm-blog-left-sidebar tm-e3e8ff-bg">
+    <div class="tm-blog-section tm-blog-left-sidebar tm-7098a9-bg">
         <div class="container">
             <div class="row">
                 <main class="container mt-3">
                     <header class="mb-4" data-aos="fade-down">
-                        <h2 class="text-primary mt-2">The test procedure</h2>
+                        <h2 class="mt-2">The test procedure</h2>
                     </header>
-                    <img src="{{ asset('assets/img/client/detect_art021_img.png') }}" alt="detect_art021_img.png">
+                    <img src="{{ asset('assets/img/client/helixial_1.jpg') }}" alt="assets/img/client/helixial_1.jpg">
                 </main>
             </div>
         </div>

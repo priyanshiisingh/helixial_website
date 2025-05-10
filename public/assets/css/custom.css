@@ -16,7 +16,17 @@
     margin-right: 30px; /* Optional: Add some margin for padding if needed */
 }
 
+.text-f2c744{
+    color: #f2c744 !important;
+}
 
+.text-c4edff{
+    color: #c4edff !important;
+}
+
+.text-002735{
+    color: #002735 !important;
+}
 
 /* Modal Style */
 .modal {
@@ -321,7 +331,7 @@
 
 .blog-text h1 {
     font-size: 80px;
-    color: #f0fd71 !important;
+    color: #f2c744 !important;
     margin-top : 30px;
     line-height: 1;
 }
@@ -365,7 +375,7 @@
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
-    color:#f0fd71 !important;
+    color:#f2c744 !important;
 }
 
 .services-image {
@@ -415,7 +425,6 @@
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     font-size: 15px;
-    color: #003e73;
     position: relative;
   }
 
@@ -437,7 +446,6 @@
 
   .arrow {
     font-size: 26px;
-    color: #003e73;
     animation: bounce 2s infinite;
   }
 
@@ -486,16 +494,17 @@
 
 .about-text h1 {
     font-size: 100px;
-    color: #fff;
     margin: 0;
     line-height: 1;
 }
 
 .about-text h2 {
+    text-transform: capitalize;
     font-size: 50px;
-    color: #003e73;
     margin: 0;
     line-height: 1;
+    text-align: center;
+    font-weight: 500;
 }
 
 .services-text h2 {
@@ -518,22 +527,22 @@
 
 .services-text a {
     font-size: 20px;
-    color:#f0fd71;
+    color:#f2c744;
     margin: 0;
     line-height: 1;
     text-decoration: none;
-    border-bottom: 2px solid #f0fd71;
+    border-bottom: 2px solid #f2c744;
     padding-bottom: 2px;
     padding-top: 10px;
 }
 
 .services-text-2 a {
     font-size: 20px;
-    color:#f0fd71;
+    color:#f2c744;
     margin: 0;
     line-height: 1;
     text-decoration: none;
-    border-bottom: 2px solid #f0fd71;
+    border-bottom: 2px solid #f2c744;
     padding-bottom: 2px;
     padding-top: 10px;
 }
@@ -696,7 +705,6 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 .solution {
     background: #fff;
     padding: 20px 25px;
-    border-left: 6px solid #003e73;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
     opacity: 0;
@@ -710,7 +718,6 @@ h2 {
 }
 
 .brand {
-    color: #003e73;
     font-weight: bold;
 }
 
@@ -761,7 +768,6 @@ ul li {
 .display-4 {
     font-size: 3.5rem;
     line-height: 1.2;
-    color: #003e73 !important;
 }
 
 
@@ -832,23 +838,25 @@ ul li {
   }
 
   .card-header-conventional {
-    background-color: #99acff; /* Medium blue */
+    background-color: #7098a9; /* Medium blue */
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 .card-header-alpha {
-    background-color: #99acff; /* Dark blue */
+    background-color: #7098a9; /* Dark blue */
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 .card-body-conventional {
-    background-color: #e3e8ff; /* Light blue */
+    background-color: #f1f1e6; /* Light blue */
+    color: #002735;
 }
 
 .card-body-alpha {
-    background-color: #e3e8ff; /* Slightly lighter blue */
+    background-color: #f1f1e6; /* Slightly lighter blue */
+    color: #002735;
 }

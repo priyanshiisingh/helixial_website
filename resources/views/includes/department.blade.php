@@ -1,5 +1,5 @@
     <!-- Start Department Section -->
-    <section class="tm-gradient-radial-bg service-section" id="department">
+    <section class="tm-002735-bg service-section" id="department">
         <div class="container">
             <div class="services-content">
                 <div class="services-text" data-aos="fade-down" data-aos-duration="3000">
@@ -31,7 +31,7 @@
 
 
 
-    <section class="tm-gradient-radial-bg service-section" id="liquid-biopsy">
+    <section class="tm-002735-bg service-section" id="liquid-biopsy">
         <div class="container py-5">
             <div class="row align-items-center">
 

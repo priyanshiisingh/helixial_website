@@ -14,7 +14,7 @@
                         <div class="tm-price">
                             {{-- <h3>Laboratory Technician</h3> --}}
                         </div>
-                        <h2 class="tm-pricing-heading">Laboratory Technician</h2>
+                        <h2 class="tm-pricing-heading text-002735">Laboratory Technician</h2>
                         <ul class="tm-test-list">
                             <li>Perform routine lab tests and experiments</li>
                             <li>Prepare and maintain lab equipment and materials</li>
@@ -29,7 +29,7 @@
                         <div class="tm-price">
                             {{-- <h3>Research Scientist</h3> --}}
                         </div>
-                        <h2 class="tm-pricing-heading">Research Scientist</h2>
+                        <h2 class="tm-pricing-heading text-002735">Research Scientist</h2>
                         <ul class="tm-test-list">
                             <li>Design and conduct scientific research projects</li>
                             <li>Analyze experimental data and interpret findings</li>
@@ -44,7 +44,7 @@
                         <div class="tm-price">
                             {{-- <h3>Clinical Laboratory Manager</h3> --}}
                         </div>
-                        <h2 class="tm-pricing-heading">Clinical Laboratory Manager</h2>
+                        <h2 class="tm-pricing-heading text-002735">Clinical Laboratory Manager</h2>
                         <ul class="tm-test-list">
                             <li>Oversee daily lab operations and staff management</li>
                             <li>Ensure compliance with regulatory standards and quality control</li>
@@ -59,7 +59,7 @@
                         <div class="tm-price">
                             {{-- <h3>Laboratory Assistant</h3> --}}
                         </div>
-                        <h2 class="tm-pricing-heading">Laboratory Assistant</h2>
+                        <h2 class="tm-pricing-heading text-002735">Laboratory Assistant</h2>
                         <ul class="tm-test-list">
                             <li>Assist laboratory technicians and researchers</li>
                             <li>Prepare samples and reagents for analysis</li>

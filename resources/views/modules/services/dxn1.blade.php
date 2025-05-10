@@ -17,10 +17,10 @@
         </div>
     </section> --}}
     <!-- End Blog Header -->
-    <div class="empty-space col-md-b80 col-xs-b80"></div>
+    <div class="empty-space col-md-b75 col-xs-b75"></div>
 
     <!-- Start Site Content -->
-    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-bg">
+    <div class="tm-blog-section tm-blog-left-sidebar tm-gradient-blog-bg">
         <div class="container">
             <div class="row">
                 <main class="container mt-3">
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="tm-blog-section tm-blog-left-sidebar tm-e3e8ff-bg">
+    <div class="tm-blog-section tm-blog-left-sidebar tm-7098a9-bg">
         @include('includes.dxn1_workflow')
     </div>
     <!-- End Site Content -->

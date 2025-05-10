@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="tm-footer-social">
-                            <h2>Follow Us</h2>
+                            <h2 class="text-002735">Follow Us</h2>
                             <div class="tm-footer-social-list">
                                 <a href="http://helixial-services-pvt-ltd.linkedin.com" class="tm-social-btn blue">
                                     <i class="fa fa-linkedin-square"></i>
