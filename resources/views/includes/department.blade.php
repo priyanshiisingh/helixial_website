@@ -55,7 +55,7 @@
 
                 <!-- Center Image Column -->
                 <div class="col-md-4 text-center mb-4 mb-md-0" >
-                    <img src="{{ asset('assets/img/client/liquid_biopsy_transparent.gif') }}" alt="Liquid Biopsy Tube" class="img-fluid">
+                    <img src="{{ asset('assets/img/client/liquid_biopsy_white.gif') }}" alt="Liquid Biopsy Tube" class="img-fluid">
                 </div>
 
                 <!-- Right Column -->
