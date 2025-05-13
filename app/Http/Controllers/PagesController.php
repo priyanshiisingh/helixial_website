@@ -48,4 +48,16 @@ class PagesController extends Controller
     public function career(){
         return view('modules.career.index');
     }
+
+    public function advisory(){
+        return view('modules.advisory.index');
+    }
+
+    public function partners(){
+        return view('modules.partners.index');
+    }
+
+    public function outreach(){
+        return view('modules.outreach.index');
+    }
 }

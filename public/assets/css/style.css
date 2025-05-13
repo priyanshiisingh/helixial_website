@@ -1374,7 +1374,7 @@ html {
 5. Site Header
 --------------------------------------------------------------*/
 .tm-site-header {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -3166,7 +3166,7 @@ html {
 }
 .tm-fun-fact i {
     font-size: 60px;
-    color: #002856;
+    color: #fff;
     margin-bottom: 8px;
     display: block;
 }
@@ -3174,6 +3174,7 @@ html {
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 0;
+    color: #f2c744;
 }
 .tm-fun-fact h3 {
     font-size: 24px;

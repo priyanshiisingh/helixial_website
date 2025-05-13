@@ -30,8 +30,8 @@
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About Us</a>
                                 <ul>
                                     <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.advisory') }}" class="sub-item">Advisory Board</a></li>
                                     <li class="menu-item"><a href="{{ route('pages.career') }}" class="sub-item">Careers</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.contact') }}" class="sub-item">Contact Us</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"
@@ -43,13 +43,15 @@
                                     </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
-                            <li class="menu-item"><a href="{{ route('home') }}#gallery"
+                            <li class="menu-item"><a href="{{ route('pages.partners') }}"
                                     class="nav-link tm-smooth-move">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
                             <li class="menu-item "><a href="{{ route('pages.blog') }}"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
-                            <li class="menu-item "><a href="#"
+                            <li class="menu-item "><a href="{{ route('pages.outreach') }}"
                                         class="nav-link tm-smooth-move">Outreach Activity</a>
+                            <li class="menu-item "><a href="{{ route('pages.contact') }}"
+                                        class="nav-link tm-smooth-move">Contact Us</a>
 
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>

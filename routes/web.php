@@ -16,6 +16,9 @@ Route::get('/blogs', [PagesController::class,'blog'])->name('pages.blog');
 Route::get('/blog/detail', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
 Route::get('/contact', [PagesController::class,'contact'])->name('pages.contact');
 Route::get('/careers', [PagesController::class,'career'])->name('pages.career');
+Route::get('/advisory-board', [PagesController::class,'advisory'])->name('pages.advisory');
+Route::get('/partners', [PagesController::class,'partners'])->name('pages.partners');
+Route::get('/outreach-activity', [PagesController::class,'outreach'])->name('pages.outreach');
 
 Route::post('/contact', [HomeController::class,'contact'])->name('contact.submit');
 

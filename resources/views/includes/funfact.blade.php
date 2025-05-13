@@ -1,5 +1,5 @@
     <!-- Start Fun Fact Section -->
-    <section class="tm-fun-fact-wrap tm-bg">
+    <section class="tm-002735-bg">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="container">
             <div class="row">

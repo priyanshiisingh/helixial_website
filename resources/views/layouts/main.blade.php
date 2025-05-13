@@ -4,9 +4,6 @@
 @include('layouts.head')
 
 <body>
-
-    <div id="loader">
-    </div>
     <!-- Start Preloader -->
     <div id="tm-preloader">
     </div>

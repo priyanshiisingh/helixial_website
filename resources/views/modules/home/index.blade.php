@@ -14,9 +14,10 @@
 
 @include('includes.molecular_precision')
 
-{{-- @include('includes.testimonials') --}}
+@include('includes.testimonials')
 
 {{-- @include('includes.gallery') --}}
+@include('includes.funfact')
 
 @include('includes.blog')
 
