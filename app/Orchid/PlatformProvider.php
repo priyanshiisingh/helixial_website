@@ -39,31 +39,53 @@ class PlatformProvider extends OrchidServiceProvider
                 ->title('Navigation')
                 ->route(config('platform.index')),
 
-            Menu::make('Sample Screen')
-                ->icon('bs.collection')
-                ->route('platform.example')
-                ->badge(fn () => 6),
+            // Menu::make('Sample Screen')
+            //     ->icon('bs.collection')
+            //     ->route('platform.example')
+            //     ->badge(fn () => 6),
 
-            Menu::make('Form Elements')
-                ->icon('bs.card-list')
-                ->route('platform.example.fields')
-                ->active('*/examples/form/*'),
+            // Menu::make('Form Elements')
+            //     ->icon('bs.card-list')
+            //     ->route('platform.example.fields')
+            //     ->active('*/examples/form/*'),
 
-            Menu::make('Layouts Overview')
-                ->icon('bs.window-sidebar')
-                ->route('platform.example.layouts'),
+            // Menu::make('Layouts Overview')
+            //     ->icon('bs.window-sidebar')
+            //     ->route('platform.example.layouts'),
 
-            Menu::make('Grid System')
-                ->icon('bs.columns-gap')
-                ->route('platform.example.grid'),
+            // Menu::make('Grid System')
+            //     ->icon('bs.columns-gap')
+            //     ->route('platform.example.grid'),
 
-            Menu::make('Charts')
-                ->icon('bs.bar-chart')
-                ->route('platform.example.charts'),
+            // Menu::make('Charts')
+            //     ->icon('bs.bar-chart')
+            //     ->route('platform.example.charts'),
 
-            Menu::make('Cards')
+            // Menu::make('Cards')
+            //     ->icon('bs.card-text')
+            //     ->route('platform.example.cards')
+            //     ->divider(),
+
+            Menu::make('Blogs')
                 ->icon('bs.card-text')
-                ->route('platform.example.cards')
+                ->route('platform.blogs'),
+            
+            Menu::make('Faqs')
+                ->icon('bs.card-text')
+                ->route('platform.faqs'),
+
+            Menu::make('Testimonials')
+                ->icon('bs.card-text')
+                ->route('platform.testimonials'),
+
+            Menu::make('Careers')
+                ->icon('bs.card-text')
+                ->route('platform.careers')
+                ->divider(),
+
+            Menu::make('Inquiries')
+                ->icon('bs.card-text')
+                ->route('platform.inquires')
                 ->divider(),
 
             Menu::make(__('Users'))
@@ -78,17 +100,17 @@ class PlatformProvider extends OrchidServiceProvider
                 ->permission('platform.systems.roles')
                 ->divider(),
 
-            Menu::make('Documentation')
-                ->title('Docs')
-                ->icon('bs.box-arrow-up-right')
-                ->url('https://orchid.software/en/docs')
-                ->target('_blank'),
+            // Menu::make('Documentation')
+            //     ->title('Docs')
+            //     ->icon('bs.box-arrow-up-right')
+            //     ->url('https://orchid.software/en/docs')
+            //     ->target('_blank'),
 
-            Menu::make('Changelog')
-                ->icon('bs.box-arrow-up-right')
-                ->url('https://github.com/orchidsoftware/platform/blob/master/CHANGELOG.md')
-                ->target('_blank')
-                ->badge(fn () => Dashboard::version(), Color::DARK),
+            // Menu::make('Changelog')
+            //     ->icon('bs.box-arrow-up-right')
+            //     ->url('https://github.com/orchidsoftware/platform/blob/master/CHANGELOG.md')
+            //     ->target('_blank')
+            //     ->badge(fn () => Dashboard::version(), Color::DARK),
         ];
     }
 

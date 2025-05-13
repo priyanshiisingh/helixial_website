@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Orchid\Screens\BlogEditScreen;
+use App\Orchid\Screens\BlogScreen;
+use App\Orchid\Screens\CareerScreen;
 use App\Orchid\Screens\Examples\ExampleActionsScreen;
 use App\Orchid\Screens\Examples\ExampleCardsScreen;
 use App\Orchid\Screens\Examples\ExampleChartsScreen;
@@ -11,9 +14,12 @@ use App\Orchid\Screens\Examples\ExampleGridScreen;
 use App\Orchid\Screens\Examples\ExampleLayoutsScreen;
 use App\Orchid\Screens\Examples\ExampleScreen;
 use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
+use App\Orchid\Screens\FaqScreen;
+use App\Orchid\Screens\InquiryScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
+use App\Orchid\Screens\TestimonialScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
@@ -102,3 +108,15 @@ Route::screen('/examples/charts', ExampleChartsScreen::class)->name('platform.ex
 Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.example.cards');
 
 // Route::screen('idea', Idea::class, 'platform.screens.idea');
+
+
+
+// custom routes 
+Route::screen('blogs', BlogScreen::class)->name('platform.blogs');
+Route::screen('blog/create', BlogEditScreen::class)->name('platform.blog.create');
+Route::screen('blog/{blog?}', BlogEditScreen::class)
+    ->name('platform.blog.edit');
+Route::screen('testimonials', TestimonialScreen::class)->name('platform.testimonials');
+Route::screen('careers', CareerScreen::class)->name('platform.careers');
+Route::screen('faqs', FaqScreen::class)->name('platform.faqs');
+Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');
