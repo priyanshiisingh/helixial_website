@@ -2,14 +2,14 @@
 
 namespace App\Orchid\Screens;
 
-use App\Models\Career;
+use App\Models\CaseStudy;
 use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
 use Orchid\Screen\TD;
 use Orchid\Support\Facades\Layout;
 
-class CareerScreen extends Screen
+class CaseStudyScreen extends Screen
 {
     /**
      * Fetch data to be displayed on the screen.
@@ -19,7 +19,7 @@ class CareerScreen extends Screen
     public function query(): iterable
     {
         return [
-            'careers' => Career::latest()->get(),
+            'caseStudies' => CaseStudy::latest()->get(),
         ];
     }
 
@@ -30,7 +30,7 @@ class CareerScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Careers';
+        return 'Case Studies';
     }
 
     /**
@@ -40,8 +40,8 @@ class CareerScreen extends Screen
      */
     public function commandBar(): iterable
     {
-        return [
-                Link::make('Add Career')->route('platform.career.create')
+         return [
+                Link::make('Add Case Study')->route('platform.caseStudy.create')
             ];
     }
 
@@ -53,25 +53,25 @@ class CareerScreen extends Screen
     public function layout(): iterable
     {
         return [
-            Layout::table('careers', [
-                TD::make('title', 'Title')->sort()->render(function (Career $career) {
-                    return Link::make($career->title)
-                        ->route('platform.career.edit', $career);
+            Layout::table('caseStudies', [
+                TD::make('title', 'Title')->sort()->render(function (CaseStudy $caseStudy) {
+                    return Link::make($caseStudy->title)
+                        ->route('platform.caseStudy.edit', $caseStudy);
                 }),
 
                 TD::make('Actions')
                 ->alignRight()
-                ->render(function (Career $career) {
-                    return Button::make('Delete career')
-                        ->confirm('After deleting, the career will be gone forever.')
-                        ->method('delete', ['career' => $career->id]);
+                ->render(function (CaseStudy $caseStudy) {
+                    return Button::make('Delete case study')
+                        ->confirm('After deleting, the caseStudy will be gone forever.')
+                        ->method('delete', ['caseStudy' => $caseStudy->id]);
                 }),
             ])
         ];
     }
 
-    public function delete(Career $career)
+    public function delete(CaseStudy $caseStudy)
     {
-        $career->delete();
+        $caseStudy->delete();
     }
 }

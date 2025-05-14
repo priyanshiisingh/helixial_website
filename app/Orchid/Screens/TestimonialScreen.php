@@ -2,7 +2,12 @@
 
 namespace App\Orchid\Screens;
 
+use App\Models\Testimonial;
+use Orchid\Screen\Actions\Button;
+use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
+use Orchid\Screen\TD;
+use Orchid\Support\Facades\Layout;
 
 class TestimonialScreen extends Screen
 {
@@ -13,7 +18,9 @@ class TestimonialScreen extends Screen
      */
     public function query(): iterable
     {
-        return [];
+        return [
+            'testimonials' => Testimonial::latest()->get(),
+        ];
     }
 
     /**
@@ -33,7 +40,9 @@ class TestimonialScreen extends Screen
      */
     public function commandBar(): iterable
     {
-        return [];
+        return [
+                Link::make('Add Testimonial')->route('platform.testimonial.create')
+            ];
     }
 
     /**
@@ -43,6 +52,25 @@ class TestimonialScreen extends Screen
      */
     public function layout(): iterable
     {
-        return [];
+        return [
+            Layout::table('testimonials', [
+                TD::make('name', 'name')->sort()->render(function (Testimonial $testimonial) {
+                    return Link::make($testimonial->name)
+                        ->route('platform.testimonial.edit', $testimonial);
+                }),
+
+                TD::make('Actions')
+                ->alignRight()
+                ->render(function (Testimonial $testimonial) {
+                    return Button::make('Delete testimonial')
+                        ->confirm('After deleting, the testimonial will be gone forever.')
+                        ->method('delete', ['testimonial' => $testimonial->id]);
+                }),
+            ])
+        ];
+    }
+    public function delete(Testimonial $testimonial)
+    {
+        $testimonial->delete();
     }
 }

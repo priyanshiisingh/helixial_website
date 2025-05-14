@@ -2,7 +2,7 @@
 
 namespace App\Orchid\Screens;
 
-use App\Models\Blog;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Orchid\Attachment\Models\Attachment;
 use Orchid\Screen\Actions\Button;
@@ -14,18 +14,18 @@ use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Alert;
 use Orchid\Support\Facades\Layout;
 
-class BlogEditScreen extends Screen
+class TestimonialEditScreen extends Screen
 {
-    public $blog;
+    public $testimonial;
     /**
      * Fetch data to be displayed on the screen.
      *
      * @return array
      */
-    public function query(Blog $blog): iterable
+    public function query(Testimonial $testimonial): iterable
     {
         return [
-            'blog' => $blog
+            'testimonial' => $testimonial
         ];
     }
 
@@ -36,7 +36,7 @@ class BlogEditScreen extends Screen
      */
     public function name(): ?string
     {
-        return $this->blog->exists ? 'Edit blog' : 'Creating a new blog';
+        return $this->testimonial->exists ? 'Edit testimonial' : 'Creating a new testimonial';
     }
 
     /**
@@ -47,20 +47,20 @@ class BlogEditScreen extends Screen
     public function commandBar(): iterable
     {
         return [
-            Button::make('Create blog')
+            Button::make('Create testimonial')
                 ->icon('pencil')
                 ->method('createOrUpdate')
-                ->canSee(!$this->blog->exists),
+                ->canSee(!$this->testimonial->exists),
 
             Button::make('Update')
                 ->icon('note')
                 ->method('createOrUpdate')
-                ->canSee($this->blog->exists),
+                ->canSee($this->testimonial->exists),
 
             Button::make('Remove')
                 ->icon('trash')
                 ->method('remove')
-                ->canSee($this->blog->exists),
+                ->canSee($this->testimonial->exists),
         ];
     }
 
@@ -73,59 +73,56 @@ class BlogEditScreen extends Screen
     {
         return [
             Layout::rows([
-                Input::make('blog.title')
+                Input::make('testimonial.name')
                     ->title('Title')
-                    ->placeholder('Attractive but mysterious title')
-                    ->help('Specify a short descriptive name for this blog.'),
-                Input::make('blog.author')
+                    ->help('Specify a short descriptive name for this testimonial.'),
+                Input::make('testimonial.author')
                     ->title('Author')
                     ->placeholder('Author name')
-                    ->help('Specify a short descriptive name for this blog.'),
-                Quill::make('blog.description')
+                    ->help('Specify a short descriptive author name for this testimonial.'),
+                Quill::make('testimonial.description')
                     ->title('Description')
-                    ->help('Specify a description for this blog.'),
-                Upload::make('blog.attachments')
-                    ->title('blog Image')
+                    ->help('Specify a description for this testimonial.'),
+                Upload::make('testimonial.attachments')
+                    ->title('Testimonial Image')
                     ->maxFiles(1)
                     ->acceptedFiles('image/*')
-                    ->value($this->blog->attachments),
-                Select::make('blog.active')
+                    ->value($this->testimonial->attachments),
+                Select::make('testimonial.active')
                     ->title('Status')
                     ->options([
                         '0' => 'Inactive',
                         '1' => 'Active',
                     ])
                     ->placeholder('Select status'),
-
-
             ])
         ];
     }
 
     public function createOrUpdate(Request $request)
     {
-        $blogData = $request->get('blog');
+        $testimonialData = $request->get('testimonial');
 
-        $blog = Blog::updateOrCreate(['id' => $this->blog->id ?? null], $blogData);
+        $testimonial = Testimonial::updateOrCreate(['id' => $this->testimonial->id ?? null], $testimonialData);
 
         // Get the image IDs from the request
-        $imageIds = $request->input('blog.attachments', []);
+        $imageIds = $request->input('testimonial.attachments', []);
 
         // Filter out non-existing attachment IDs
         $existingAttachments = Attachment::whereIn('id', $imageIds)->pluck('id')->toArray();
 
         // Sync images properly (removes deleted images)
-        $blog->attachments()->sync($existingAttachments);
+        $testimonial->attachments()->sync($existingAttachments);
 
-        return redirect()->route('platform.blogs');
+        return redirect()->route('platform.testimonials');
     }
 
     public function remove()
     {
-        $this->blog->delete();
+        $this->testimonial->delete();
 
-        Alert::info('You have successfully deleted the blog.');
+        Alert::info('You have successfully deleted the testimonial.');
 
-        return redirect()->route('platform.blogs');
+        return redirect()->route('platform.testimonials');
     }
 }

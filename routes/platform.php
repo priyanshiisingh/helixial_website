@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 use App\Orchid\Screens\BlogEditScreen;
 use App\Orchid\Screens\BlogScreen;
+use App\Orchid\Screens\CareerEditScreen;
 use App\Orchid\Screens\CareerScreen;
+use App\Orchid\Screens\CaseStudyEditScreen;
+use App\Orchid\Screens\CaseStudyScreen;
 use App\Orchid\Screens\Examples\ExampleActionsScreen;
 use App\Orchid\Screens\Examples\ExampleCardsScreen;
 use App\Orchid\Screens\Examples\ExampleChartsScreen;
@@ -14,11 +17,13 @@ use App\Orchid\Screens\Examples\ExampleGridScreen;
 use App\Orchid\Screens\Examples\ExampleLayoutsScreen;
 use App\Orchid\Screens\Examples\ExampleScreen;
 use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
+use App\Orchid\Screens\FaqEditScreen;
 use App\Orchid\Screens\FaqScreen;
 use App\Orchid\Screens\InquiryScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
+use App\Orchid\Screens\TestimonialEditScreen;
 use App\Orchid\Screens\TestimonialScreen;
 use App\Orchid\Screens\User\UserEditScreen;
 use App\Orchid\Screens\User\UserListScreen;
@@ -116,7 +121,25 @@ Route::screen('blogs', BlogScreen::class)->name('platform.blogs');
 Route::screen('blog/create', BlogEditScreen::class)->name('platform.blog.create');
 Route::screen('blog/{blog?}', BlogEditScreen::class)
     ->name('platform.blog.edit');
+
 Route::screen('testimonials', TestimonialScreen::class)->name('platform.testimonials');
+Route::screen('testimonial/create', TestimonialEditScreen::class)->name('platform.testimonial.create');
+Route::screen('testimonial/{testimonial?}', testimonialEditScreen::class)
+    ->name('platform.testimonial.edit');
+
 Route::screen('careers', CareerScreen::class)->name('platform.careers');
+Route::screen('career/create', CareerEditScreen::class)->name('platform.career.create');
+Route::screen('career/{career?}', CareerEditScreen::class)
+    ->name('platform.career.edit');
+
 Route::screen('faqs', FaqScreen::class)->name('platform.faqs');
+Route::screen('faq/create', FaqEditScreen::class)->name('platform.faq.create');
+Route::screen('faq/{faq?}', FaqEditScreen::class)
+    ->name('platform.faq.edit');
+
+Route::screen('case-study', CaseStudyScreen::class)->name('platform.caseStudy');
+Route::screen('case-study/create', CaseStudyEditScreen::class)->name('platform.caseStudy.create');
+Route::screen('case-study/{caseStudy?}', CaseStudyEditScreen::class)
+    ->name('platform.caseStudy.edit');
+
 Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');

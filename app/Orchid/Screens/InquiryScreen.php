@@ -2,7 +2,12 @@
 
 namespace App\Orchid\Screens;
 
+use App\Models\Contact;
+use Orchid\Screen\Actions\Button;
+use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
+use Orchid\Screen\TD;
+use Orchid\Support\Facades\Layout;
 
 class InquiryScreen extends Screen
 {
@@ -13,7 +18,9 @@ class InquiryScreen extends Screen
      */
     public function query(): iterable
     {
-        return [];
+        return [
+            'inquries' => Contact::latest()->get(),
+        ];
     }
 
     /**
@@ -43,6 +50,26 @@ class InquiryScreen extends Screen
      */
     public function layout(): iterable
     {
-        return [];
+        return [
+            Layout::table('inquries', [
+                TD::make('name', 'Name'),
+                TD::make('email', 'Email'),
+                TD::make('subject', 'Subject'),
+                TD::make('phone', 'Phone'),
+                TD::make('msg', 'Message'),
+                TD::make('Actions')
+                ->alignRight()
+                ->render(function (Contact $inquiry) {
+                    return Button::make('Delete inquiry')
+                        ->confirm('After deleting, the inquiry will be gone forever.')
+                        ->method('delete', ['inquiry' => $inquiry->id]);
+                }),
+            ])
+        ];
+    }
+
+    public function delete(Contact $inquiry)
+    {
+        $inquiry->delete();
     }
 }

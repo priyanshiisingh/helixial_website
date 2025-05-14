@@ -10,4 +10,12 @@ use Orchid\Screen\AsSource;
 class Career extends Model
 {
     use HasFactory, AsSource, Sluggable;
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'description',
+        'active'
+    ];
+
 }

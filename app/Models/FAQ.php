@@ -9,4 +9,12 @@ use Orchid\Screen\AsSource;
 class FAQ extends Model
 {
     use HasFactory, AsSource;
+
+    protected $table = "faqs";
+
+    protected $fillable=[
+        'question',
+        'answer',
+        'active'
+    ];
 }
