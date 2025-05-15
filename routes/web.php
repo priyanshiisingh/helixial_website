@@ -13,7 +13,7 @@ Route::get('/service/cancerFind', [PagesController::class,'cancerFind'])->name('
 Route::get('/service/cancerDetect', [PagesController::class,'cancerDetect'])->name('pages.service.cancerDetect');
 Route::get('/service/dxn1', [PagesController::class,'dxn1'])->name('pages.service.dxn1');
 Route::get('/blogs', [PagesController::class,'blog'])->name('pages.blog');
-Route::get('/blog/detail', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
+Route::get('/blog/{slug?}', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
 Route::get('/contact', [PagesController::class,'contact'])->name('pages.contact');
 Route::get('/careers', [PagesController::class,'career'])->name('pages.career');
 Route::get('/advisory-board', [PagesController::class,'advisory'])->name('pages.advisory');

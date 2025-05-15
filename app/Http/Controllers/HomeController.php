@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Contact;
 use App\Notifications\ContactRequestNotification;
 use Illuminate\Http\Request;
@@ -11,7 +12,8 @@ use Illuminate\Support\Facades\Notification;
 class HomeController extends Controller
 {
     public function index(){
-        return view('modules.home.index');
+        $blogs = Blog::all()->take(3);
+        return view('modules.home.index', compact('blogs'));
     }
 
     public function contact(Request $request){
