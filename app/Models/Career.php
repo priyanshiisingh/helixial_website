@@ -2,20 +2,20 @@
 
 namespace App\Models;
 
+use App\Traits\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Screen\AsSource;
 
-class Contact extends Model
+class Career extends Model
 {
-    use HasFactory, AsSource;
+    use HasFactory, AsSource, Sluggable;
 
-    protected $table ="contact";
     protected $fillable = [
-        'name',
-        'email',
-        'subject',
-        'phone',
-        'msg'
+        'title',
+        'slug',
+        'description',
+        'active'
     ];
+
 }

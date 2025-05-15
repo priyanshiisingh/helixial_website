@@ -6,16 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Screen\AsSource;
 
-class Contact extends Model
+class FAQ extends Model
 {
     use HasFactory, AsSource;
 
-    protected $table ="contact";
-    protected $fillable = [
-        'name',
-        'email',
-        'subject',
-        'phone',
-        'msg'
+    protected $table = "faqs";
+
+    protected $fillable=[
+        'question',
+        'answer',
+        'active'
     ];
 }
