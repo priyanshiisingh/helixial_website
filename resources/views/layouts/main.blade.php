@@ -3,7 +3,7 @@
 
 @include('layouts.head')
 
-<body>
+<body class="main">
     <!-- Start Preloader -->
     <div id="tm-preloader">
     </div>
