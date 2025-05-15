@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -34,11 +35,13 @@ class PagesController extends Controller
     }
 
     public function blog(){
-        return view('modules.blogs.index');
+        $blogs = Blog::all();
+        return view('modules.blogs.index', compact('blogs'));
     }
 
-    public function blogDetail(){
-        return view('modules.blogs.show');
+    public function blogDetail($slug){
+        $blog = Blog::where('slug',$slug)->first();
+        return view('modules.blogs.show', compact('blog'));
     }
 
     public function contact(){
