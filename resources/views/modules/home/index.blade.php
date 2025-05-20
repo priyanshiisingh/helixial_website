@@ -24,5 +24,6 @@
 @include('includes.contact')
 
 {{-- @include('includes.human_body') --}}
+{{-- @include('includes.map') --}}
 
 @endsection
