@@ -29,7 +29,7 @@
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <h5 class="blog-title mb-1">
+                                        <h5 class="blog-title-title mb-1">
                                             <a href="{{ route('pages.blog.detail', $blog->slug) }}"
                                                 class="text-white fw-bold">
                                                 {{ $blog->title }}
