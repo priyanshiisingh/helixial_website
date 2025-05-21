@@ -12,5 +12,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/plugins.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/map.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>

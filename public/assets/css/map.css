@@ -1,0 +1,39 @@
+/* .gujarat-map {
+            width: 100%;
+            filter: drop-shadow(0px 4px 7px #6a6a6a59);
+            } */
+
+.gujarat-map {
+    width: 100%;
+    background-image: url(UsersGujinfo/img/ROUND.png);
+    padding: 28px;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    box-shadow: 0px 3.195876359939575px 139.02061462402344px 0px
+        rgba(0, 0, 0, 20%);
+}
+.map-color {
+    fill: #405189;
+    stroke-width: 0.5px;
+    stroke: #fff;
+}
+.map-color:hover {
+    fill: #f88124;
+    transform: translateY(0px);
+    filter: url(#drop-shadow);
+}
+.map-color.active {
+    fill: #f88124;
+    stroke: #f88124;
+}
+.taxt_color_map a {
+    font-weight: bolder !important;
+    font-size: 4px !important;
+    font-weight: 700 !important;
+    font-family: "Lato", sans-serif;
+}
+.st1 {
+    font-size: 0.3rem;
+}

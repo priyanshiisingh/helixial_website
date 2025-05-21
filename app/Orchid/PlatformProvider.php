@@ -69,7 +69,7 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Blogs')
                 ->icon('bs.card-text')
                 ->route('platform.blogs'),
-            
+
             Menu::make('Faqs')
                 ->icon('bs.card-text')
                 ->route('platform.faqs'),
@@ -77,10 +77,14 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Testimonials')
                 ->icon('bs.card-text')
                 ->route('platform.testimonials'),
-            
+
             Menu::make('Case Studies')
                 ->icon('bs.card-text')
                 ->route('platform.caseStudy'),
+
+            Menu::make('Partners')
+                ->icon('bs.card-text')
+                ->route('platform.mapData'),
 
             Menu::make('Careers')
                 ->icon('bs.card-text')

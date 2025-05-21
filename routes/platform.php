@@ -20,6 +20,7 @@ use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
 use App\Orchid\Screens\FaqEditScreen;
 use App\Orchid\Screens\FaqScreen;
 use App\Orchid\Screens\InquiryScreen;
+use App\Orchid\Screens\MapDataScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
@@ -116,7 +117,7 @@ Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.exam
 
 
 
-// custom routes 
+// custom routes
 Route::screen('blogs', BlogScreen::class)->name('platform.blogs');
 Route::screen('blog/create', BlogEditScreen::class)->name('platform.blog.create');
 Route::screen('blog/{blog?}', BlogEditScreen::class)
@@ -143,3 +144,4 @@ Route::screen('case-study/{caseStudy?}', CaseStudyEditScreen::class)
     ->name('platform.caseStudy.edit');
 
 Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');
+Route::screen('map-data', MapDataScreen::class)->name('platform.mapData');
