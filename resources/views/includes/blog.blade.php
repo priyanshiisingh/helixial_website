@@ -7,9 +7,9 @@
             <div class="empty-space col-md-b60 col-xs-b40"></div>
         </div> --}}
 
-        <div class="blog-text" data-aos="fade-up" data-aos-duration="3000">
-            <h2 class="blog-title">Blog <span>Archive</span></h2>
-        </div>
+
+        <h2 class="blog-title" data-aos="fade-up" data-aos-duration="3000">Blog <span>Archive</span></h2>
+
         <div class="container">
             <div class="row" data-aos="fade-down" data-aos-duration="3000">
                 <div class="col-12">

@@ -1,59 +1,28 @@
-    <!-- Start Hero Section -->
-    <section class="hero tm-style1" id="home">
-        <div class="hero-slider1 owl-carousel" id="hero-slider1">
-            <div class="single-slide" style="position: relative; overflow: hidden;">
-                <!-- Video Background -->
-                <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                    <source src="{{ asset('assets/img/client/new/helixial-dark.mp4') }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+<!-- Start Hero Section -->
+<section class="hero tm-style1" id="home">
+    <div class="hero-slider1 owl-carousel" id="hero-slider1">
+        <div class="single-slide" style="position: relative; overflow: hidden;">
+            <!-- Video Background -->
+            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="{{ asset('assets/img/client/new/helixial-dark.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-                <!-- Content -->
-                <div class="container" style="position: relative;  z-index: 1;">
-
-                    <div class="slider-text tm-gradient-radial-hero-text-bg">
-                        <div class="tm-overflow-hidden mx-5">
-                            {{-- <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 70px; font-family: 'Playfair', serif;">HELIXIAL
-                            </h1> --}}
-                            <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                            <h1 style="font-family: 'Nunito Sans', sans-serif;">Helixial Services</h1>
-                            <p class="text-f2c744"><i>Built on research | Backed by data | Delivered with precision</i></p>
+            <!-- Content -->
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="slider-text">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="hero-title" >
+                                Built On <strong>Research</strong><br>
+                                Backed By <strong>Data</strong><br>
+                                Delivered With <strong>Precision</strong>
+                            </h2>
                         </div>
-                        <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                        {{-- <div class="tm-overflow-hidden">
-                            <p>The quality of our service and the professionalism of our staff are <br>
-                            the reason for Helixial Center’s success.</p>
-                        </div> --}}
-                        {{-- <div class="empty-space col-md-b55 col-sm-b35 col-xs-b25"></div> --}}
                     </div>
-                </div><!-- .container -->
-            </div><!-- .single-slide -->
-
-            <div class="single-slide" style="background: url(assets/img/client/helixial_1.jpg);">
-                <div class="hero-overlay"></div>
-                <div class="container">
-                    <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
-                        <div class="tm-overflow-hidden mx-5">
-                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'Nunito Sans', sans-serif;">Molecular precision | Smarter Detection | Better Health
-                            </h1>
-                        </div>
-                        <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                    </div>
-                </div><!-- .container -->
-            </div><!-- .single-slide -->
-
-            <div class="single-slide" style="background: url(assets/img/client/national-cancer-institute-XknuBmnjbKg-unsplash 1.png);">
-                <div class="hero-overlay"></div>
-                <div class="container">
-                    <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
-                        <div class="tm-overflow-hidden mx-5">
-                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'Nunito Sans', sans-serif;">Built on research | Backed by data | Delivered with precision
-                            </h1>
-                        </div>
-                        <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                    </div>
-                </div><!-- .container -->
-            </div><!-- .single-slide -->
-        </div><!-- #hero-slider1 -->
-    </section>
-    <!-- End Hero Section -->
+                </div>
+            </div><!-- .container -->
+        </div><!-- .single-slide -->
+    </div><!-- #hero-slider1 -->
+</section>
+<!-- End Hero Section -->

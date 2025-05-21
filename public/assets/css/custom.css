@@ -1058,7 +1058,7 @@ ul li {
     font-size: 50px;
     font-weight: 900;
     line-height: 69px;
-    text-align: centlefter;
+    text-align: center;
     text-transform: capitalize;
     color: #f8fffe;
     margin-bottom: 50px;
@@ -1163,7 +1163,6 @@ ul li {
     font-weight: 800;
 }
 
-
 .tm-form-field input,
 .tm-form-field textarea {
     width: 100%;
@@ -1184,7 +1183,6 @@ ul li {
     box-shadow: none !important;
     border: none !important;
 }
-
 
 .tm-form-field textarea {
     resize: none;
@@ -1217,6 +1215,25 @@ ul li {
     }
 }
 
-.normal-text{
-    color:#F8FFFE !important;
+.normal-text {
+    color: #f8fffe !important;
 }
+
+.hero-title {
+    /* font-size: 80px;
+    font-weight: 400;
+    line-height: 95px; */
+    text-align: left;
+    text-transform: capitalize;
+    /* color: #f8fffe;
+    margin-bottom: 0; */
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+}
+
+.hero-title strong {
+    font-weight: 800;
+}
+
