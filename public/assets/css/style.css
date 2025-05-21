@@ -1835,7 +1835,7 @@ html {
 --------------------------------------------------------------*/
 /*Hero*/
 .hero {
-    height: 650px;
+    height: 580px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1853,6 +1853,15 @@ html {
     padding-top: 100px;
 }
 .slider-text h1 {
+    font-family: inherit;
+    font-size: 56px;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    line-height: 80px;
+    margin-bottom: 0;
+}
+
+.slider-text h2 {
     font-family: inherit;
     font-size: 56px;
     font-weight: 300;
@@ -5213,6 +5222,11 @@ blockquote small span {
         height: 600px;
     }
     .slider-text h1 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .slider-text h2 {
         font-size: 40px;
         line-height: 56px;
     }

@@ -12,7 +12,7 @@
             <div class="container" style="position: relative; z-index: 1;">
                 <div class="slider-text">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <h2 class="hero-title" >
                                 Built On <strong>Research</strong><br>
                                 Backed By <strong>Data</strong><br>
