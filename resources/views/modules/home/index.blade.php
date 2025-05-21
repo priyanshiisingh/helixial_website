@@ -8,7 +8,7 @@
 
 {{-- @include('includes.data_sequencing') --}}
 
-@include('includes.generational_diagnostics')
+{{-- @include('includes.generational_diagnostics') --}}
 
 @include('includes.department')
 

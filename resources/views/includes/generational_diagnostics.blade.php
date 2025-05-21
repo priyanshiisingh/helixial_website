@@ -1,10 +1,10 @@
 <!-- Start About Section -->
-<section class="about-section tm-7098a9-bg py-5">
+<section class="about-section py-5">
     <div class="container" >
 
         <!-- Heading Full Width -->
-        <div class="about-text p-0 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="3000">
-            <h2 class="">Decoding genomics for next-gen diagnostics</h2>
+        <div class="section-title" data-aos="zoom-in" data-aos-duration="3000">
+            <h3 class="genomics-title"><strong>Decoding Genomics</strong> For Next-Gen Diagnostics</h3>
         </div>
 
         <!-- Image and Paragraph Side-by-Side -->
@@ -13,7 +13,7 @@
             <div class="col-lg-12 mb-4 mb-lg-0">
                 <img src="{{ asset('assets/img/client/bioinformatics/bioinformatics.gif') }}"
                      alt="Lab equipment image"
-                     class="img-fluid" style="max-width: 100%; height: auto;">    
+                     class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
 
             <!-- Description Column -->

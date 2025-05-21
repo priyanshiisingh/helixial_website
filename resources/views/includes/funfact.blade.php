@@ -1,11 +1,12 @@
     <!-- Start Fun Fact Section -->
-    <section class="tm-002735-bg">
+    <section class="tm-white-bg">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="tm-fun-fact text-center">
-                        <i class="icofont icofont-briefcase-alt-2 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s"></i>
+                        {{-- <i class="icofont icofont-briefcase-alt-2 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s"></i> --}}
+                        <img src="{{ asset('assets/img/new/clock.svg') }}" alt="" class="fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
                         <h2 class="tm-counter">25</h2>
                         <h3>Years of experience</h3>
                     </div>
@@ -13,7 +14,7 @@
                 </div><!-- .col -->
                 <div class="col-lg-3 col-md-6">
                     <div class="tm-fun-fact text-center">
-                        <i class="icofont icofont-emo-simple-smile wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s"></i>
+                        <img src="{{ asset('assets/img/new/smiley.svg') }}" alt="" class="fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
                         <h2 class="tm-counter">2500</h2>
                         <h3>Happy Patients</h3>
                     </div>
@@ -21,7 +22,7 @@
                 </div><!-- .col -->
                 <div class="col-lg-3 col-md-6">
                     <div class="tm-fun-fact text-center">
-                        <i class="icofont icofont-doctor wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="2s"></i>
+                        <img src="{{ asset('assets/img/new/doc.svg') }}" alt="" class="fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
                         <h2 class="tm-counter">150</h2>
                         <h3>Number of Doctors</h3>
                     </div>
@@ -29,7 +30,7 @@
                 </div><!-- .col -->
                 <div class="col-lg-3 col-md-6">
                     <div class="tm-fun-fact text-center">
-                        <i class="icofont icofont-users-social wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="2s"></i>
+                       <img src="{{ asset('assets/img/new/staff.svg') }}" alt="" class="fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
                         <h2 class="tm-counter">250</h2>
                         <h3>Number of Staffs</h3>
                     </div>

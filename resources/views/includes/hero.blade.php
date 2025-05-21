@@ -16,7 +16,7 @@
                             {{-- <h1 class="tm-headline letters tm-rotate-text" style="font-weight: 500; font-size: 70px; font-family: 'Playfair', serif;">HELIXIAL
                             </h1> --}}
                             <div class="empty-space col-sm-b20 col-xs-b10"></div>
-                            <h1 style="font-family: 'DM Sans', sans-serif;">Helixial Services</h1>
+                            <h1 style="font-family: 'Nunito Sans', sans-serif;">Helixial Services</h1>
                             <p class="text-f2c744"><i>Built on research | Backed by data | Delivered with precision</i></p>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
@@ -34,7 +34,7 @@
                 <div class="container">
                     <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
                         <div class="tm-overflow-hidden mx-5">
-                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'DM Sans', sans-serif;">Molecular precision | Smarter Detection | Better Health
+                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'Nunito Sans', sans-serif;">Molecular precision | Smarter Detection | Better Health
                             </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>
@@ -42,12 +42,12 @@
                 </div><!-- .container -->
             </div><!-- .single-slide -->
 
-            <div class="single-slide" style="background: url(assets/img/client/helixial_2.jpg);">
+            <div class="single-slide" style="background: url(assets/img/client/national-cancer-institute-XknuBmnjbKg-unsplash 1.png);">
                 <div class="hero-overlay"></div>
                 <div class="container">
                     <div class="slider-text" style="background: rgba(255, 255, 255, 0.7);">
                         <div class="tm-overflow-hidden mx-5">
-                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'DM Sans', sans-serif;">Built on research | Backed by data | Delivered with precision
+                            <h1 class="tm-headline letters tm-rotate-text text-002735" style="font-family: 'Nunito Sans', sans-serif;">Built on research | Backed by data | Delivered with precision
                             </h1>
                         </div>
                         <div class="empty-space col-sm-b20 col-xs-b10"></div>

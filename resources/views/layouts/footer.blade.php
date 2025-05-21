@@ -1,31 +1,15 @@
-    <!-- Start Footer -->
-    <footer class="tm-overflow-hidden">
-        <div class="tm-gray-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="tm-footer-social">
-                            <h2 class="text-002735">Follow Us</h2>
-                            <div class="tm-footer-social-list">
-                                <a href="http://helixial-services-pvt-ltd.linkedin.com" class="tm-social-btn blue">
-                                    <i class="fa fa-linkedin-square"></i>
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- .col -->
-                </div>
+<!-- Start Footer -->
+<footer class="tm-overflow-hidden text-white">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+            <p class="mb-2 mb-md-0 tm-copyright">Copyright © 2025 Helixial.</p>
+            <div class="d-flex align-items-center">
+                <span class="me-2">Follow Us</span>
+                <a href="https://helixial-services-pvt-ltd.linkedin.com" target="_blank" class="text-white">
+                    <i class="fa fa-linkedin-square fa-lg" style="background: #75E2DF; color: white; padding: 4px 6px; border-radius: 4px;"></i>
+                </a>
             </div>
         </div>
-        <div class="tm-site-footer">
-            <div class="container"><!-- row-md-reverce -->
-                <div class="row row-sm-reverce">
-                    <div class="col-md-7 col-lg-8">
-                        <p class="tm-copyright">Copyright © 2025 Helixial. </p>
-                    </div><!-- .col -->
-
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+</footer>
+<!-- End Footer -->

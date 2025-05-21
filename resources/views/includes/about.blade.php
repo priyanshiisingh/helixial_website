@@ -1,12 +1,12 @@
 <!-- Start About Secton -->
-<section class="tm-gradient-top-down-bg  about-section">
+<section class="about-section">
 
     <div class="container">
         <div class="about-content">
-            <div class="about-text" data-aos="fade-right" data-aos-duration="3000">
-                <h1>About<br>us</h1>
+            <div class="w-100" data-aos="fade-right" data-aos-duration="3000">
+                <h1 class="section-title">About <strong>Us</strong></h1>
             </div>
-            <div class="about-image" data-aos="fade-left" data-aos-duration="3000">
+            <div class="about-content-new" data-aos="fade-left" data-aos-duration="3000">
                 <p>
                     Driven by science and powered by innovation, Helixial is committed to unwinding the genetic
                     blueprint of disease to bring clarity to healthcare decisions. Whether it’s identifying elusive
@@ -18,8 +18,27 @@
                 </p>
             </div>
         </div>
-        <div style="width:100%; height: 300px; overflow: hidden;">
-            <img src="{{ asset('assets/img/client/helixial_3.jpg') }}" alt="Lab equipment image">
+
+        <!-- Heading Full Width -->
+        <div class="section-title" data-aos="zoom-in" data-aos-duration="3000">
+            <h3 class="genomics-title"><strong>Decoding Genomics</strong> For Next-Gen Diagnostics</h3>
+        </div>
+
+        <!-- Image and Paragraph Side-by-Side -->
+        <div class="row align-items-center my-4" data-aos="fade-up" data-aos-duration="5000">
+            <!-- Image Column -->
+            <div class="col-lg-12 mb-4 mb-lg-0">
+                <img src="{{ asset('assets/img/new/generational_diagnostics.png') }}"
+                     alt="Lab equipment image"
+                     class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+
+            <!-- Description Column -->
+            <div class="col-lg-12 mt-5 about-content-new" data-aos="fade-left" data-aos-duration="3000">
+                <p>
+                    Next-Generation Sequencing (NGS) is an advanced technology for high-throughput DNA and RNA sequencing, enabling rapid and parallel analysis of entire genomes or targeted regions. By integrating innovative sequencing chemistries, diverse platforms, and powerful bioinformatics, NGS offers a faster, more scalable alternative to traditional Sanger sequencing.
+                </p>
+            </div>
         </div>
     </div>
 </section>
