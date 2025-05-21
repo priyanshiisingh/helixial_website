@@ -35,8 +35,8 @@
                                                 {{ $blog->title }}
                                             </a>
                                         </h5>
-                                        <p class="mb-0 text-muted small">
-                                            {{ $blog->author }}<br>
+                                        <p class="mb-0 text-white">
+                                            <span class="fw-bold">{{ $blog->author }}</span><br>
                                             {!! \Illuminate\Support\Str::limit(strip_tags($blog->description), 80) !!}
                                         </p>
                                     </div>
