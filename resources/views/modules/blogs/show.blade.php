@@ -134,7 +134,7 @@
                                     </a>
                                 </div>
                                 <div class="tm-post-details-wrap">
-                                    <h2 class="tm-entry-title text-002735">{{ $blog->title }}</h2>
+                                    {{-- <h2 class="tm-entry-title text-002735">{{ $blog->title }}</h2> --}}
                                     <div class="tm-byline">
                                         <span class="author">
                                             <a href="#" class="bar-link"><i class="fa fa-user"></i>{{ $blog->author }}</a>
