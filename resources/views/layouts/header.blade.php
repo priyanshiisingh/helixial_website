@@ -88,14 +88,15 @@
     document.addEventListener('DOMContentLoaded', function () {
         const branding = document.querySelector('.tm-site-branding');
         const headerInfo = document.querySelector('.tm-header-info-wrap');
+        const headerMenuContainer = document.querySelector('.tm-header-menu-container');
 
         function toggleHeaderElements() {
             const isMobile = window.innerWidth <= 991;
 
             if (isMobile) {
-                // Always show branding on mobile
                 branding?.classList.remove('hidden-on-top');
                 branding?.classList.add('show-on-scroll');
+                headerMenuContainer?.classList.remove('center-nav'); // Don't center on mobile
                 return;
             }
 
@@ -103,16 +104,18 @@
                 branding?.classList.add('show-on-scroll');
                 branding?.classList.remove('hidden-on-top');
                 headerInfo?.classList.add('hide-on-scroll');
+                headerMenuContainer?.classList.remove('center-nav'); // move to side on scroll
             } else {
                 branding?.classList.remove('show-on-scroll');
                 branding?.classList.add('hidden-on-top');
                 headerInfo?.classList.remove('hide-on-scroll');
+                headerMenuContainer?.classList.add('center-nav'); // center on top before scroll
             }
         }
 
         window.addEventListener('scroll', toggleHeaderElements);
-        window.addEventListener('resize', toggleHeaderElements); // recheck on resize
-        toggleHeaderElements(); // Initial check
+        window.addEventListener('resize', toggleHeaderElements);
+        toggleHeaderElements();
     });
 </script>
 

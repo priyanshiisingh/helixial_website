@@ -1254,3 +1254,25 @@ ul li {
         line-height: 1.3;
     }
 }
+
+
+
+/* Default: align to left */
+.tm-header-menu-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* When centered on large screens */
+.center-nav {
+    justify-content: center !important;
+}
+
+/* Media query for laptops and larger screens */
+/* @media (min-width: 992px) {
+    .tm-primary-nav-list {
+        display: flex;
+        gap: 30px;
+    }
+} */
