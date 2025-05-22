@@ -26,6 +26,10 @@
                         <a href="index.html">Helixial</a>
                         </span> -->
                     </div>
+                    @php
+    $aboutRoutes = ['pages.about', 'pages.advisory', 'pages.career'];
+    $serviceRoutes = ['pages.service.dxn1', 'pages.service.alphaProfiling'];
+@endphp
                     <nav class="tm-primary-nav tm-onepage-nav">
                         <ul class="tm-primary-nav-list">
                             <li class="menu-item">
@@ -33,7 +37,7 @@
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="menu-item  menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About
+                                    class="nav-link tm-smooth-move {{ in_array(Route::currentRouteName(), $aboutRoutes) ? 'active' : '' }}">About
                                     Us</a>
                                 <ul>
                                     <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About
@@ -45,7 +49,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
+                                    class="nav-link tm-smooth-move {{ in_array(Route::currentRouteName(), $serviceRoutes) ? 'active' : '' }}">Our
                                     Services</a>
                                 <ul>
                                     <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}"
@@ -56,14 +60,14 @@
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
                             <li class="menu-item"><a href="{{ route('pages.partners') }}"
-                                    class="nav-link tm-smooth-move">Partners</a></li>
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.partners' ? 'active' : '' }}">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
                             <li class="menu-item "><a href="{{ route('pages.blog') }}"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
                             <li class="menu-item "><a href="{{ route('pages.outreach') }}"
-                                    class="nav-link tm-smooth-move">Outreach Activity</a>
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.outreach' ? 'active' : '' }}">Outreach Activity</a>
                             <li class="menu-item "><a href="{{ route('pages.contact') }}"
-                                    class="nav-link tm-smooth-move">Contact Us</a>
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.contact' ? 'active' : '' }}">Contact Us</a>
 
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
