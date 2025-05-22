@@ -155,6 +155,19 @@ html {
 .section-title strong {
     font-weight: 900;
 }
+
+.smaller-section-title {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 69px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #f8fffe;
+}
+
+.smaller-section-title strong {
+    font-weight: 900;
+}
 /*--------------------------------------------------------------
 2. General
 --------------------------------------------------------------*/
