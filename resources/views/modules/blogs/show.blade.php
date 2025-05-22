@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Start Blog Header -->
-    <section class="tm-blog-hero">
+    {{-- <section class="tm-blog-hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -15,15 +15,30 @@
                 </div><!-- .col -->
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Blog Header -->
+
+    <div class="empty-space col-md-b75 col-xs-b75"></div>
+    <div class="empty-space col-md-b85 col-xs-b85"></div>
+
+    <!-- Start Site Content -->
+    <div class="tm-blog-section tm-blog-right-sidebar">
+        {{-- <div class="empty-space col-md-b100 col-xs-b70"></div> --}}
+        <div class="container">
+            <div class="about-content mb-0 pb-3 pt-6">
+                <div class="w-100" data-aos="fade-right" data-aos-duration="3000">
+                    <h1 class="section-title">{{ $blog->title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Start Site Content -->
     <div class="tm-blog-section tm-blog-left-sidebar">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
         <div class="container">
             <div class="row">
-                <aside class="col-xl-3 col-lg-4 sidebar">
+                {{-- <aside class="col-xl-3 col-lg-4 sidebar">
                     <div class="empty-space col-md-b0 col-xs-b40"></div>
                     <section class="widget widget_search">
                         <h2 class="widget-title">Search</h2>
@@ -101,8 +116,8 @@
                             <li><a href="#">February 018</a></li>
                         </ul>
                     </section><!-- .widget -->
-                </aside>
-                <main class="col-xl-9 col-lg-8">
+                </aside> --}}
+                <main class="col-xl-12 col-lg-12">
                     <div class="tm-site-main">
                         @php
                             $image = $blog->attachments->first(); // Get the first attached image

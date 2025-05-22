@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Start Blog Header -->
-    <section class="tm-blog-hero">
+    {{-- <section class="tm-blog-hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -14,8 +14,23 @@
                 </div><!-- .col -->
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Blog Header -->
+
+    <div class="empty-space col-md-b75 col-xs-b75"></div>
+    <div class="empty-space col-md-b85 col-xs-b85"></div>
+
+    <!-- Start Site Content -->
+    <div class="tm-blog-section tm-blog-right-sidebar">
+        {{-- <div class="empty-space col-md-b100 col-xs-b70"></div> --}}
+        <div class="container">
+            <div class="about-content mb-0 pb-3 pt-6">
+                <div class="w-100" data-aos="fade-right" data-aos-duration="3000">
+                    <h1 class="section-title">Our <strong>Blogs</strong></strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Start Site Content -->
     <div class="tm-blog-section tm-blog-right-sidebar">
@@ -41,13 +56,16 @@
                                         </a>
                                     </div>
                                     <div class="tm-post-details-wrap">
-                                        <h2 class="tm-entry-title text-002735"><a href="{{ route('pages.blog.detail', $blog->slug) }}">{{ $blog->title }}</a></h2>
+                                        <h2 class="tm-entry-title text-white"><a
+                                                href="{{ route('pages.blog.detail', $blog->slug) }}">{{ $blog->title }}</a>
+                                        </h2>
                                         <div class="tm-byline">
                                             <span class="author">
                                                 <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="bar-link"><i
                                                         class="fa fa-user"></i>{{ $blog->author }}</a>
                                             </span>
-                                            <span class="posted-on"><i class="fa fa-calendar"></i>{{ formatPrettyDate($blog->created_at) }}</span>
+                                            <span class="posted-on"><i
+                                                    class="fa fa-calendar"></i>{{ formatPrettyDate($blog->created_at) }}</span>
                                             {{-- <span><i class="fa fa-tag"></i>Medical</span> --}}
                                         </div>
                                     </div><!-- .tm-post-details-wrap -->
