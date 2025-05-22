@@ -7,9 +7,15 @@
                     <a href="mailto:Info@helixialservices.com"><i class="fa fa-envelope"></i>Info@helixialservices.com</a>
                 </div>
             </div> --}}
+            <div class="tm-header-info-wrap">
+                <a href="{{ route('home') }}" class="tm-logo-link">
+                    <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}" alt="Helixial Logo"
+                        class="tm-logo">
+                </a>
+            </div>
             <div class="tm-header-menu tm-gradient-header-bg">
                 <div class="container tm-header-menu-container">
-                    <div class="tm-site-branding">
+                    <div class="tm-site-branding hidden-on-top">
                         <!-- For Image Logo -->
                         <a href="{{ route('home') }}" class="tm-logo-link">
                             <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}"
@@ -27,20 +33,26 @@
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="menu-item  menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About Us</a>
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About
+                                    Us</a>
                                 <ul>
-                                    <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About Us</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.advisory') }}" class="sub-item">Advisory Board</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.career') }}" class="sub-item">Careers</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About
+                                            Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.advisory') }}"
+                                            class="sub-item">Advisory Board</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.career') }}"
+                                            class="sub-item">Careers</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
                                     Services</a>
-                                    <ul>
-                                        <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}" class="sub-item">DXN1</a></li>
-                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}" class="sub-item">AlphaLiquid® Biopsy</a></li>
-                                    </ul>
+                                <ul>
+                                    <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}"
+                                            class="sub-item">DXN1</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}"
+                                            class="sub-item">AlphaLiquid® Biopsy</a></li>
+                                </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
                             <li class="menu-item"><a href="{{ route('pages.partners') }}"
@@ -49,9 +61,9 @@
                             <li class="menu-item "><a href="{{ route('pages.blog') }}"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
                             <li class="menu-item "><a href="{{ route('pages.outreach') }}"
-                                        class="nav-link tm-smooth-move">Outreach Activity</a>
+                                    class="nav-link tm-smooth-move">Outreach Activity</a>
                             <li class="menu-item "><a href="{{ route('pages.contact') }}"
-                                        class="nav-link tm-smooth-move">Contact Us</a>
+                                    class="nav-link tm-smooth-move">Contact Us</a>
 
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
@@ -72,3 +84,35 @@
         </div><!-- .tm-site-header -->
     </header>
     <!-- End Site Header Wrap -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const branding = document.querySelector('.tm-site-branding');
+        const headerInfo = document.querySelector('.tm-header-info-wrap');
+
+        function toggleHeaderElements() {
+            const isMobile = window.innerWidth <= 991;
+
+            if (isMobile) {
+                // Always show branding on mobile
+                branding?.classList.remove('hidden-on-top');
+                branding?.classList.add('show-on-scroll');
+                return;
+            }
+
+            if (window.scrollY > 50) {
+                branding?.classList.add('show-on-scroll');
+                branding?.classList.remove('hidden-on-top');
+                headerInfo?.classList.add('hide-on-scroll');
+            } else {
+                branding?.classList.remove('show-on-scroll');
+                branding?.classList.add('hidden-on-top');
+                headerInfo?.classList.remove('hide-on-scroll');
+            }
+        }
+
+        window.addEventListener('scroll', toggleHeaderElements);
+        window.addEventListener('resize', toggleHeaderElements); // recheck on resize
+        toggleHeaderElements(); // Initial check
+    });
+</script>
+

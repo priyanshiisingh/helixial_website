@@ -1496,8 +1496,12 @@ html {
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
 .tm-header-info-wrap {
-    background-color: #002856;
+    background-color: #fff;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0 0.6rem 0;
 }
 .tm-header-info {
     height: 45px;
@@ -4378,6 +4382,34 @@ blockquote small span {
     font-weight: 600;
     font-style: initial;
 }
+
+
+/* Initially hidden */
+.tm-site-branding.hidden-on-top {
+    display: none;
+}
+.tm-site-branding.show-on-scroll {
+    display: block;
+}
+
+.tm-header-info-wrap.hide-on-scroll {
+    display: none;
+}
+
+.tm-site-branding {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tm-header-info-wrap {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    display: flex;
+}
+.tm-header-info-wrap.hide-on-scroll {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    display: none;
+}
 @media screen and (max-width: 991px) {
     .tm-entry-title,
     .comments-title,
@@ -4402,6 +4434,10 @@ blockquote small span {
     }
     .tm-blog-section .tm-post:not(:last-child) {
         margin-bottom: 40px;
+    }
+
+        .tm-header-info-wrap {
+        display: none;
     }
 }
 @media screen and (max-width: 767px) {
