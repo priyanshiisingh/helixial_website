@@ -54,6 +54,12 @@
                             filter:
                             url(#drop-shadow);
                             }
+                            .map-color.active:hover
+                            {
+                            fill:
+                            #f88124;
+                            }
+
                             .map-color.active
                             {
                             fill:

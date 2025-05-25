@@ -29,8 +29,9 @@
                     <h1 class="section-title">Partners</h1>
                 </div>
             </div>
-
-            @include('includes.map')
+            <div class="mb-lg-5">
+                @include('includes.map')
+            </div>
         </div>
     </div>
     <!-- End Site Content -->
