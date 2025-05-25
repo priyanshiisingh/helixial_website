@@ -19,6 +19,7 @@ Route::get('/careers', [PagesController::class,'career'])->name('pages.career');
 Route::get('/advisory-board', [PagesController::class,'advisory'])->name('pages.advisory');
 Route::get('/partners', [PagesController::class,'partners'])->name('pages.partners');
 Route::get('/outreach-activity', [PagesController::class,'outreach'])->name('pages.outreach');
+Route::get('/faqs', [PagesController::class,'faqs'])->name('pages.faqs');
 
 Route::post('/contact', [HomeController::class,'contact'])->name('contact.submit');
 

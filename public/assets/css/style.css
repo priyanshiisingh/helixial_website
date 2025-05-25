@@ -3376,7 +3376,7 @@ html {
     overflow: hidden;
 }
 .accordian-wrapper {
-    margin-right: calc((100vw - 1132px) / 2);
+    width: 100%;
 }
 .accordian-heading {
     font-size: 24px;
@@ -3387,7 +3387,7 @@ html {
     margin-bottom: 15px;
 }
 .single-accordian {
-    background-color: #ffffff;
+    background-color: #02364B;
     border: 1px solid #dedede;
 }
 .accordian-head {
@@ -3403,7 +3403,7 @@ html {
     font-family: inherit;
 }
 .accordian-head.active {
-    background-color: #002856;
+    background-color: #024D60;
     color: #fff;
 }
 .accordian-head i {
@@ -3420,7 +3420,7 @@ html {
     display: inline-block;
     height: 16px;
     width: 16px;
-    background-color: #002856;
+    background-color: #75E2DF;
     border-radius: 50%;
     position: absolute;
     right: 20px;

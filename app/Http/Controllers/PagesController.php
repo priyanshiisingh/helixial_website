@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Career;
+use App\Models\FAQ;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -10,6 +12,12 @@ class PagesController extends Controller
     public function about(){
         return view('modules.about.index');
     }
+
+    public function faqs(){
+        $faqs = FAQ::where('active',1)->get();
+        return view('modules.faqs.index', compact('faqs'));
+    }
+
 
     public function service(){
         return view('modules.services.index');
@@ -35,7 +43,7 @@ class PagesController extends Controller
     }
 
     public function blog(){
-        $blogs = Blog::all();
+        $blogs = Blog::where('active',1)->get();
         return view('modules.blogs.index', compact('blogs'));
     }
 
@@ -49,7 +57,8 @@ class PagesController extends Controller
     }
 
     public function career(){
-        return view('modules.career.index');
+        $careers = Career::where('active', 1)->get();
+        return view('modules.career.index',compact('careers'));
     }
 
     public function advisory(){

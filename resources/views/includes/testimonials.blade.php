@@ -10,30 +10,25 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="owl-carousel tm-testimonial tm-testimonial-1 tm-dots1">
-                        <div class="tm-single-testimonial">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">They saved my life. They didn't give up, and they pushed for
-                                    a treatment that would put me in remission. They continue to have some of the best
-                                    staffing I've ever had.</p>
 
-                                <div class="testimonial-author">
-                                    <div class="author-avatar"><img src="assets/img/test-01.jpg" alt=""></div>
-                                    <p class="author-info">Alex Bieniek<br><strong>Student</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tm-single-testimonial">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">They saved my life. They didn't give up, and they pushed for
-                                    a treatment that would put me in remission. They continue to have some of the best
-                                    staffing I've ever had.</p>
+                        @if (!$testimonials->isEmpty())
+                            @foreach ($testimonials as $testimonial)
+                                @php
+                                    $image = $testimonial->attachments->first(); // Get the first attached image
+                                @endphp
+                                <div class="tm-single-testimonial">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-text">{!! $testimonial->description !!}</p>
 
-                                <div class="testimonial-author">
-                                    <div class="author-avatar"><img src="assets/img/test-01.jpg" alt=""></div>
-                                    <p class="author-info">Alex Bieniek<br><strong>Student</strong></p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar"><img src="{{ $image != null ? asset($image->url()) : '' }}" alt="">
+                                            </div>
+                                            <p class="author-info">{{ $testimonial->author }}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>

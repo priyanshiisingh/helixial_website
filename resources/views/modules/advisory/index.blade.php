@@ -29,6 +29,7 @@
                     <h1 class="section-title">Advisory <strong>Board</strong></h1>
                 </div>
             </div>
+            @include('includes.team')
         </div>
     </div>
     <!-- End Site Content -->

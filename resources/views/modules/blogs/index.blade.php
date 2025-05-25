@@ -40,45 +40,50 @@
                 <main class="col-xl-12">
                     <div class="tm-site-main">
 
-                        @foreach ($blogs as $blog)
-                            @php
-                                $image = $blog->attachments->first(); // Get the first attached image
-                            @endphp
-                            <article class="tm-post">
-                                <header class="tm-entry-header">
-                                    <div class="tm-post-thumb">
-                                        <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="tm-link-block">
-                                            <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="">
-                                            <div class="tm-blog-hover">
-                                                <span class="tm-blog-shap"></span>
-                                                <i class="fa fa-link"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="tm-post-details-wrap">
-                                        <h2 class="tm-entry-title text-white"><a
-                                                href="{{ route('pages.blog.detail', $blog->slug) }}">{{ $blog->title }}</a>
-                                        </h2>
-                                        <div class="tm-byline">
-                                            <span class="author">
-                                                <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="bar-link"><i
-                                                        class="fa fa-user"></i>{{ $blog->author }}</a>
-                                            </span>
-                                            <span class="posted-on"><i
-                                                    class="fa fa-calendar"></i>{{ formatPrettyDate($blog->created_at) }}</span>
-                                            {{-- <span><i class="fa fa-tag"></i>Medical</span> --}}
+                        @if (!$blogs->isEmpty())
+                            @foreach ($blogs as $blog)
+                                @php
+                                    $image = $blog->attachments->first(); // Get the first attached image
+                                @endphp
+                                <article class="tm-post">
+                                    <header class="tm-entry-header">
+                                        <div class="tm-post-thumb">
+                                            <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="tm-link-block">
+                                                <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="">
+                                                <div class="tm-blog-hover">
+                                                    <span class="tm-blog-shap"></span>
+                                                    <i class="fa fa-link"></i>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </div><!-- .tm-post-details-wrap -->
-                                </header><!-- .tm-entry-header -->
-                                <div class="tm-entry-content">
-                                    <p>{!! shortDescriptionText($blog->description) !!}</p>
-                                </div>
-                                <div class="empty-space col-xs-b30"></div>
-                                <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="tm-btn1">Read More</a>
-                            </article><!-- .post -->
-                        @endforeach
-
-                        <div class="tm-pagination">
+                                        <div class="tm-post-details-wrap">
+                                            <h2 class="tm-entry-title text-white"><a
+                                                    href="{{ route('pages.blog.detail', $blog->slug) }}">{{ $blog->title }}</a>
+                                            </h2>
+                                            <div class="tm-byline">
+                                                <span class="author">
+                                                    <a href="{{ route('pages.blog.detail', $blog->slug) }}"
+                                                        class="bar-link"><i class="fa fa-user"></i>{{ $blog->author }}</a>
+                                                </span>
+                                                <span class="posted-on"><i
+                                                        class="fa fa-calendar"></i>{{ formatPrettyDate($blog->created_at) }}</span>
+                                                {{-- <span><i class="fa fa-tag"></i>Medical</span> --}}
+                                            </div>
+                                        </div><!-- .tm-post-details-wrap -->
+                                    </header><!-- .tm-entry-header -->
+                                    <div class="tm-entry-content">
+                                        <p>{!! shortDescriptionText($blog->description) !!}</p>
+                                    </div>
+                                    <div class="empty-space col-xs-b30"></div>
+                                    <a href="{{ route('pages.blog.detail', $blog->slug) }}" class="tm-btn1">Read More</a>
+                                </article><!-- .post -->
+                            @endforeach
+                        @else
+                            <div>
+                                No Blogs found
+                            </div>
+                        @endif
+                        {{-- <div class="tm-pagination">
                             <!-- <a href="#" class="tm-prev-page"><i class="icofont icofont-long-arrow-left"></i></a> -->
                             <div class="tm-page-number">
                                 <a href="#" class="active">1</a>
@@ -87,7 +92,7 @@
                                 <a href="#">4</a>
                             </div>
                             <a href="#" class="tm-next-page"><i class="icofont icofont-long-arrow-right"></i></a>
-                        </div>
+                        </div> --}}
                     </div><!-- .tm-site-main -->
                 </main><!-- .col -->
             </div>

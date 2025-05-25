@@ -46,6 +46,8 @@
                                             class="sub-item">Advisory Board</a></li>
                                     <li class="menu-item"><a href="{{ route('pages.career') }}"
                                             class="sub-item">Careers</a></li>
+                                     <li class="menu-item"><a href="{{ route('pages.faqs') }}"
+                                            class="sub-item">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"

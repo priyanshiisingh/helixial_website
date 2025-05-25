@@ -2,8 +2,12 @@
 
 declare(strict_types=1);
 
+use App\Orchid\Screens\AdvisoryBoardEditScreen;
+use App\Orchid\Screens\AdvisoryBoardScreen;
 use App\Orchid\Screens\BlogEditScreen;
 use App\Orchid\Screens\BlogScreen;
+use App\Orchid\Screens\BoardCategoryEditScreen;
+use App\Orchid\Screens\BoardCategoryScreen;
 use App\Orchid\Screens\CareerEditScreen;
 use App\Orchid\Screens\CareerScreen;
 use App\Orchid\Screens\CaseStudyEditScreen;
@@ -20,6 +24,8 @@ use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
 use App\Orchid\Screens\FaqEditScreen;
 use App\Orchid\Screens\FaqScreen;
 use App\Orchid\Screens\InquiryScreen;
+use App\Orchid\Screens\OutreachActivityEditScreen;
+use App\Orchid\Screens\OutreachActivityScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
@@ -116,7 +122,7 @@ Route::screen('/examples/cards', ExampleCardsScreen::class)->name('platform.exam
 
 
 
-// custom routes 
+// custom routes
 Route::screen('blogs', BlogScreen::class)->name('platform.blogs');
 Route::screen('blog/create', BlogEditScreen::class)->name('platform.blog.create');
 Route::screen('blog/{blog?}', BlogEditScreen::class)
@@ -141,5 +147,19 @@ Route::screen('case-study', CaseStudyScreen::class)->name('platform.caseStudy');
 Route::screen('case-study/create', CaseStudyEditScreen::class)->name('platform.caseStudy.create');
 Route::screen('case-study/{caseStudy?}', CaseStudyEditScreen::class)
     ->name('platform.caseStudy.edit');
+
+Route::screen('advisory-board', AdvisoryBoardScreen::class)->name('platform.advisoryBoard');
+Route::screen('advisory-board/create', AdvisoryBoardEditScreen::class)->name('platform.advisoryBoard.create');
+Route::screen('advisory-board/{advisoryBoard?}', AdvisoryBoardEditScreen::class)
+    ->name('platform.advisoryBoard.edit');
+
+Route::screen('board-categories', BoardCategoryScreen::class)->name('platform.boardCategory');
+Route::screen('board-categories/{boardCategory?}', BoardCategoryEditScreen::class)
+    ->name('platform.boardCategory.edit');
+
+Route::screen('outreach-activities', OutreachActivityScreen::class)->name('platform.outreachActivity');
+Route::screen('outreach-activities/create', OutreachActivityEditScreen::class)->name('platform.outreachActivity.create');
+Route::screen('outreach-activities/{outreachActivity?}', OutreachActivityEditScreen::class)
+    ->name('platform.outreachActivity.edit');
 
 Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');

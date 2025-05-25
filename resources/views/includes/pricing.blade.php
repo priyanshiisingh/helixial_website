@@ -27,51 +27,6 @@
                         </ul>
                         <a href="#" class="tm-btn2 apply-btn" data-target="labTechnicianModal">APPLY NOW</a>
                     </div><!-- .tm-price-list -->
-
-                    <div class="tm-price-list tm-gray-bg">
-                        <div class="tm-price">
-                            {{-- <h3>Research Scientist</h3> --}}
-                        </div>
-                        <h2 class="tm-pricing-heading text-002735">Research Scientist</h2>
-                        <ul class="tm-test-list text-002735">
-                            <li>Design and conduct scientific research projects</li>
-                            <li>Analyze experimental data and interpret findings</li>
-                            <li>Publish research papers and contribute to academic journals</li>
-                            <li>Collaborate with multidisciplinary teams</li>
-                            <li>Maintain up-to-date knowledge of scientific advancements</li>
-                        </ul>
-                        <a href="#" class="tm-btn2 apply-btn" data-target="researchScientistModal">APPLY NOW</a>
-                    </div><!-- .tm-price-list -->
-
-                    <div class="tm-price-list tm-gray-bg">
-                        <div class="tm-price">
-                            {{-- <h3>Clinical Laboratory Manager</h3> --}}
-                        </div>
-                        <h2 class="tm-pricing-heading text-002735">Clinical Laboratory Manager</h2>
-                        <ul class="tm-test-list text-002735">
-                            <li>Oversee daily lab operations and staff management</li>
-                            <li>Ensure compliance with regulatory standards and quality control</li>
-                            <li>Monitor equipment maintenance and inventory management</li>
-                            <li>Develop and implement laboratory procedures</li>
-                            <li>Prepare reports and liaise with medical professionals</li>
-                        </ul>
-                        <a href="#" class="tm-btn2 apply-btn" data-target="clinicalLabManagerModal">APPLY NOW</a>
-                    </div><!-- .tm-price-list -->
-
-                    <div class="tm-price-list tm-gray-bg">
-                        <div class="tm-price">
-                            {{-- <h3>Laboratory Assistant</h3> --}}
-                        </div>
-                        <h2 class="tm-pricing-heading text-002735">Laboratory Assistant</h2>
-                        <ul class="tm-test-lis text-002735t">
-                            <li>Assist laboratory technicians and researchers</li>
-                            <li>Prepare samples and reagents for analysis</li>
-                            <li>Ensure lab is organized and equipment is properly maintained</li>
-                            <li>Handle and dispose of hazardous materials safely</li>
-                            <li>Assist in inventory management and ordering supplies</li>
-                        </ul>
-                        <a href="#" class="tm-btn2 apply-btn" data-target="labAssistantModal">APPLY NOW</a>
-                    </div><!-- .tm-price-list -->
                 </div>
 
             </div><!-- .col -->
