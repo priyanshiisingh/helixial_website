@@ -17,7 +17,7 @@
     </section> --}}
     <!-- End Blog Header -->
 
-    <div class="empty-space col-md-b75 col-xs-b75"></div>
+    <div class="empty-space col-lg-b75"></div>
     <div class="empty-space col-md-b85 col-xs-b85"></div>
 
     <!-- Start Site Content -->
@@ -29,6 +29,8 @@
                     <h1 class="section-title">Partners</h1>
                 </div>
             </div>
+
+            @include('includes.map')
         </div>
     </div>
     <!-- End Site Content -->

@@ -17,7 +17,7 @@
         </div>
     </section> --}}
     <!-- End Blog Header -->
-    <div class="empty-space col-md-b75 col-xs-b75"></div>
+    <div class="empty-space col-lg-b75"></div>
     <div class="empty-space col-md-b80 col-xs-b80"></div>
 
     <!-- Start Site Content -->
