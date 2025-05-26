@@ -445,7 +445,7 @@
 
         /* Owl Carousel Team Member */
         $(".tm-member-carousel").owlCarousel({
-            loop: true,
+            loop: false,
             margin: 30,
             nav: true,
             navText: [
@@ -502,7 +502,7 @@
 
         /* Owl Carousel For Pricing Table */
         $(".tm-pricing-carousel").owlCarousel({
-            loop: true,
+            loop: false,
             margin: 30,
             nav: true,
             navText: [
