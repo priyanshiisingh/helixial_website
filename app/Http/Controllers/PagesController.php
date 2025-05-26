@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AdvisoryBoard;
 use App\Models\Blog;
 use App\Models\Career;
 use App\Models\FAQ;
+use App\Models\OutreachActivity;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -62,7 +64,8 @@ class PagesController extends Controller
     }
 
     public function advisory(){
-        return view('modules.advisory.index');
+        $members = AdvisoryBoard::where('active', 1)->get();
+        return view('modules.advisory.index',compact('members'));
     }
 
     public function partners(){
@@ -70,6 +73,7 @@ class PagesController extends Controller
     }
 
     public function outreach(){
-        return view('modules.outreach.index');
+        $activities = OutreachActivity::where('active', 1)->get();
+        return view('modules.outreach.index',compact('activities'));
     }
 }

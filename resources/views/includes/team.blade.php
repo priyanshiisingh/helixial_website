@@ -3,96 +3,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="tm-member-carousel owl-carousel tm-nam-tm-style1  tm-dots1">
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-01.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Willie Crowley</a></h3>
-                                <span class="tm-member-speciality">Cardiologist</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Jay Swanson</a></h3>
-                                <span class="tm-member-speciality">Gynecologist</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-03.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Alex Abbott</a></h3>
-                                <span class="tm-member-speciality">Neurology</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-04.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Kay Conley</a></h3>
-                                <span class="tm-member-speciality">Diagnosis</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-01.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Willie Crowley</a></h3>
-                                <span class="tm-member-speciality">Cardiologist</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-02.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Jay Swanson</a></h3>
-                                <span class="tm-member-speciality">Gynecologist</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-03.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Alex Abbott</a></h3>
-                                <span class="tm-member-speciality">Neurology</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                        <div class="tm-team-member">
-                            <div class="tm-member-hover">
-                                <a href="#" class="tm-member-thumb">
-                                    <img src="assets/img/doctor-04.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="tm-member-meta text-center">
-                                <h3 class="tm-member-name"><a href="#">Dr. Kay Conley</a></h3>
-                                <span class="tm-member-speciality">Diagnosis</span>
-                            </div>
-                        </div><!-- .tm-team-member -->
-                    </div><!-- .member-carousel -->
+                    @if (!$members->isEmpty())
+                        <div class="tm-member-carousel owl-carousel tm-nam-tm-style1  tm-dots1">
+
+                            @foreach ($members as $member)
+                                @php
+                                    $image = $member->attachments->first(); // Get the first attached image
+                                @endphp
+                                <div class="tm-team-member">
+                                    <div class="tm-member-hover">
+                                        <a href="#" class="tm-member-thumb">
+                                            <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tm-member-meta text-center">
+                                        <h3 class="tm-member-name"><a href="#">{{ $member->name }}</a></h3>
+                                        <span class="tm-member-speciality">{!! $member->description !!}</span>
+                                    </div>
+                                </div><!-- .tm-team-member -->
+                            @endforeach
+
+                        </div><!-- .member-carousel -->
+                    @else
+                        <div>
+                            No results
+                        </div>
+                    @endif
                 </div><!-- .col -->
             </div>
         </div>

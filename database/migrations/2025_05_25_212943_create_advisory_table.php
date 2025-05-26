@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('advisory_board', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('category');
+            $table->string('category')->nullable();
             $table->longText('description')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();

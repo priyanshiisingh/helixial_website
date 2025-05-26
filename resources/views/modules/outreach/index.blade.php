@@ -29,6 +29,32 @@
                     <h1 class="section-title">Outreach <strong>Activity</strong></h1>
                 </div>
             </div>
+            @if (!$activities->isEmpty())
+                <div class="tm-member-carousel owl-carousel tm-nam-tm-style1  tm-dots1">
+
+                    @foreach ($activities as $activity)
+                        @php
+                            $image = $activity->attachments->first(); // Get the first attached image
+                        @endphp
+                        <div class="tm-team-member">
+                            <div class="tm-member-hover">
+                                <a href="#" class="tm-member-thumb">
+                                    <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="">
+                                </a>
+                            </div>
+                            <div class="tm-member-meta text-center">
+                                <h3 class="tm-member-name"><a href="#">{{ $activity->title }}</a></h3>
+                                <span class="tm-member-speciality">{!! $activity->description !!}</span>
+                            </div>
+                        </div><!-- .tm-team-member -->
+                    @endforeach
+
+                </div><!-- .member-carousel -->
+            @else
+                <div>
+                    No results
+                </div>
+            @endif
         </div>
     </div>
     <!-- End Site Content -->

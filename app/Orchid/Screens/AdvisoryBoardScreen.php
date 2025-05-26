@@ -2,7 +2,15 @@
 
 namespace App\Orchid\Screens;
 
+use App\Models\AdvisoryBoard;
+use App\Models\Blog;
+use Orchid\Screen\Actions\Button;
+use Orchid\Screen\Actions\Link;
+use Orchid\Screen\Actions\ModalToggle;
+use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Screen;
+use Orchid\Screen\TD;
+use Orchid\Support\Facades\Layout;
 
 class AdvisoryBoardScreen extends Screen
 {
@@ -13,7 +21,9 @@ class AdvisoryBoardScreen extends Screen
      */
     public function query(): iterable
     {
-        return [];
+        return [
+            'boardmembers' => AdvisoryBoard::latest()->get(),
+        ];
     }
 
     /**
@@ -23,7 +33,7 @@ class AdvisoryBoardScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'AdvisoryBoardScreen';
+        return 'Advisory Board';
     }
 
     /**
@@ -33,7 +43,9 @@ class AdvisoryBoardScreen extends Screen
      */
     public function commandBar(): iterable
     {
-        return [];
+            return [
+                Link::make('Add Board member')->route('platform.advisoryBoard.create')
+            ];
     }
 
     /**
@@ -43,6 +55,26 @@ class AdvisoryBoardScreen extends Screen
      */
     public function layout(): iterable
     {
-        return [];
+        return [
+            Layout::table('boardmembers', [
+                TD::make('name', 'Name')->sort()->render(function (AdvisoryBoard $member) {
+                    return Link::make($member->name)
+                        ->route('platform.advisoryBoard.edit', $member);
+                }),
+
+                TD::make('Actions')
+                ->alignRight()
+                ->render(function (AdvisoryBoard $member) {
+                    return Button::make('Delete member')
+                        ->confirm('After deleting, the member will be gone forever.')
+                        ->method('delete', ['member' => $member->id]);
+                }),
+            ])
+        ];
+    }
+
+    public function delete(AdvisoryBoard $member)
+    {
+        $member->delete();
     }
 }

@@ -78,9 +78,9 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('bs.card-text')
                 ->route('platform.testimonials'),
 
-            Menu::make('Board Categories')
-                ->icon('bs.card-text')
-                ->route('platform.boardCategory'),
+            // Menu::make('Board Categories')
+            //     ->icon('bs.card-text')
+            //     ->route('platform.boardCategory'),
 
             Menu::make('Advisory Board')
                 ->icon('bs.card-text')
