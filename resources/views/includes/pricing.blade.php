@@ -12,23 +12,35 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="tm-pricing-carousel owl-carousel tm-nam-tm-style1 tm-dots1">
-                    <div class="tm-price-list tm-gray-bg">
-                        <div class="tm-price">
-                            {{-- <h3>Laboratory Technician</h3> --}}
-                        </div>
-                        <h2 class="tm-pricing-heading text-002735">Laboratory Technician</h2>
-                        <ul class="tm-test-list text-002735">
-                            <li>Perform routine lab tests and experiments</li>
-                            <li>Prepare and maintain lab equipment and materials</li>
-                            <li>Ensure lab safety protocols are followed</li>
-                            <li>Document test results and assist in research projects</li>
-                            <li>Collaborate with research teams and senior scientists</li>
-                        </ul>
-                        <a href="#" class="tm-btn2 apply-btn" data-target="labTechnicianModal">APPLY NOW</a>
-                    </div><!-- .tm-price-list -->
-                </div>
 
+                @if (session('success'))
+                    <div class="alert alert-success mt-3">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if (!$careers->isEmpty())
+
+                    <div class="tm-pricing-carousel owl-carousel tm-nam-tm-style1 tm-dots1">
+                        @foreach ($careers as $career)
+                            <div class="tm-price-list tm-gray-bg">
+                                <div class="tm-price">
+                                    {{-- <h3>Laboratory Technician</h3> --}}
+                                </div>
+                                <h2 class="tm-pricing-heading text-002735">{{ $career->title }}</h2>
+                                {{ $career->description }}
+                                <a href="#" class="tm-btn2 apply-btn" data-title="{{ $career->title }}"
+                                    data-description="{{ strip_tags($career->description) }}">
+                                    APPLY NOW
+                                </a>
+                            </div><!-- .tm-price-list -->
+                        @endforeach
+                    </div>
+                @else
+                    <div>
+                        No results
+                    </div>
+                @endif
             </div><!-- .col -->
         </div><!-- .row -->
     </div>
@@ -37,49 +49,64 @@
 <!-- End Pricing Section -->
 
 <!-- Modals (Hidden by default) -->
-<div id="labTechnicianModal" class="modal">
+<!-- Dynamic Modal -->
+<div id="careerModal" class="modal" style="display:none;">
     <div class="modal-content text-002735">
         <span class="close">&times;</span>
-        <h5 class="text-002735">Apply for Laboratory Technician</h5>
-        <p>Please fill out the form to apply for the Laboratory Technician position.</p>
-        <form>
+        <h5 class="text-002735" id="modalTitle"></h5>
+        <p id="modalDescription"></p>
+        <form action="{{ route('career.submit') }}" method="POST">
+            @csrf
+            <input type="hidden" name="job_title" id="jobTitleInput">
+
             <div class="mb-3">
                 <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" required>
+                <input type="text" class="form-control" id="fullName" name="name" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit Application</button>
         </form>
     </div>
 </div>
 
+
 <!-- Repeat modals for other positions in similar way -->
 <!-- Add modals for "Research Scientist", "Clinical Lab Manager", and "Laboratory Assistant" here with similar structure. -->
 
 <script>
-    // Modal functionality
-    document.querySelectorAll('.apply-btn').forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault();
-            var modalId = this.getAttribute('data-target'); // Get the modal target id
-            var modal = document.getElementById(modalId);
-            modal.style.display = "block"; // Show the modal
+    const modal = document.getElementById("careerModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const jobTitleInput = document.getElementById("jobTitleInput");
+    const closeModal = modal.querySelector(".close");
 
-            // Close the modal when clicking on the close button
-            var closeButton = modal.querySelector('.close');
-            closeButton.addEventListener('click', function() {
-                modal.style.display = "none"; // Hide the modal
-            });
+    document.querySelectorAll(".apply-btn").forEach(button => {
+        button.addEventListener("click", function(e) {
+            e.preventDefault();
 
-            // Close the modal when clicking outside of the modal content
-            window.addEventListener('click', function(event) {
-                if (event.target === modal) {
-                    modal.style.display = "none"; // Hide the modal if clicked outside
-                }
-            });
+            const title = this.getAttribute("data-title");
+            const description = this.getAttribute("data-description");
+
+            modalTitle.textContent = "Apply for " + title;
+            modalDescription.textContent = "Please fill out the form to apply for the " + title +
+                " position.";
+
+            jobTitleInput.value = title;
+
+            modal.style.display = "block";
         });
+    });
+
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
     });
 </script>

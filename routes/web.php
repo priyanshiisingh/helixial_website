@@ -22,4 +22,5 @@ Route::get('/outreach-activity', [PagesController::class,'outreach'])->name('pag
 Route::get('/faqs', [PagesController::class,'faqs'])->name('pages.faqs');
 
 Route::post('/contact', [HomeController::class,'contact'])->name('contact.submit');
+Route::post('/career-response', [HomeController::class,'careerResponse'])->name('career.submit');
 

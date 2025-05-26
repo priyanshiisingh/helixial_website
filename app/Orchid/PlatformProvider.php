@@ -101,8 +101,11 @@ class PlatformProvider extends OrchidServiceProvider
 
             Menu::make('Inquiries')
                 ->icon('bs.card-text')
-                ->route('platform.inquires')
-                ->divider(),
+                ->route('platform.inquires'),
+
+            Menu::make('Career Responses')
+                ->icon('bs.card-text')
+                ->route('platform.responses')->divider(),
 
             Menu::make(__('Users'))
                 ->icon('bs.people')

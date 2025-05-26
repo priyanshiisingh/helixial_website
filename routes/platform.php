@@ -9,6 +9,7 @@ use App\Orchid\Screens\BlogScreen;
 use App\Orchid\Screens\BoardCategoryEditScreen;
 use App\Orchid\Screens\BoardCategoryScreen;
 use App\Orchid\Screens\CareerEditScreen;
+use App\Orchid\Screens\CareerResponseScreen;
 use App\Orchid\Screens\CareerScreen;
 use App\Orchid\Screens\CaseStudyEditScreen;
 use App\Orchid\Screens\CaseStudyScreen;
@@ -163,3 +164,4 @@ Route::screen('outreach-activities/{outreachActivity?}', OutreachActivityEditScr
     ->name('platform.outreachActivity.edit');
 
 Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');
+Route::screen('career-responses', CareerResponseScreen::class)->name('platform.responses');
