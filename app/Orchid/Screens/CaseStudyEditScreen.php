@@ -73,6 +73,7 @@ class CaseStudyEditScreen extends Screen
             Layout::rows([
                 Input::make('caseStudy.title')
                     ->title('Title')
+                    ->required()
                     ->placeholder('Attractive but mysterious title')
                     ->help('Specify a short descriptive name for this case study.'),
                 Quill::make('caseStudy.description')

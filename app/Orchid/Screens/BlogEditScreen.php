@@ -76,6 +76,7 @@ class BlogEditScreen extends Screen
                 Input::make('blog.title')
                     ->title('Title')
                     ->placeholder('Attractive but mysterious title')
+                    ->required()
                     ->help('Specify a short descriptive name for this blog.'),
                 Input::make('blog.author')
                     ->title('Author')

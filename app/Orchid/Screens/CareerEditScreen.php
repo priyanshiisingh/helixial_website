@@ -75,6 +75,7 @@ class CareerEditScreen extends Screen
             Layout::rows([
                 Input::make('career.title')
                     ->title('Title')
+                    ->required()
                     ->placeholder('Attractive but mysterious title')
                     ->help('Specify a short descriptive name for this career.'),
                 Quill::make('career.description')

@@ -75,6 +75,7 @@ class TestimonialEditScreen extends Screen
             Layout::rows([
                 Input::make('testimonial.name')
                     ->title('Title')
+                    ->required()
                     ->help('Specify a short descriptive name for this testimonial.'),
                 Input::make('testimonial.author')
                     ->title('Author')

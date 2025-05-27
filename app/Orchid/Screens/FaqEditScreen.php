@@ -74,9 +74,11 @@ class FaqEditScreen extends Screen
             Layout::rows([
                 TextArea::make('faq.question')
                     ->title('Question')
+                    ->required()
                     ->help('Specify a FAQ question'),
                 TextArea::make('faq.answer')
                     ->title('Answer')
+                    ->required()
                     ->help('Specify a answer for this FAQ.'),
                 Select::make('faq.active')
                     ->title('Status')

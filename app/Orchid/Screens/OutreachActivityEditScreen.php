@@ -77,6 +77,7 @@ class OutreachActivityEditScreen extends Screen
             Layout::rows([
                 Input::make('outreachActivity.title')
                     ->title('Title')
+                    ->required()
                     ->placeholder('Attractive but mysterious title')
                     ->help('Specify a short descriptive title for this activity.'),
                 Quill::make('outreachActivity.description')

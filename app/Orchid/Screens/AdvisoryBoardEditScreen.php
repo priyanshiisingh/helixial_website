@@ -77,6 +77,7 @@ class AdvisoryBoardEditScreen extends Screen
             Layout::rows([
                 Input::make('advisoryBoard.name')
                     ->title('Name')
+                    ->required()
                     ->placeholder('Attractive but mysterious name')
                     ->help('Specify a short descriptive name for this member.'),
                 Quill::make('advisoryBoard.description')
