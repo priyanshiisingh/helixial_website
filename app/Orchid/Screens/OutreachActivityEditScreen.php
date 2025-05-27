@@ -2,7 +2,7 @@
 
 namespace App\Orchid\Screens;
 
-use App\Models\outreachActivity;
+use App\Models\OutreachActivity;
 use App\Models\Blog;
 use App\Models\BoardCategory;
 use Illuminate\Http\Request;
