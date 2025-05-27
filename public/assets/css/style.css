@@ -1764,7 +1764,7 @@ html {
 .m-menu-btn span:after {
     width: 25px;
     height: 2px;
-    background-color: #75E2DF;
+    background-color: #fff;
     display: block;
 }
 .m-menu-btn span:before {
@@ -1832,7 +1832,7 @@ html {
     position: relative;
 }
 .tm-primary-nav .menu-item > .nav-link.active {
-    color: #75E2DF;
+    color: #00bcd4;
 }
 .tm-header3 .tm-header-info-wrap {
     background-color: transparent;
