@@ -30,6 +30,8 @@ use App\Orchid\Screens\OutreachActivityScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
+use App\Orchid\Screens\SeoEditScreen;
+use App\Orchid\Screens\SeoListScreen;
 use App\Orchid\Screens\TestimonialEditScreen;
 use App\Orchid\Screens\TestimonialScreen;
 use App\Orchid\Screens\User\UserEditScreen;
@@ -165,3 +167,8 @@ Route::screen('outreach-activities/{outreachActivity?}', OutreachActivityEditScr
 
 Route::screen('inquires', InquiryScreen::class)->name('platform.inquires');
 Route::screen('career-responses', CareerResponseScreen::class)->name('platform.responses');
+
+Route::screen('seo', SeoListScreen::class)->name('platform.seo');
+Route::screen('seo/create', SeoEditScreen::class)->name('platform.seo.create');
+Route::screen('seo/{seo?}', SeoEditScreen::class)
+    ->name('platform.seo.edit');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\CareerResponse;
 use App\Models\Contact;
+use App\Models\Seo;
 use App\Models\Testimonial;
 use App\Notifications\ContactRequestNotification;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class HomeController extends Controller
     public function index(){
         $blogs = Blog::where('active', 1)->take(3)->get();
         $testimonials = Testimonial::where('active', 1)->get();
-        return view('modules.home.index', compact('blogs','testimonials'));
+        $seo = Seo::all()->keyBy('name');
+        return view('modules.home.index', compact('blogs','testimonials', 'seo'));
     }
 
     public function contact(Request $request){

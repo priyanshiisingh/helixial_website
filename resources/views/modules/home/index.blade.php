@@ -24,5 +24,7 @@
 
     @include('includes.contact')
 
+    @include('includes.instagram_block')
+
     {{-- @include('includes.human_body') --}}
 @endsection

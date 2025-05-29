@@ -107,6 +107,10 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('bs.card-text')
                 ->route('platform.responses')->divider(),
 
+            Menu::make('SEO Manager')
+                ->icon('globe')
+                ->route('platform.seo')->divider(),
+
             Menu::make(__('Users'))
                 ->icon('bs.people')
                 ->route('platform.systems.users')
