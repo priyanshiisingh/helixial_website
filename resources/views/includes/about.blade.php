@@ -28,7 +28,7 @@
         <div class="row align-items-center my-4" data-aos="fade-up" data-aos-duration="5000">
             <!-- Image Column -->
             <div class="col-lg-12 mb-4 mb-lg-0">
-                <img src="{{ asset('assets/img/new/generational_diagnostics.png') }}"
+                <img src="{{ asset('assets/img/new/generational_diagnostics.svg') }}"
                      alt="Lab equipment image"
                      class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
