@@ -59,7 +59,12 @@
         </div>
     </div>
 
+    <div class="w-100" data-aos="fade-left" data-aos-duration="3000"><img
+            src="{{ asset('assets/img/new/alpha/heroalpha1.svg') }}" alt=""></div>
+
+
     <!-- End Site Content -->
+        @include('includes.alpha_protocol')
     @include('includes.alpha_profiling_process')
     @include('includes.cancer_detect_process')
     @include('includes.cancer_find_process')

@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="w-100 mt-2" data-aos="fade-right" data-aos-duration="3000">
-                    <img src="{{ asset('assets/img/new/alpha/Icons.png') }}" alt="">
+                    <img src="{{ asset('assets/img/new/alpha/Icons.svg') }}" alt="">
                 </div>
 
                 <div data-aos="fade-right" data-aos-duration="3000" style="max-height: 300px;">

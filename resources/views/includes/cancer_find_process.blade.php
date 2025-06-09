@@ -24,12 +24,14 @@
                     </p>
                 </div>
                 <div class="w-100 mt-2" data-aos="fade-right" data-aos-duration="3000">
-                    <img src="{{ asset('assets/img/new/alpha/sampleTypes.png') }}" alt="">
+                    <img src="{{ asset('assets/img/new/alpha/sampleTypes.svg') }}" alt="">
                 </div>
             </div>
+            <div class="my-5" data-aos="fade-left" data-aos-duration="3000"><img src="{{ asset('assets/img/new/alpha/humanalpha.svg') }}" alt=""></div>
         </div>
     </div>
-    <div class="tm-blog-section tm-blog-left-sidebar  tm-white-bg mt-2 w-100" >
-        <img src="{{ asset('assets/img/new/alpha/image3alpha.png') }}" alt="assets/img/client/C0039T01 1.png" width="100%">
+    <div class="tm-blog-section tm-blog-left-sidebar  tm-white-bg mt-2 w-100">
+        <img src="{{ asset('assets/img/new/alpha/image3alpha.png') }}" alt="assets/img/client/C0039T01 1.png"
+            width="100%">
     </div>
     <!-- End Site Content -->
