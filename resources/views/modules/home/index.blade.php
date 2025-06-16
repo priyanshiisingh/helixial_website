@@ -11,7 +11,7 @@
 
     @include('includes.department')
 
-    {{-- @include('includes.molecular_precision') --}}
+    @include('includes.molecular_precision')
 
     @include('includes.testimonials')
 

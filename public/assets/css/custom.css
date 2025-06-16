@@ -75,7 +75,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    color: #fff;
+    color: #F8FFFE;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -142,7 +142,7 @@
 }
 
 .card-process {
-    background: #fff;
+    background: #F8FFFE;
     border-radius: 16px;
     padding: 20px;
     width: 180px;
@@ -166,7 +166,7 @@
 
 .label {
     background: #5c6ac4;
-    color: white;
+    color: #F8FFFE;
     padding: 8px 12px;
     border-radius: 20px;
     font-size: 13px;
@@ -192,7 +192,7 @@
 }
 
 .step {
-    background-color: white;
+    background-color: #F8FFFE;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -296,35 +296,35 @@
 
 .services-text h1 {
     font-size: 100px;
-    color: #fff;
+    color: #F8FFFE;
     margin: 0;
     line-height: 1;
 }
 
 .contact-section {
     padding-top: 60px;
-    color: #fff !important;
+    color: #F8FFFE !important;
 }
 
 .contact-section h1 {
-    color: #fff !important;
+    color: #F8FFFE !important;
 }
 
 .contact-section-i {
-    color: #fff !important;
+    color: #F8FFFE !important;
 }
 
 .contact-section-h3 {
-    color: #fff !important;
+    color: #F8FFFE !important;
 }
 
 .contact-section-a {
-    color: #fff !important;
+    color: #F8FFFE !important;
 }
 
 .contact-section label {
     background: none;
-    color: #fff;
+    color: #F8FFFE;
 }
 
 .blog-text h1 {
@@ -336,7 +336,7 @@
 
 .services-text-2 h1 {
     font-size: 100px;
-    color: #fff;
+    color: #F8FFFE;
     margin: 0;
     line-height: 1;
 }
@@ -363,7 +363,7 @@
     margin-top: 20px;
     font-size: 16px;
     line-height: 1.7;
-    color: #fff;
+    color: #F8FFFE;
 }
 
 .service-yellow-text {
@@ -413,7 +413,7 @@
 }
 
 .workflow-step {
-    background: #fff;
+    background: #F8FFFE;
     padding: 16px 20px;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
@@ -529,20 +529,20 @@
 
 .services-text h2 {
     font-size: 40px;
-    color: #fff;
+    color: #F8FFFE;
     margin: 0;
     line-height: 1;
 }
 
 .services-text-2 h2 {
     font-size: 40px;
-    color: #fff;
+    color: #F8FFFE;
     margin: 0;
     line-height: 1;
 }
 
 .services-text-2 p {
-    color: #fff;
+    color: #F8FFFE;
 }
 
 .services-text a {
@@ -675,7 +675,7 @@
 .tooltip {
     visibility: hidden;
     background-color: #333;
-    color: #fff;
+    color: #F8FFFE;
     text-align: center;
     border-radius: 5px;
     padding: 5px 8px;
@@ -697,7 +697,7 @@
 }
 
 #description-box {
-    background: #ffffff;
+    background: #F8FFFE;
     color: #333333;
     font-size: 14px;
     padding: 10px 15px;
@@ -721,7 +721,7 @@
 }
 
 .solution {
-    background: #fff;
+    background: #F8FFFE;
     padding: 20px 25px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -857,14 +857,14 @@ ul li {
 
 .card-header-conventional {
     background-color: #7098a9; /* Medium blue */
-    color: white;
+    color: #F8FFFE;
     font-weight: bold;
     text-align: center;
 }
 
 .card-header-alpha {
     background-color: #7098a9; /* Dark blue */
-    color: white;
+    color: #F8FFFE;
     font-weight: bold;
     text-align: center;
 }
@@ -1141,7 +1141,7 @@ ul li {
 }
 
 .blog-title a {
-    color: #fff;
+    color: #F8FFFE;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -1184,7 +1184,7 @@ ul li {
     border: none !important;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    color: #F8FFFE;
     font-size: 15px;
     outline: none;
     box-shadow: none !important;
@@ -1207,7 +1207,7 @@ ul li {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
     padding: 14px 20px;
-    color: white;
+    color: #F8FFFE;
     font-weight: 600;
     border: none;
     transition: background-color 0.3s;
@@ -1254,7 +1254,7 @@ ul li {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.5;
-    color: white;
+    color: #F8FFFE;
 }
 
 .hero-title strong {

@@ -87,8 +87,8 @@
             </div>
         </div>
 
-        <div>
-            <img src="{{ asset('assets/img/new/homeprocess.svg') }}" alt="">
+        <div class="m-5">
+            <img src="{{ asset('assets/img/new/home_process.svg') }}" alt="">
         </div>
     </section>
 
