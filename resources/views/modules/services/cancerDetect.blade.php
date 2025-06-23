@@ -25,7 +25,7 @@
         <div class="container">
             <div class="about-content mb-0 pb-3 pt-6">
                 <div class="w-100" data-aos="fade-right" data-aos-duration="3000">
-                    <h1 class="section-title">Our <strong>Services</strong></h1>
+                    <h1 class="section-title"><strong>Oncology</strong></h1>
                 </div>
             </div>
         </div>

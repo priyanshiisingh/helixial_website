@@ -11,7 +11,7 @@ Route::get('/service/detail', [PagesController::class,'serviceDetail'])->name('p
 Route::get('/service/alpha-profiling', [PagesController::class,'alphaProfiling'])->name('pages.service.alphaProfiling');
 Route::get('/service/cancerFind', [PagesController::class,'cancerFind'])->name('pages.service.cancerFind');
 Route::get('/service/cancerDetect', [PagesController::class,'cancerDetect'])->name('pages.service.cancerDetect');
-Route::get('/service/dxn1', [PagesController::class,'dxn1'])->name('pages.service.dxn1');
+Route::get('/service/microbiology', [PagesController::class,'dxn1'])->name('pages.service.dxn1');
 Route::get('/blogs', [PagesController::class,'blog'])->name('pages.blog');
 Route::get('/blog/{slug?}', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
 Route::get('/contact', [PagesController::class,'contact'])->name('pages.contact');

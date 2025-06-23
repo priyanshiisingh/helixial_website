@@ -55,9 +55,9 @@
                                     Services</a>
                                 <ul>
                                     <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}"
-                                            class="sub-item">DXN1</a></li>
+                                            class="sub-item">Microbiology</a></li>
                                     <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}"
-                                            class="sub-item">AlphaLiquid® Biopsy</a></li>
+                                            class="sub-item">Oncology</a></li>
                                 </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}

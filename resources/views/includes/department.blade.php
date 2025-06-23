@@ -4,7 +4,7 @@
             <div class="services-content mb-0 align-items-center">
                 <div data-aos="fade-down" data-aos-duration="3000" style="margin-bottom: 0;">
                     <h1 class="service-title mb-2">Our <strong>Services</strong></h1>
-                    <h3 class="service-subtitle mb-2"><span>Dxn1:</span> Precision diagnostic</h3>
+                    <h3 class="service-subtitle mb-2"><span>Microbiology:</span> Precision diagnostic</h3>
                     <p class="service-description mb-2">Incorporating AI, next-gen sequencing, and big data, we offer swift, highly precise, and personalized diagnoses of infectious diseases, including non-culturable strains with their resistance to antibiotics, and cancer detection.</p>
                     <p class="service-tagline mb-3">Unwinding genomic data for next-generation diagnostics</p>
                     <div class="read-more-btn mb-4">

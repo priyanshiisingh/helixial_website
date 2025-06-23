@@ -25,7 +25,7 @@
         <div class="container">
             <div class="about-content mb-0 pb-3 pt-6">
                 <div class="w-100" data-aos="fade-right" data-aos-duration="3000">
-                    <h1 class="section-title">Our <strong>Services</strong></h1>
+                    <h1 class="section-title"><strong>Microbiology</strong></h1>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
 
             <div class="box">
                 <div class="rectangle text-center d-flex align-items-center justify-content-center">
-                    <a href="{{ route('pages.service.alphaProfiling') }}" class="text-white text-decoration-none">Alpha Liquid Profiling</a>
+                    <a href="{{ route('pages.service.alphaProfiling') }}" class="text-white text-decoration-none">Oncology</a>
                 </div>
             </div>
 
