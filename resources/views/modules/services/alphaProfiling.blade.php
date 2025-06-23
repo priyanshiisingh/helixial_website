@@ -34,7 +34,7 @@
         <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
 
             <div class="box">
-                <div class="rectangle text-center d-flex align-items-center justify-content-center"><a href="#cancerDetect"
+                <div class="rectangle text-center d-flex align-items-center justify-content-center"><a href="{{ route('pages.service.cancerDetect') }}"
                         class="text-white text-decoration-none">
                         Cancer <strong>Detect</strong>
                     </a>
@@ -45,14 +45,14 @@
 
             <div class="box">
                 <div class="rectangle text-center d-flex align-items-center justify-content-center">
-                    <a href="#alphaProfiling" class="text-white text-decoration-none">Alpha Liquid Profiling</a>
+                    <a href="{{ route('pages.service.alphaProfiling') }}" class="text-white text-decoration-none">Alpha Liquid Profiling</a>
                 </div>
             </div>
 
 
             <div class="box">
                 <div class="rectangle text-center d-flex align-items-center justify-content-center">
-                    <a href="#cancerFind" class="text-white text-decoration-none">Cancer <strong>Find</strong></a>
+                    <a href="{{ route('pages.service.cancerFind') }}" class="text-white text-decoration-none">Cancer <strong>Find</strong></a>
                 </div>
             </div>
 
@@ -66,9 +66,9 @@
     <!-- End Site Content -->
         @include('includes.alpha_protocol')
     @include('includes.alpha_profiling_process')
-    @include('includes.cancer_detect_process')
+    {{-- @include('includes.cancer_detect_process')
     @include('includes.cancer_find_process')
     @include('includes.deliver_with_precision')
-    @include('includes.heli_services')
+    @include('includes.heli_services') --}}
     @include('includes.contact')
 @endsection
