@@ -33,7 +33,7 @@ class HomeController extends Controller
            Log::error($th);
         }
 
-        return redirect()->back();
+       return redirect()->back()->with('success', 'Contact info sent successfully!');
     }
 
         public function careerResponse(Request $request){
@@ -51,6 +51,6 @@ class HomeController extends Controller
            Log::error($th);
         }
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Career interest sent successfully!');;
     }
 }
