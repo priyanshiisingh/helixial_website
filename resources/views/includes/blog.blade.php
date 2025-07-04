@@ -21,7 +21,7 @@
                             @endphp
 
                             <div class="col-12">
-                                <div class="blog-card d-flex flex-md-row flex-column align-items-center gap-3">
+                                <div class="blog-card d-flex flex-md-row flex-column align-items-center gap-5">
                                     <div class="blog-image">
                                         <a href="{{ route('pages.blog.detail', $blog->slug) }}">
                                             <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="blog-image"
