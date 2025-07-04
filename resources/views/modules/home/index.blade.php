@@ -1,27 +1,32 @@
 @extends('layouts.main')
 @section('content')
+    @include('includes.hero')
 
-@include('includes.hero')
 
+    @include('includes.about')
 
-@include('includes.about')
+    {{-- @include('includes.data_sequencing') --}}
 
-{{-- @include('includes.data_sequencing') --}}
+    {{-- @include('includes.generational_diagnostics') --}}
 
-@include('includes.generational_diagnostics')
+    @include('includes.department')
 
-@include('includes.department')
+    @include('includes.molecular_precision')
 
-@include('includes.molecular_precision')
+    @if (!$testimonials->isEmpty())
+        @include('includes.testimonials')
+    @endif
 
-{{-- @include('includes.testimonials') --}}
+    {{-- @include('includes.gallery') --}}
+    @include('includes.funfact')
 
-{{-- @include('includes.gallery') --}}
+    @if (!$blogs->isEmpty())
+        @include('includes.blog')
+    @endif
 
-@include('includes.blog')
+    @include('includes.contact')
 
-@include('includes.contact')
+    @include('includes.instagram_block')
 
-{{-- @include('includes.human_body') --}}
-
+    {{-- @include('includes.human_body') --}}
 @endsection

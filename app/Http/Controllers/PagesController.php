@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AdvisoryBoard;
+use App\Models\Blog;
+use App\Models\Career;
+use App\Models\FAQ;
+use App\Models\OutreachActivity;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -9,6 +14,12 @@ class PagesController extends Controller
     public function about(){
         return view('modules.about.index');
     }
+
+    public function faqs(){
+        $faqs = FAQ::where('active',1)->get();
+        return view('modules.faqs.index', compact('faqs'));
+    }
+
 
     public function service(){
         return view('modules.services.index');
@@ -34,11 +45,13 @@ class PagesController extends Controller
     }
 
     public function blog(){
-        return view('modules.blogs.index');
+        $blogs = Blog::where('active',1)->get();
+        return view('modules.blogs.index', compact('blogs'));
     }
 
-    public function blogDetail(){
-        return view('modules.blogs.show');
+    public function blogDetail($slug){
+        $blog = Blog::where('slug',$slug)->first();
+        return view('modules.blogs.show', compact('blog'));
     }
 
     public function contact(){
@@ -46,6 +59,21 @@ class PagesController extends Controller
     }
 
     public function career(){
-        return view('modules.career.index');
+        $careers = Career::where('active', 1)->get();
+        return view('modules.career.index',compact('careers'));
+    }
+
+    public function advisory(){
+        $members = AdvisoryBoard::where('active', 1)->get();
+        return view('modules.advisory.index',compact('members'));
+    }
+
+    public function partners(){
+        return view('modules.partners.index');
+    }
+
+    public function outreach(){
+        $activities = OutreachActivity::where('active', 1)->get();
+        return view('modules.outreach.index',compact('activities'));
     }
 }

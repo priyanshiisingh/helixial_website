@@ -1,80 +1,74 @@
-    <!-- Start Contact Section -->
-    <section id="contact" class="contact-section tm-396171-bg">
-        <div class="tm-section-heading text-center">
-            <h1>Connect With Us</h1>
-            <div class="tm-section-seperator"><span></span></div>
-            <div class="empty-space col-md-b60 col-xs-b40"></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div id="tm-alert"></div>
-                    <form action="{{ route('contact.submit') }}" class="row tm-contact-form" method="POST"  id="contact-form">
-                        @csrf
-                        <div class="col-lg-6">
-                            <div class="tm-form-field">
-                                <input type="text" id="name" name="name" required>
-                                <label>Full Name</label>
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="tm-form-field">
-                              <input type="text" id="email" name="email" required>
-                              <label>Email Address</label>
-                          </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="tm-form-field">
-                                <input type="text" id="subject" name="subject" required>
-                                <label>Subject</label>
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="tm-form-field">
-                                <input type="text" id="phone" name="phone" required>
-                                <label>Phone</label>
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-12">
-                            <div class="tm-form-field">
-                                <textarea cols="30" rows="10" id="msg" name="msg" required></textarea>
-                                <label>Your Message</label>
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-12">
-                            <button class="tm-btn1" type="submit" id="submit" name="submit"><span>SEND MESSAGE</span></button>
-                            <div class="empty-space col-lg-b30"></div>
-                        </div><!-- .col -->
-                    </form>
-                </div><!-- .col -->
-                <div class="col-lg-4">
-                    <div class="empty-space col-md-b0 col-xs-b40"></div>
-                    <div class="tm-contact-info">
-                        <div class="tm-single-contact">
-                            <i class="contact-section-i fa fa-map-marker "></i>
-                            <h3 class="contact-section-h3">Address</h3>
-                            <p>Vadodara, Gujarat</p>
+<!-- Start Contact Section -->
+<section id="contact" class="py-5 text-white">
+    <div class="container">
+        <h2 class="contact-title text-center mb-5">
+            <strong>Connect</strong> With Us
+        </h2>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-12">
+                <form action="{{ route('contact.submit') }}" method="POST" id="contact-form" class="row g-3">
+                    @csrf
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tm-form-field">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
                         </div>
-                        <div class="empty-space col-xs-b25"></div>
-                        <div class="tm-single-contact">
-                            <i class="contact-section-i fa fa-phone"></i>
-                            <h3 class="contact-section-h3">Phone</h3>
-                            <p>701-686-1759</p>
-                        </div>
-                        <div class="empty-space col-xs-b25"></div>
-                        <div class="tm-single-contact">
-                            <i class="contact-section-i fa fa-envelope"></i>
-                            <h3 class="contact-section-h3">Email</h3>
-                            <a class="contact-section-a" href="mailto:Info@helixialservices.com">Info@helixialservices.com</a>
-                        </div>
-                        <div class="empty-space col-xs-b25"></div>
                     </div>
-                </div><!-- .col -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tm-form-field">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="tm-form-field h-100">
+                            <textarea id="msg" name="msg" rows="3" required placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tm-form-field">
+                            <input type="email" id="email" name="email"  placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tm-form-field">
+                            <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex align-items-end">
+                        <button type="submit" class="tm-btn1 w-100" id="submit"
+                            name="submit">
+                            SEND MESSAGE
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-12 mt-5">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="fw-normal normal-text mb-1">Phone</h5>
+                        <p class="fw-semibold">701-686-1759</p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="fw-normal normal-text mb-1">Address</h5>
+                        <p class="fw-semibold">Vadodara, Gujarat</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="fw-normal normal-text mb-1">Email</h5>
+                        <p class="fw-semibold">
+                            <a href="mailto:Info@helixialservices.com"
+                                class="text-white text-decoration-none">Info@helixialservices.com</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="empty-space col-md-b70 col-xs-b40"></div>
-    </section>
-    <!-- End Contact Section -->
+    </div>
+
     <script>
         var contactSubmitUrl = "{{ route('contact.submit') }}";
     </script>
+</section>
+<!-- End Contact Section -->

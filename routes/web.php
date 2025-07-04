@@ -11,11 +11,16 @@ Route::get('/service/detail', [PagesController::class,'serviceDetail'])->name('p
 Route::get('/service/alpha-profiling', [PagesController::class,'alphaProfiling'])->name('pages.service.alphaProfiling');
 Route::get('/service/cancerFind', [PagesController::class,'cancerFind'])->name('pages.service.cancerFind');
 Route::get('/service/cancerDetect', [PagesController::class,'cancerDetect'])->name('pages.service.cancerDetect');
-Route::get('/service/dxn1', [PagesController::class,'dxn1'])->name('pages.service.dxn1');
+Route::get('/service/microbiology', [PagesController::class,'dxn1'])->name('pages.service.dxn1');
 Route::get('/blogs', [PagesController::class,'blog'])->name('pages.blog');
-Route::get('/blog/detail', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
+Route::get('/blog/{slug?}', [PagesController::class,'blogDetail'])->name('pages.blog.detail');
 Route::get('/contact', [PagesController::class,'contact'])->name('pages.contact');
 Route::get('/careers', [PagesController::class,'career'])->name('pages.career');
+Route::get('/advisory-board', [PagesController::class,'advisory'])->name('pages.advisory');
+Route::get('/partners', [PagesController::class,'partners'])->name('pages.partners');
+Route::get('/outreach-activity', [PagesController::class,'outreach'])->name('pages.outreach');
+Route::get('/faqs', [PagesController::class,'faqs'])->name('pages.faqs');
 
 Route::post('/contact', [HomeController::class,'contact'])->name('contact.submit');
+Route::post('/career-response', [HomeController::class,'careerResponse'])->name('career.submit');
 

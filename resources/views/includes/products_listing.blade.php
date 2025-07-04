@@ -1,5 +1,5 @@
 <div class="page-center my-4">
-    <div class="solutions-container">
+    <div class="solutions-container text-002735">
 
         <div class="solution" data-aos="fade-up">
             <h2><span class="brand">Bact</span><span class="fast">fast</span><sup>®</sup></h2>

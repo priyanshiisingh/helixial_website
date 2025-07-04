@@ -7,9 +7,15 @@
                     <a href="mailto:Info@helixialservices.com"><i class="fa fa-envelope"></i>Info@helixialservices.com</a>
                 </div>
             </div> --}}
+            <div class="tm-header-info-wrap">
+                <a href="{{ route('home') }}" class="tm-logo-link">
+                    <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}" alt="Helixial Logo"
+                        class="tm-logo">
+                </a>
+            </div>
             <div class="tm-header-menu tm-gradient-header-bg">
                 <div class="container tm-header-menu-container">
-                    <div class="tm-site-branding">
+                    <div class="tm-site-branding hidden-on-top">
                         <!-- For Image Logo -->
                         <a href="{{ route('home') }}" class="tm-logo-link">
                             <img src="{{ asset('assets/img/client/logo/helixial_logo_transparent.png') }}"
@@ -20,6 +26,10 @@
                         <a href="index.html">Helixial</a>
                         </span> -->
                     </div>
+                    @php
+    $aboutRoutes = ['pages.about', 'pages.advisory', 'pages.career'];
+    $serviceRoutes = ['pages.service.dxn1', 'pages.service.alphaProfiling'];
+@endphp
                     <nav class="tm-primary-nav tm-onepage-nav">
                         <ul class="tm-primary-nav-list">
                             <li class="menu-item">
@@ -27,29 +37,39 @@
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="menu-item  menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.about' ? 'active' : '' }}">About Us</a>
+                                    class="nav-link tm-smooth-move {{ in_array(Route::currentRouteName(), $aboutRoutes) ? 'active' : '' }}">About
+                                    Us</a>
                                 <ul>
-                                    <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About Us</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.career') }}" class="sub-item">Careers</a></li>
-                                    <li class="menu-item"><a href="{{ route('pages.contact') }}" class="sub-item">Contact Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.about') }}" class="sub-item">About
+                                            Us</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.advisory') }}"
+                                            class="sub-item">Advisory Board</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.career') }}"
+                                            class="sub-item">Careers</a></li>
+                                     <li class="menu-item"><a href="{{ route('pages.faqs') }}"
+                                            class="sub-item">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#"
-                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.service' ? 'active' : '' }}">Our
+                                    class="nav-link tm-smooth-move {{ in_array(Route::currentRouteName(), $serviceRoutes) ? 'active' : '' }}">Our
                                     Services</a>
-                                    <ul>
-                                        <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}" class="sub-item">DXN1</a></li>
-                                        <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}" class="sub-item">AlphaLiquid® Biopsy</a></li>
-                                    </ul>
+                                <ul>
+                                    <li class="menu-item"><a href="{{ route('pages.service.dxn1') }}"
+                                            class="sub-item">Microbiology</a></li>
+                                    <li class="menu-item"><a href="{{ route('pages.service.alphaProfiling') }}"
+                                            class="sub-item">Oncology</a></li>
+                                </ul>
                             </li>
                             {{-- <li class="menu-item"><a href="#doctor" class="nav-link tm-smooth-move">DOCTOR</a></li> --}}
-                            <li class="menu-item"><a href="{{ route('home') }}#gallery"
-                                    class="nav-link tm-smooth-move">Partners</a></li>
+                            <li class="menu-item"><a href="{{ route('pages.partners') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.partners' ? 'active' : '' }}">Partners</a></li>
                             {{-- <li class="menu-item"><a href="#price" class="nav-link tm-smooth-move">PRICE</a></li> --}}
                             <li class="menu-item "><a href="{{ route('pages.blog') }}"
                                     class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.blog' ? 'active' : '' }}">Blogs</a>
-                            <li class="menu-item "><a href="#"
-                                        class="nav-link tm-smooth-move">Outreach Activity</a>
+                            <li class="menu-item "><a href="{{ route('pages.outreach') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.outreach' ? 'active' : '' }}">Outreach Activity</a>
+                            <li class="menu-item "><a href="{{ route('pages.contact') }}"
+                                    class="nav-link tm-smooth-move {{ Route::currentRouteName() == 'pages.contact' ? 'active' : '' }}">Contact Us</a>
 
                                 {{-- /menu-item-has-children --}}
                                 {{-- <ul>
@@ -70,3 +90,38 @@
         </div><!-- .tm-site-header -->
     </header>
     <!-- End Site Header Wrap -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const branding = document.querySelector('.tm-site-branding');
+        const headerInfo = document.querySelector('.tm-header-info-wrap');
+        const headerMenuContainer = document.querySelector('.tm-header-menu-container');
+
+        function toggleHeaderElements() {
+            const isMobile = window.innerWidth <= 991;
+
+            if (isMobile) {
+                branding?.classList.remove('hidden-on-top');
+                branding?.classList.add('show-on-scroll');
+                headerMenuContainer?.classList.remove('center-nav'); // Don't center on mobile
+                return;
+            }
+
+            if (window.scrollY > 50) {
+                branding?.classList.add('show-on-scroll');
+                branding?.classList.remove('hidden-on-top');
+                headerInfo?.classList.add('hide-on-scroll');
+                headerMenuContainer?.classList.remove('center-nav'); // move to side on scroll
+            } else {
+                branding?.classList.remove('show-on-scroll');
+                branding?.classList.add('hidden-on-top');
+                headerInfo?.classList.remove('hide-on-scroll');
+                headerMenuContainer?.classList.add('center-nav'); // center on top before scroll
+            }
+        }
+
+        window.addEventListener('scroll', toggleHeaderElements);
+        window.addEventListener('resize', toggleHeaderElements);
+        toggleHeaderElements();
+    });
+</script>
+

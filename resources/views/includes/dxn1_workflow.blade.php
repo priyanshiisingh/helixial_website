@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <main class="container my-3">
+        <main class="container my-3 text-002735">
             <article data-aos="zoom-in">
 
                 <h2 class="my-5">SAMPLE WORKFLOW</h2>
