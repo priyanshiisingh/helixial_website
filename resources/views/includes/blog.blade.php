@@ -1,134 +1,54 @@
     <!-- Start Blog Section -->
     <section id="blog">
         <div class="empty-space col-md-b100 col-xs-b70"></div>
-        <div class="tm-section-heading text-center">
-            <h2>LATEST NEWS</h2>
+        {{-- <div class="tm-section-heading text-center">
+            <h2>Blogs</h2>
             <div class="tm-section-seperator"><span></span></div>
             <div class="empty-space col-md-b60 col-xs-b40"></div>
-        </div>
+        </div> --}}
+
+
+        <h2 class="blog-title" data-aos="fade-up" data-aos-duration="3000">Blog <span>Archive</span></h2>
+
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="tm-left-post">
-                        <div class="tm-post tm-style1">
-                            <div class="tm-post-thumb">
-                                <a href="#" class="tm-link-block">
-                                    <img src="assets/img/blog-01.jpg" alt="blog-01">
-                                    <div class="tm-blog-hover">
-                                        <span class="tm-blog-shap"></span>
-                                        <i class="fa fa-link"></i>
+            <div class="row" data-aos="fade-down" data-aos-duration="3000">
+                <div class="col-12">
+                    <div class="row g-4">
+
+                        @foreach ($blogs as $blog)
+                            @php
+                                $image = $blog->attachments->first(); // Get the first attached image
+                            @endphp
+
+                            <div class="col-12">
+                                <div class="blog-card d-flex flex-md-row flex-column align-items-center gap-5">
+                                    <div class="blog-image">
+                                        <a href="{{ route('pages.blog.detail', $blog->slug) }}">
+                                            <img src="{{ $image != null ? asset($image->url()) : '' }}" alt="blog-image"
+                                                class="img-fluid rounded">
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="empty-space col-xs-b25"></div>
-                            <div class="tm-blog-body">
-                                <h2 class="tm-blog-heading">
-                                    <a href="#" class="tm-link-block">Scary Thing That You Don’t Get Enough Sleep</a>
-                                </h2>
-                                <div class="empty-space col-xs-b15"></div>
-                                <div class="tm-blog-meta">
-                                    <span><a href="#" class="bar-link"><i class="fa fa-user"></i>Admin</a></span>
-                                    <span><i class="fa fa-calendar"></i>Jan 10, 2018</span>
-                                </div>
-                                <div class="empty-space col-xs-b20"></div>
-                                <div class="tm-blog-separator"></div>
-                                <div class="tm-entry-content">
-                                    <p>If you're tossing and turning every night, there's some bad news. Your brain could be in big trouble! Turns out, there are some pretty scary side effects to sleep loss, all around. (By the way, getting too much sleep...</p>
-                                    <div class="empty-space col-xs-b30"></div>
-                                    <a href="#" class="tm-btn1">READ MORE</a>
-                                </div>
-                            </div>
-                        </div><!-- .tm-post -->
-                    </div><!-- .tm-left-post -->
-                    <div class="empty-space col-xs-b30"></div>
-                </div><!-- .col -->
-                <div class="col-xl-6">
-                    <div class="tm-right-post">
-                        <div class="tm-post tm-style2">
-                            <div class="tm-post-thumb">
-                                <a href="#" class="tm-link-block">
-                                    <img src="assets/img/blog-02.jpg" alt="blog-02">
-                                    <div class="tm-blog-hover small">
-                                        <span class="tm-blog-shap"></span>
-                                        <i class="fa fa-link"></i>
+                                    <div class="blog-content">
+                                        <h5 class="blog-title-title mb-1">
+                                            <a href="{{ route('pages.blog.detail', $blog->slug) }}"
+                                                class="text-white fw-bold">
+                                                {{ $blog->title }}
+                                            </a>
+                                        </h5>
+                                        <p class="mb-0 text-white">
+                                            <span class="fw-bold">{{ $blog->author }}</span><br>
+                                            {!! \Illuminate\Support\Str::limit(strip_tags($blog->description), 80) !!}
+                                        </p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="empty-space col-xs-b25"></div>
-                            <div class="tm-blog-body">
-                                <h2 class="tm-blog-heading">
-                                    <a href="#" class="tm-link-block">Doctors and Nurses Reveal...</a>
-                                </h2>
-                                <div class="empty-space col-xs-b10"></div>
-                                <div class="tm-blog-meta">
-                                    <span><a href="#" class="bar-link"><i class="fa fa-user"></i>Admin</a></span>
-                                    <span><i class="fa fa-calendar"></i>Feb 13, 2018</span>
-                                </div>
-                                <div class="empty-space col-xs-b20"></div>
-                                <div class="tm-blog-separator"></div>
-                                <div class="tm-entry-content">
-                                    <p>These tips might just save your life (or at least make it a little healthier). When it comes to your...</p>
                                 </div>
                             </div>
-                        </div><!-- .tm-post -->
-                        <div class="tm-post tm-style2">
-                            <div class="tm-post-thumb">
-                                <a href="#" class="tm-link-block">
-                                    <img src="assets/img/blog-03.jpg" alt="blog-03">
-                                    <div class="tm-blog-hover small">
-                                        <span class="tm-blog-shap"></span>
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="empty-space col-xs-b25"></div>
-                            <div class="tm-blog-body">
-                                <h2 class="tm-blog-heading">
-                                    <a href="#" class="tm-link-block">7 Ways to market helth...</a>
-                                </h2>
-                                <div class="empty-space col-xs-b10"></div>
-                                <div class="tm-blog-meta">
-                                    <span><a href="#" class="bar-link"><i class="fa fa-user"></i>Admin</a></span>
-                                    <span><i class="fa fa-calendar"></i>Mar 09, 2018</span>
-                                </div>
-                                <div class="empty-space col-xs-b20"></div>
-                                <div class="tm-blog-separator"></div>
-                                <div class="tm-entry-content">
-                                    <p>Health care in the United States is provided by many distinct organizations...</p>
-                                </div>
-                            </div>
-                        </div><!-- .tm-post -->
-                        <div class="tm-post tm-style2">
-                            <div class="tm-post-thumb">
-                                <a href="#" class="tm-link-block">
-                                    <img src="assets/img/blog-04.jpg" alt="blog-04">
-                                    <div class="tm-blog-hover small">
-                                        <span class="tm-blog-shap"></span>
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="empty-space col-xs-b25"></div>
-                            <div class="tm-blog-body">
-                                <h2 class="tm-blog-heading">
-                                    <a href="#" class="tm-link-block">How to Market to Medicare...</a>
-                                </h2>
-                                <div class="empty-space col-xs-b10"></div>
-                                <div class="tm-blog-meta">
-                                    <span><a href="#" class="bar-link"><i class="fa fa-user"></i>Admin</a></span>
-                                    <span><i class="fa fa-calendar"></i>Mar 19, 2018</span>
-                                </div>
-                                <div class="empty-space col-xs-b20"></div>
-                                <div class="tm-blog-separator"></div>
-                                <div class="tm-entry-content">
-                                    <p>Medicare influences most of the healthcare decisions of patients 65 and up. Unfortunately, original...</p>
-                                </div>
-                            </div>
-                        </div><!-- .tm-post -->
-                    </div><!-- .tm-right-post -->
-                    <div class="empty-space col-xs-b30"></div>
-                </div><!-- .col -->
-            </div>
+                        @endforeach
+
+                    </div><!-- .row -->
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+
+
         </div>
         <div class="empty-space col-md-b70 col-xs-b40"></div>
     </section>
