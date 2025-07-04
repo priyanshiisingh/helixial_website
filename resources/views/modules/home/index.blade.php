@@ -13,7 +13,9 @@
 
     @include('includes.molecular_precision')
 
-    @include('includes.testimonials')
+    @if (!$testimonials->isEmpty())
+        @include('includes.testimonials')
+    @endif
 
     {{-- @include('includes.gallery') --}}
     @include('includes.funfact')
