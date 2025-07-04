@@ -914,6 +914,11 @@ ul li {
     font-weight: 900;
 }
 
+
+.biopsy-box{
+    color: black !important;
+}
+
 .service-description {
     font-size: 20px;
     font-weight: 400;
@@ -921,7 +926,6 @@ ul li {
     text-align: left;
     color: #f8fffe;
     margin-bottom: 20px;
-    max-width: 732px;
 }
 
 .service-subtitle {
@@ -971,6 +975,31 @@ ul li {
 
 .read-more-btn span a {
     color: #75e2df;
+}
+
+.read-more-btn-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 43px;
+    background-color: #75e2df;
+    border-radius: 21px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.read-more-btn-reverse span {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #024d60;
+}
+
+.read-more-btn-reverse span a {
+    color: #024d60;
 }
 
 .text-overlay-section .image-wrapper {
